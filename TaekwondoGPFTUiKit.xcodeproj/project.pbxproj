@@ -11,7 +11,7 @@
 		10CDA58B28E4CF92000B4005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */; };
 		10CDA58D28E4CF92000B4005 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA58C28E4CF92000B4005 /* FirstScreen.swift */; };
 		10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CDA59128E4CF93000B4005 /* Assets.xcassets */; };
-		10CDA59528E4CF93000B4005 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CDA59328E4CF93000B4005 /* LaunchScreen.storyboard */; };
+		10CDA59528E4CF93000B4005 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CDA59328E4CF93000B4005 /* Main.storyboard */; };
 		10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */; };
 		10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */; };
 		10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A928E4D249000B4005 /* PatternsViewModel.swift */; };
@@ -26,7 +26,7 @@
 		10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		10CDA58C28E4CF92000B4005 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		10CDA59128E4CF93000B4005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		10CDA59428E4CF93000B4005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		10CDA59428E4CF93000B4005 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10CDA59628E4CF93000B4005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryViewModel.swift; sourceTree = "<group>"; };
 		10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
@@ -71,9 +71,8 @@
 				10CDA59C28E4D0C6000B4005 /* Extenions */,
 				10CDA58828E4CF92000B4005 /* AppDelegate.swift */,
 				10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */,
-				10CDA58C28E4CF92000B4005 /* FirstScreen.swift */,
 				10CDA59128E4CF93000B4005 /* Assets.xcassets */,
-				10CDA59328E4CF93000B4005 /* LaunchScreen.storyboard */,
+				10CDA59328E4CF93000B4005 /* Main.storyboard */,
 				10CDA59628E4CF93000B4005 /* Info.plist */,
 			);
 			path = TaekwondoGPFTUiKit;
@@ -110,6 +109,7 @@
 		10CDA5A028E4D195000B4005 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				10CDA58C28E4CF92000B4005 /* FirstScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -172,7 +172,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10CDA59528E4CF93000B4005 /* LaunchScreen.storyboard in Resources */,
+				10CDA59528E4CF93000B4005 /* Main.storyboard in Resources */,
 				10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,12 +199,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		10CDA59328E4CF93000B4005 /* LaunchScreen.storyboard */ = {
+		10CDA59328E4CF93000B4005 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				10CDA59428E4CF93000B4005 /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -335,7 +335,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaekwondoGPFTUiKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -363,7 +363,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaekwondoGPFTUiKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
