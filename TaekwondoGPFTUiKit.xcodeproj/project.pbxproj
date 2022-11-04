@@ -47,6 +47,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		105DD9C8291535DD002C218F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		10CDA57C28E4CF92000B4005 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +76,7 @@
 				10CDA59E28E4D159000B4005 /* ViewModels */,
 				10CDA5A028E4D195000B4005 /* Views */,
 				10CDA59C28E4D0C6000B4005 /* Extenions */,
+				105DD9C8291535DD002C218F /* SupportingFiles */,
 				10CDA58828E4CF92000B4005 /* AppDelegate.swift */,
 				10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */,
 				10CDA59128E4CF93000B4005 /* Assets.xcassets */,
