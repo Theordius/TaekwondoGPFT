@@ -58,7 +58,6 @@ class FirstScreen: UIViewController {
         theoryScreen.title = "Teoria"
         navigationController?.pushViewController(theoryScreen, animated: true)
     }
-    
 }
 
 
