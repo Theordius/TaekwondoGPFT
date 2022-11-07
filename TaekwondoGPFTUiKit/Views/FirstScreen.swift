@@ -16,6 +16,7 @@ class FirstScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        
         mainLogo()
 
         buttonConfiguration(button: myButton1, config: .filled(), title: "TEORIA", subtitle: "Teoria Taekwon - do ", bgColor: .blue, foregroundColor: .white)
@@ -30,7 +31,7 @@ class FirstScreen: UIViewController {
         buttonConfiguration(button: myButton4, config: .filled(), title: "SKLEP ONLINE", subtitle: "Nasz sklep online", bgColor: .blue, foregroundColor: .white)
         myButton4.addTarget(self, action: #selector(goToShopOnlineScreen), for: .touchUpInside)
         
-        theoryScreen()
+        stackedButtonsView()
         
     }
     
@@ -42,15 +43,15 @@ class FirstScreen: UIViewController {
         NSLayoutConstraint.activate([
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             imageView.centerYAnchor.constraint(equalTo: view.topAnchor, constant: 175),
-            imageView.heightAnchor.constraint(equalToConstant: 100),
-            imageView.widthAnchor.constraint(equalToConstant: 100)
+            imageView.heightAnchor.constraint(equalToConstant: 125),
+            imageView.widthAnchor.constraint(equalToConstant: 125)
         ])
     }
     
-    func theoryScreen() {
+    func stackedButtonsView() {
         
         stackView.axis = .vertical
-        stackView.spacing = 12
+        stackView.spacing = 15
         stackView.distribution = .fillEqually
         stackView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -58,8 +59,8 @@ class FirstScreen: UIViewController {
         
         stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        stackView.heightAnchor.constraint(equalToConstant: 372).isActive = true // 84(height of single button) * 4(number of buttons) = 336 + 36(total stackView spaces from buttons) = 372(height of intere stackView)
-        stackView.widthAnchor.constraint(equalToConstant: view.frame.width - 60).isActive = true // set width of button
+        stackView.heightAnchor.constraint(equalToConstant: 276).isActive = true // 84(height of single button) * 4(number of buttons) = 336 + 36(total stackView spaces from buttons) = 372(height of intere stackView)
+        stackView.widthAnchor.constraint(equalToConstant: view.frame.width - 80).isActive = true // set width of button
         
     }
     
