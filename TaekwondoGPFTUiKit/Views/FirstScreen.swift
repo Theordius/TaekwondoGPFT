@@ -18,6 +18,7 @@ class FirstScreen: UIViewController {
         view.backgroundColor = .systemBackground
         
         mainLogo()
+        stackedButtonsView()
 
         buttonConfiguration(button: myButton1, config: .filled(), title: "TEORIA", subtitle: "Teoria Taekwon - do ", bgColor: .blue, foregroundColor: .white)
         myButton1.addTarget(self, action: #selector(goToTheoryScreen), for: .touchUpInside)
@@ -30,8 +31,6 @@ class FirstScreen: UIViewController {
         
         buttonConfiguration(button: myButton4, config: .filled(), title: "SKLEP ONLINE", subtitle: "Nasz sklep online", bgColor: .blue, foregroundColor: .white)
         myButton4.addTarget(self, action: #selector(goToShopOnlineScreen), for: .touchUpInside)
-        
-        stackedButtonsView()
         
     }
     
@@ -48,7 +47,6 @@ class FirstScreen: UIViewController {
         stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         stackView.heightAnchor.constraint(equalToConstant: 276).isActive = true // 84(height of single button) * 4(number of buttons) = 336 + 36(total stackView spaces from buttons) = 372(height of intere stackView)
         stackView.widthAnchor.constraint(equalToConstant: view.frame.width - 80).isActive = true // set width of button
-        
     }
     
     //MARK: - Basic Navigation

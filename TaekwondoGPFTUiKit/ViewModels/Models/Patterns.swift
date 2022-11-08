@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+struct Patterns: Hashable, Identifiable {
+    let id: String
+    let name: String
+}

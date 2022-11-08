@@ -66,8 +66,6 @@
 			children = (
 				10CDA58828E4CF92000B4005 /* AppDelegate.swift */,
 				10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */,
-				1081A5A1291917C000666376 /* Buttons.swift */,
-				1081A5AD291A764200666376 /* Logo.swift */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -105,6 +103,8 @@
 		10CDA59C28E4D0C6000B4005 /* Extenions */ = {
 			isa = PBXGroup;
 			children = (
+				1081A5A1291917C000666376 /* Buttons.swift */,
+				1081A5AD291A764200666376 /* Logo.swift */,
 			);
 			path = Extenions;
 			sourceTree = "<group>";
