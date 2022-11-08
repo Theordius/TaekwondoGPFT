@@ -35,19 +35,6 @@ class FirstScreen: UIViewController {
         
     }
     
-    func mainLogo() {
-        let imageView = UIImageView(image: image!)
-        view.addSubview(imageView)
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
-            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            imageView.centerYAnchor.constraint(equalTo: view.topAnchor, constant: 175),
-            imageView.heightAnchor.constraint(equalToConstant: 125),
-            imageView.widthAnchor.constraint(equalToConstant: 125)
-        ])
-    }
-    
     func stackedButtonsView() {
         
         stackView.axis = .vertical
