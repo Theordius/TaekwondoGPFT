@@ -9,6 +9,6 @@ import Foundation
 import UIKit
 
 struct Patterns: Hashable, Identifiable, Codable {
-    let id: Int
+    let id: String
     let name: String
 }
