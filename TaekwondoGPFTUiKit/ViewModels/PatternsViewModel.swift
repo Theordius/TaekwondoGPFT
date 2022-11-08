@@ -10,4 +10,13 @@ import UIKit
 
 class PatternsViewModel {
     public var patterns = [Patterns]()
+    
+    init() {
+        let loader = JSONLoader()
+        do {
+            patterns = try loader.loadJSON("Patterns.json")
+        } catch {
+            fatalError("File not found")
+        }
+    }
 }

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Patterns: Hashable, Identifiable {
+struct Patterns: Hashable, Identifiable, Codable {
     let id: Int
     let name: String
 }
