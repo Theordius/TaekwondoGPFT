@@ -14,6 +14,8 @@
 		1081A5A8291921B700666376 /* ShopOnlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A7291921B700666376 /* ShopOnlineView.swift */; };
 		1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A9291933A700666376 /* CalendarViewModel.swift */; };
 		1081A5AE291A764200666376 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5AD291A764200666376 /* Logo.swift */; };
+		1081A5B0291A7A4800666376 /* Patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 1081A5AF291A7A4800666376 /* Patterns.json */; };
+		1081A5B2291A7AF300666376 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B1291A7AF300666376 /* JSONLoader.swift */; };
 		10CDA58928E4CF92000B4005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA58828E4CF92000B4005 /* AppDelegate.swift */; };
 		10CDA58B28E4CF92000B4005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */; };
 		10CDA58D28E4CF92000B4005 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA58C28E4CF92000B4005 /* FirstScreen.swift */; };
@@ -35,6 +37,8 @@
 		1081A5A7291921B700666376 /* ShopOnlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopOnlineView.swift; sourceTree = "<group>"; };
 		1081A5A9291933A700666376 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		1081A5AD291A764200666376 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		1081A5AF291A7A4800666376 /* Patterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Patterns.json; sourceTree = "<group>"; };
+		1081A5B1291A7AF300666376 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		10CDA58528E4CF92000B4005 /* TaekwondoGPFTUiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaekwondoGPFTUiKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CDA58828E4CF92000B4005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			children = (
 				10CDA58828E4CF92000B4005 /* AppDelegate.swift */,
 				10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */,
+				1081A5AF291A7A4800666376 /* Patterns.json */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 			children = (
 				1081A5A1291917C000666376 /* Buttons.swift */,
 				1081A5AD291A764200666376 /* Logo.swift */,
+				1081A5B1291A7AF300666376 /* JSONLoader.swift */,
 			);
 			path = Extenions;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10CDA59528E4CF93000B4005 /* Main.storyboard in Resources */,
+				1081A5B0291A7A4800666376 /* Patterns.json in Resources */,
 				10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +229,7 @@
 				1081A5AE291A764200666376 /* Logo.swift in Sources */,
 				1081A5A62919219000666376 /* CalendarView.swift in Sources */,
 				10CDA5AE28E4D2FD000B4005 /* Events.swift in Sources */,
+				1081A5B2291A7AF300666376 /* JSONLoader.swift in Sources */,
 				1022689129159CC5003A8A80 /* TheoryView.swift in Sources */,
 				1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */,
 				10CDA5B028E4D309000B4005 /* Theory.swift in Sources */,
