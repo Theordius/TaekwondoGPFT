@@ -1,33 +1,38 @@
 [
     {
-        "name": "Chon-gi",
         "id": "1",
+        "name": "Chon-gi",
+        
      
     },
     
     {
-        "name": "Dan-Gun",
         "id": "2",
+        "name": "Dan-Gun",
+      
       
        
     },
     
     {
-        "name": "Do-San",
         "id": "3",
+        "name": "Do-San",
+        
        
     },
     
     {
-        "name": "Whong-yo",
         "id": "4",
+        "name": "Whong-yo",
+     
       
         
     },
     
     {
-        "name": "Yul-Gok",
         "id": "5",
+        "name": "Yul-Gok",
+        
         
     },
 ]

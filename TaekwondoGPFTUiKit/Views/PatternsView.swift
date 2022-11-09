@@ -8,17 +8,13 @@
 import UIKit
 
 class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
-   
-    var patterns = [Patterns]()
-    var data = [String]()
+    
+    var viewModel = PatternsViewModel()
+        
     let tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        for i in 0...24 {
-            data.append("New Element \(i)")
-        }
         
         view.addSubview(tableView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -26,6 +22,7 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
+       
     }
     
     override func viewDidLayoutSubviews() {
@@ -34,13 +31,13 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        return viewModel.patterns.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = data[indexPath.row]
+        cell.textLabel?.text = viewModel.patterns[indexPath.row].name
         return cell
         
     }

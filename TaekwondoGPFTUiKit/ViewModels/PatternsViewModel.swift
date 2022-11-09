@@ -9,7 +9,8 @@ import Foundation
 import UIKit
 
 class PatternsViewModel {
-    public var patterns = [Patterns]()
+    
+    public var patterns: [Patterns]
     
     init() {
         let loader = JSONLoader()
