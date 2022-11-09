@@ -1,38 +1,155 @@
 [
     {
         "id": "1",
-        "name": "Chon-gi",
+        "name": "CHON - JI",
         
-     
+        
     },
     
     {
         "id": "2",
-        "name": "Dan-Gun",
-      
-      
-       
+        "name": "DAN - GUN",
+        
+        
+        
     },
     
     {
         "id": "3",
-        "name": "Do-San",
+        "name": "DO - SAN",
         
-       
+        
     },
     
     {
         "id": "4",
-        "name": "Whong-yo",
-     
-      
+        "name": "WON - HYO",
+        
+        
         
     },
     
     {
         "id": "5",
-        "name": "Yul-Gok",
-        
+        "name": "YUL - GOK",
         
     },
+    
+    {
+        "id": "6",
+        "name": "JOONG - GUN",
+        
+    },
+    
+    {
+        "id": "7",
+        "name": "TOI - GYE",
+        
+    },
+    
+    {
+        "id": "8",
+        "name": "HWA - RANG",
+        
+    },
+    
+    {
+           "id": "9",
+           "name": "CHOONG - MOO",
+           
+       },
+    
+    {
+            "id": "10",
+            "name": "GWANG - GAE",
+            
+        },
+        
+        {
+            "id": "11",
+            "name": "PO - EUN",
+            
+        },
+        
+        {
+             "id": "12",
+             "name": "GE - BEAK",
+             
+         },
+         
+         
+         {
+             "id": "13",
+             "name": "EUI - AM",
+             
+         },
+         
+         
+         {
+             "id": "14",
+             "name": "CHOONG - JANG",
+             
+         },
+         
+         {
+             "id": "15",
+             "name": "KO - DANG",
+             
+         },
+         
+         {
+             "id": "16",
+             "name": "SAM - IL",
+             
+         },
+         
+         {
+             "id": "17",
+             "name": "YOO - SIN",
+             
+         },
+         
+         {
+             "id": "18",
+             "name": "CHOI - YONG",
+             
+         },
+         
+         {
+             "id": "19",
+             "name": "YONG - GAE",
+             
+         },
+         
+         {
+             "id": "20",
+             "name": "UL - JI",
+             
+         },
+         
+         {
+             "id": "21",
+             "name": "MOON - MOO",
+             
+         },
+         
+         {
+             "id": "22",
+             "name": "SO - SAN",
+             
+         },
+         
+         {
+             "id": "23",
+             "name": "SE - JONG",
+             
+         },
+         
+         {
+             "id": "24",
+             "name": "TONG - IL",
+             
+             
+         }
+
 ]
