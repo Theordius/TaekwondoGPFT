@@ -9,6 +9,7 @@ import UIKit
 import WebKit
 
 class OnlieShopView: UIViewController, WKNavigationDelegate {
+    
     var webView : WKWebView!
     
     override func loadView() {
@@ -25,5 +26,4 @@ class OnlieShopView: UIViewController, WKNavigationDelegate {
         webView.allowsBackForwardNavigationGestures = true
         
     }
-
 }

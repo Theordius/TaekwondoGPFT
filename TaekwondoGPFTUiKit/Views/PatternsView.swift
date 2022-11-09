@@ -34,6 +34,8 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
         return viewModel.patterns.count
     }
     
+    //MARK: - Table View Delegates
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
