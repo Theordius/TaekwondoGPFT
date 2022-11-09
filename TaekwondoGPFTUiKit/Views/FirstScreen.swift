@@ -70,7 +70,7 @@ class FirstScreen: UIViewController {
     }
     
     @objc func goToShopOnlineScreen() {
-        let shopOnlineScreen = ShopOnlineView()
+        let shopOnlineScreen = OnlieShopView()
         shopOnlineScreen.title = "SklepOnline"
         navigationController?.pushViewController(shopOnlineScreen, animated: true)
         
