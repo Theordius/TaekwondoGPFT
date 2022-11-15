@@ -3,7 +3,7 @@
 //  TaekwondoGPFTUiKit
 //
 //  Created by Rafał Gęsior on 07/11/2022.
-//
+//  Buttons configuration model
 
 import Foundation
 import UIKit

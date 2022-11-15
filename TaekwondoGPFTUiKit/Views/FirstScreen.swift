@@ -20,7 +20,7 @@ class FirstScreen: UIViewController {
         mainLogo()
         stackedButtonsView()
 
-        buttonConfiguration(button: myButton1, config: .filled(), title: "TEORIA", subtitle: "Teoria Taekwon - do ", bgColor: .blue, foregroundColor: .white)
+        buttonConfiguration(button: myButton1, config: .filled(), title: "TEORIA", subtitle: "Teoria Taekwon - do", bgColor: .blue, foregroundColor: .white)
         myButton1.addTarget(self, action: #selector(goToTheoryScreen), for: .touchUpInside)
         
         buttonConfiguration(button: myButton2, config: .filled(), title: "UKŁADY FORMALNE", subtitle: "Układy formalne", bgColor: .blue, foregroundColor: .white)

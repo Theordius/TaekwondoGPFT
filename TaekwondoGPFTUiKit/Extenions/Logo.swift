@@ -3,7 +3,7 @@
 //  TaekwondoGPFTUiKit
 //
 //  Created by Rafał Gęsior on 08/11/2022.
-//
+//  Logo configuration model
 
 import Foundation
 import UIKit

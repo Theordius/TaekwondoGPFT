@@ -10,8 +10,8 @@ import UIKit
 class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var viewModel = PatternsViewModel()
-        
     let tableView = UITableView()
+    var backgroundConfiguration = UIBackgroundConfiguration.listPlainCell()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,9 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
         tableView.separatorStyle = .none
         tableView.delegate = self
         tableView.dataSource = self
+        backgroundConfiguration.backgroundColor = .systemGray6
+        backgroundConfiguration.backgroundInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
+        backgroundConfiguration.cornerRadius = 5
        
     }
     
@@ -40,6 +43,7 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = viewModel.patterns[indexPath.row].name
+        cell.backgroundConfiguration = backgroundConfiguration
         return cell
         
     }
