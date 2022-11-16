@@ -9,7 +9,6 @@ import UIKit
 
 class FirstScreen: UIViewController {
     
-    let image = UIImage(named: "logo")
     let theoryButton = UIButton()
     let stackView = UIStackView(arrangedSubviews: [myButton1, myButton2, myButton3, myButton4])
     

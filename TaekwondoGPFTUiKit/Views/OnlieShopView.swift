@@ -11,6 +11,7 @@ import WebKit
 class OnlieShopView: UIViewController, WKNavigationDelegate {
     
     var webView : WKWebView!
+    let url = URL(string: "https://sklep.gpft.pl")!
     
     override func loadView() {
         webView = WKWebView()
@@ -20,10 +21,13 @@ class OnlieShopView: UIViewController, WKNavigationDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let url = URL(string: "https://sklep.gpft.pl")!
+        
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
+     
         
+    }
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        title = webView.title
     }
 }

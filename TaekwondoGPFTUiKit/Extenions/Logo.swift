@@ -13,7 +13,7 @@ let logo = UIImage(named: "logo")
 extension FirstScreen {
     
     func mainLogo() {
-        let imageView = UIImageView(image: image!)
+        let imageView = UIImageView(image: logo!)
         view.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
