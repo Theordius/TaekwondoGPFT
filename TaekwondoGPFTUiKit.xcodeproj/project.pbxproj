@@ -16,7 +16,7 @@
 		1081A5B0291A7A4800666376 /* Patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 1081A5AF291A7A4800666376 /* Patterns.json */; };
 		1081A5B2291A7AF300666376 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B1291A7AF300666376 /* JSONLoader.swift */; };
 		1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */; };
-		1081A5B6291BDF3600666376 /* OnlieShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B5291BDF3600666376 /* OnlieShopView.swift */; };
+		1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B5291BDF3600666376 /* OnlineShopView.swift */; };
 		10CDA58928E4CF92000B4005 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA58828E4CF92000B4005 /* AppDelegate.swift */; };
 		10CDA58B28E4CF92000B4005 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */; };
 		10CDA58D28E4CF92000B4005 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA58C28E4CF92000B4005 /* FirstScreen.swift */; };
@@ -40,7 +40,7 @@
 		1081A5AF291A7A4800666376 /* Patterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Patterns.json; sourceTree = "<group>"; };
 		1081A5B1291A7AF300666376 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopViewModel.swift; sourceTree = "<group>"; };
-		1081A5B5291BDF3600666376 /* OnlieShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlieShopView.swift; sourceTree = "<group>"; };
+		1081A5B5291BDF3600666376 /* OnlineShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopView.swift; sourceTree = "<group>"; };
 		10CDA58528E4CF92000B4005 /* TaekwondoGPFTUiKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaekwondoGPFTUiKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CDA58828E4CF92000B4005 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 				1022689029159CC5003A8A80 /* TheoryView.swift */,
 				1081A5A32919215700666376 /* PatternsView.swift */,
 				1081A5A52919219000666376 /* CalendarView.swift */,
-				1081A5B5291BDF3600666376 /* OnlieShopView.swift */,
+				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,7 +229,7 @@
 				10CDA58928E4CF92000B4005 /* AppDelegate.swift in Sources */,
 				1081A5A2291917C000666376 /* Buttons.swift in Sources */,
 				10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */,
-				1081A5B6291BDF3600666376 /* OnlieShopView.swift in Sources */,
+				1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */,
 				1081A5A42919215700666376 /* PatternsView.swift in Sources */,
 				1081A5AE291A764200666376 /* Logo.swift in Sources */,
 				1081A5A62919219000666376 /* CalendarView.swift in Sources */,

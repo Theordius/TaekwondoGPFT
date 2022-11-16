@@ -8,7 +8,7 @@
 import UIKit
 import WebKit
 
-class OnlieShopView: UIViewController, WKNavigationDelegate {
+class OnlineShopView: UIViewController, WKNavigationDelegate {
     
     var webView : WKWebView!
     let url = URL(string: "https://sklep.gpft.pl")!
