@@ -10,5 +10,4 @@ import UIKit
 
 class OnlineShopViewModel {
     
-    public let url = URL(string: "https://sklep.gpft.pl")
 }
