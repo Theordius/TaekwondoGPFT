@@ -11,13 +11,11 @@ import WebKit
 class OnlineShopView: UIViewController, WKNavigationDelegate {
     
     //TODO: viewModel implementation
-   // var viewModel = OnlineShopViewModel()
+    // var viewModel = OnlineShopViewModel()
     
     var webView : WKWebView!
     var progressView: UIProgressView!
-    let logo = UIImage(named: "logo")
     let url = URL(string: "https://sklep.gpft.pl")!
-    
     
     override func loadView() {
         webView = WKWebView()
@@ -30,7 +28,7 @@ class OnlineShopView: UIViewController, WKNavigationDelegate {
             progressView.progress = Float(webView.estimatedProgress)
         }
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,19 +37,25 @@ class OnlineShopView: UIViewController, WKNavigationDelegate {
         let spacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         progressView = UIProgressView(progressViewStyle: .default)
         progressView.sizeToFit()
-       
+        
         let progressButton = UIBarButtonItem(customView: progressView)
-       
+        
         toolbarItems = [progressButton, spacer]
         navigationController?.isToolbarHidden = false
         
-       
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
-     
         
     }
+    
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        title = webView.title
+        
+        if webView.isLoading == false {
+            title = webView.title
+            navigationController?.isToolbarHidden = true
+            
+        } else {
+            return
+        }
     }
 }
