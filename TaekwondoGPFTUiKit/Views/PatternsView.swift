@@ -15,7 +15,6 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.addSubview(tableView)
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         tableView.rowHeight = 60
@@ -49,8 +48,10 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        print("The cell \(indexPath.row) was tapped")
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "PatternsDetail") as? PatternsDetailView {
+            vc.selectedMovie = viewModel.patterns[indexPath.row].name
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 

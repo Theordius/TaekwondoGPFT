@@ -16,7 +16,6 @@ final class JSONLoader {
     
     func loadJSON<T: Decodable>(_ filename: String) throws ->  T  {
         let data: Data
-        
         guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
         else {
             throw TestError.fileNotFound("Couldn't find \(filename) in main bundle.")

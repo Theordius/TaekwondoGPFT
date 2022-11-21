@@ -11,6 +11,8 @@
 		10599D48292584EC005E42F0 /* URLLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D47292584EC005E42F0 /* URLLoader.swift */; };
 		10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4929258F72005E42F0 /* OnlineShop.swift */; };
 		10599D4C29258F85005E42F0 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4B29258F85005E42F0 /* Calendar.swift */; };
+		10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */; };
+		10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */; };
 		1081A5A2291917C000666376 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A1291917C000666376 /* Buttons.swift */; };
 		1081A5A42919215700666376 /* PatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A32919215700666376 /* PatternsView.swift */; };
 		1081A5A62919219000666376 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A52919219000666376 /* CalendarView.swift */; };
@@ -39,6 +41,9 @@
 		10599D4929258F72005E42F0 /* OnlineShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShop.swift; sourceTree = "<group>"; };
 		10599D4B29258F85005E42F0 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		10599D4F2927FD9D005E42F0 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Main.strings; sourceTree = "<group>"; };
+		10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsDetailView.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsDetailsViewModel.swift; sourceTree = "<group>"; };
+		10599DA1292BC368005E42F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		1081A5A1291917C000666376 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		1081A5A32919215700666376 /* PatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsView.swift; sourceTree = "<group>"; };
 		1081A5A52919219000666376 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -131,6 +136,7 @@
 				10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */,
 				10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */,
 				10CDA5A928E4D249000B4005 /* PatternsViewModel.swift */,
+				10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */,
 				1081A5A9291933A700666376 /* CalendarViewModel.swift */,
 				1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */,
 				10CDA59F28E4D163000B4005 /* Models */,
@@ -144,8 +150,8 @@
 				10CDA5AB28E4D2EF000B4005 /* Patterns.swift */,
 				10CDA5AD28E4D2FD000B4005 /* Events.swift */,
 				10CDA5AF28E4D309000B4005 /* Theory.swift */,
-				10599D4929258F72005E42F0 /* OnlineShop.swift */,
 				10599D4B29258F85005E42F0 /* Calendar.swift */,
+				10599D4929258F72005E42F0 /* OnlineShop.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -158,6 +164,7 @@
 				1081A5A32919215700666376 /* PatternsView.swift */,
 				1081A5A52919219000666376 /* CalendarView.swift */,
 				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
+				10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */,
 				10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */,
 				1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */,
+				10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */,
 				10CDA58D28E4CF92000B4005 /* FirstScreen.swift in Sources */,
 				10CDA58928E4CF92000B4005 /* AppDelegate.swift in Sources */,
 				1081A5A2291917C000666376 /* Buttons.swift in Sources */,
@@ -266,6 +275,7 @@
 			children = (
 				10CDA59428E4CF93000B4005 /* Base */,
 				10599D4F2927FD9D005E42F0 /* pl */,
+				10599DA1292BC368005E42F0 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
