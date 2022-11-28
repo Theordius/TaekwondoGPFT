@@ -8,22 +8,16 @@
 import UIKit
 
 class PatternsDetailView: UIViewController {
-    @IBOutlet var PatternMovie: UIImageView!
-    @IBOutlet var PatternDescription: UITextView!
     
     var viewModel = PatternsDetailsViewModel()
-    
-    var selectedMovie: String?
+    var detailItem: Patterns?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = selectedMovie
+        title =  "\(viewModel.patterns.self)"
         navigationItem.largeTitleDisplayMode = .never
-        
-        if let movieToLoad = selectedMovie  {
-            PatternMovie.image = UIImage(named: movieToLoad)
-        }
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {

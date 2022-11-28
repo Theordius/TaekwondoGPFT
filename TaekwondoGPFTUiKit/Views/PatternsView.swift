@@ -13,10 +13,11 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
     let tableView = UITableView()
     var backgroundConfiguration = UIBackgroundConfiguration.listPlainCell()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(tableView)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "patterns")
         tableView.rowHeight = 60
         tableView.separatorStyle = .none
         tableView.delegate = self
@@ -39,8 +40,8 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
     //MARK: - Table View Delegates
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "patterns", for: indexPath)
+        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
         cell.textLabel?.text = viewModel.patterns[indexPath.row].name
         cell.backgroundConfiguration = backgroundConfiguration
         return cell
@@ -49,7 +50,7 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(withIdentifier: "PatternsDetail") as? PatternsDetailView {
-            vc.selectedMovie = viewModel.patterns[indexPath.row].name
+            vc.detailItem = viewModel.patterns[indexPath.row]
             navigationController?.pushViewController(vc, animated: true)
         }
     }
