@@ -41,19 +41,20 @@ class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "patterns", for: indexPath)
+        let pattern = viewModel.patterns[indexPath.row]
         cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
-        cell.textLabel?.text = viewModel.patterns[indexPath.row].name
+        cell.textLabel?.text = pattern.name
         cell.backgroundConfiguration = backgroundConfiguration
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "PatternsDetail") as? PatternsDetailView {
-            vc.detailItem = viewModel.patterns[indexPath.row]
-            navigationController?.pushViewController(vc, animated: true)
+        let vc = PatternsDetailView()
+        vc.detailItem = viewModel.patterns[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
         }
     }
-}
+
 
 

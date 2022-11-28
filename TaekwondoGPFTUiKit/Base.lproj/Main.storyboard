@@ -46,36 +46,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0sD-cR-4LB">
-                                <rect key="frame" x="75" y="395" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XQS-U4-xhL">
+                                <rect key="frame" x="75" y="91" width="240" height="675"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0sD-cR-4LB">
+                                <rect key="frame" x="75" y="471" width="240" height="233"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQS-U4-xhL">
-                                <rect key="frame" x="75" y="91" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IMv-oi-Du7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0sD-cR-4LB" firstAttribute="top" secondItem="IMv-oi-Du7" secondAttribute="top" constant="49" id="C7k-Cl-tA6"/>
-                            <constraint firstItem="0sD-cR-4LB" firstAttribute="leading" secondItem="IMv-oi-Du7" secondAttribute="leading" constant="75" id="Kqp-uz-ejI"/>
-                            <constraint firstItem="0sD-cR-4LB" firstAttribute="centerX" secondItem="xq0-r6-C8G" secondAttribute="centerX" id="Pv9-TU-BRL"/>
-                            <constraint firstItem="IMv-oi-Du7" firstAttribute="bottom" secondItem="0sD-cR-4LB" secondAttribute="bottom" constant="586" id="eYn-QU-Ww5"/>
+                            <constraint firstItem="XQS-U4-xhL" firstAttribute="leading" secondItem="0sD-cR-4LB" secondAttribute="leading" id="7Bz-hL-nWW"/>
+                            <constraint firstItem="IMv-oi-Du7" firstAttribute="bottom" secondItem="0sD-cR-4LB" secondAttribute="bottom" constant="106" id="Lhi-X1-4E8"/>
+                            <constraint firstItem="XQS-U4-xhL" firstAttribute="top" secondItem="IMv-oi-Du7" secondAttribute="top" constant="44" id="QWS-eO-ahr"/>
+                            <constraint firstItem="XQS-U4-xhL" firstAttribute="leading" secondItem="IMv-oi-Du7" secondAttribute="leading" constant="75" id="e1O-Yg-HaA"/>
+                            <constraint firstItem="XQS-U4-xhL" firstAttribute="trailing" secondItem="0sD-cR-4LB" secondAttribute="trailing" id="eJB-OH-WC4"/>
+                            <constraint firstItem="0sD-cR-4LB" firstAttribute="top" secondItem="IMv-oi-Du7" secondAttribute="top" constant="424" id="iIw-Mp-1BN"/>
+                            <constraint firstItem="XQS-U4-xhL" firstAttribute="centerX" secondItem="xq0-r6-C8G" secondAttribute="centerX" id="kmp-Re-SVh"/>
+                            <constraint firstItem="IMv-oi-Du7" firstAttribute="bottom" secondItem="XQS-U4-xhL" secondAttribute="bottom" constant="44" id="lp7-MF-l7T"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="PatternDescription" destination="0sD-cR-4LB" id="x21-lY-MCy"/>
-                        <outlet property="PatternMovie" destination="XQS-U4-xhL" id="z8S-mY-K67"/>
+                        <outlet property="PatternDescription" destination="0sD-cR-4LB" id="eGS-tM-NXB"/>
+                        <outlet property="PatternMovie" destination="XQS-U4-xhL" id="PQv-BD-OY8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nql-Fr-CIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="834" y="-90"/>
+            <point key="canvasLocation" x="833.84615384615381" y="-90.284360189573462"/>
         </scene>
     </scenes>
     <resources>

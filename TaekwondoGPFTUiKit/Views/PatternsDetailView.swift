@@ -9,25 +9,20 @@ import UIKit
 
 class PatternsDetailView: UIViewController {
     
+    @IBOutlet var PatternMovie: UIImageView!
+    @IBOutlet var PatternDescription: UITextView!
+    
+    
     var viewModel = PatternsDetailsViewModel()
     var detailItem: Patterns?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .systemBlue
         
-        title =  "\(viewModel.patterns.self)"
+        title =  "TO JEST NAZWA UKŁADU"
         navigationItem.largeTitleDisplayMode = .never
        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.hidesBarsOnTap = true
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        navigationController?.hidesBarsOnTap = false
     }
     
 
