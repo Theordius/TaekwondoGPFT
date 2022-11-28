@@ -9,8 +9,8 @@ import UIKit
 
 class PatternsDetailView: UIViewController {
     
-    @IBOutlet var PatternMovie: UIImageView!
-    @IBOutlet var PatternDescription: UITextView!
+    @IBOutlet var patternMovie: UIImageView!
+    @IBOutlet var patternDescription: UILabel!
     
     
     var viewModel = PatternsDetailsViewModel()
@@ -19,11 +19,13 @@ class PatternsDetailView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBlue
-        
+    
         title =  "TO JEST NAZWA UKŁADU"
         navigationItem.largeTitleDisplayMode = .never
        
     }
+    
+   
     
 
     /*

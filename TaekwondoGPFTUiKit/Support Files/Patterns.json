@@ -2,6 +2,7 @@
     {
         "id": "1",
         "name": "CHON - JI",
+        "description" : "To jest Chon JI",
         
         
     },
@@ -9,7 +10,7 @@
     {
         "id": "2",
         "name": "DAN - GUN",
-        
+        "description" : "To jest Chon JI",
         
         
     },
@@ -17,14 +18,14 @@
     {
         "id": "3",
         "name": "DO - SAN",
-        
+        "description" : "To jest Chon JI",
         
     },
     
     {
         "id": "4",
         "name": "WON - HYO",
-        
+        "description" : "To jest Chon JI",
         
         
     },
@@ -32,48 +33,56 @@
     {
         "id": "5",
         "name": "YUL - GOK",
+        "description" : "To jest Chon JI",
         
     },
     
     {
         "id": "6",
         "name": "JOONG - GUN",
+        "description" : "To jest Chon JI",
         
     },
     
     {
         "id": "7",
         "name": "TOI - GYE",
+        "description" : "To jest Chon JI",
         
     },
     
     {
         "id": "8",
         "name": "HWA - RANG",
+        "description" : "To jest Chon JI",
         
     },
     
     {
            "id": "9",
            "name": "CHOONG - MOO",
+           "description" : "To jest Chon JI",
            
        },
     
     {
             "id": "10",
             "name": "GWANG - GAE",
+            "description" : "To jest Chon JI",
             
         },
         
         {
             "id": "11",
             "name": "PO - EUN",
+            "description" : "To jest Chon JI",
             
         },
         
         {
              "id": "12",
              "name": "GE - BEAK",
+             "description" : "To jest Chon JI",
              
          },
          
@@ -81,6 +90,7 @@
          {
              "id": "13",
              "name": "EUI - AM",
+             "description" : "To jest Chon JI",
              
          },
          
@@ -88,66 +98,77 @@
          {
              "id": "14",
              "name": "CHOONG - JANG",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "15",
              "name": "KO - DANG",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "16",
              "name": "SAM - IL",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "17",
              "name": "YOO - SIN",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "18",
              "name": "CHOI - YONG",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "19",
              "name": "YONG - GAE",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "20",
              "name": "UL - JI",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "21",
              "name": "MOON - MOO",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "22",
              "name": "SO - SAN",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "23",
              "name": "SE - JONG",
+             "description" : "To jest Chon JI",
              
          },
          
          {
              "id": "24",
              "name": "TONG - IL",
+             "description" : "To jest Chon JI",
              
              
          }
