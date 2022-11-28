@@ -42,10 +42,13 @@ class FirstScreen: UIViewController {
         
         view.addSubview(stackView)
         
-        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        stackView.heightAnchor.constraint(equalToConstant: 276).isActive = true // 84(height of single button) * 4(number of buttons) = 336 + 36(total stackView spaces from buttons) = 372(height of intere stackView)
-        stackView.widthAnchor.constraint(equalToConstant: view.frame.width - 80).isActive = true // set width of button
+        NSLayoutConstraint.activate([
+        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        stackView.heightAnchor.constraint(equalToConstant: 276),
+        stackView.widthAnchor.constraint(equalToConstant: view.frame.width - 80)
+        
+        ])
     }
     
     //MARK: - Basic Navigation
