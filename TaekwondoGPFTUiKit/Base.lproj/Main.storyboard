@@ -38,43 +38,6 @@
             </objects>
             <point key="canvasLocation" x="9" y="-90"/>
         </scene>
-        <!--Patterns Detail View-->
-        <scene sceneID="REL-aQ-32R">
-            <objects>
-                <viewController storyboardIdentifier="PatternsDetail" id="d3K-3M-c6z" customClass="PatternsDetailView" customModule="TaekwondoGPFTUiKit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xq0-r6-C8G">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQS-U4-xhL">
-                                <rect key="frame" x="75" y="73" width="240" height="256"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="und-8H-avO">
-                                <rect key="frame" x="75" y="413" width="240" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="IMv-oi-Du7"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="XQS-U4-xhL" firstAttribute="top" secondItem="IMv-oi-Du7" secondAttribute="top" constant="44" id="QWS-eO-ahr"/>
-                            <constraint firstItem="XQS-U4-xhL" firstAttribute="leading" secondItem="IMv-oi-Du7" secondAttribute="leading" constant="75" id="e1O-Yg-HaA"/>
-                            <constraint firstItem="XQS-U4-xhL" firstAttribute="centerX" secondItem="xq0-r6-C8G" secondAttribute="centerX" id="kmp-Re-SVh"/>
-                            <constraint firstItem="IMv-oi-Du7" firstAttribute="bottom" secondItem="XQS-U4-xhL" secondAttribute="bottom" constant="44" id="lp7-MF-l7T"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="patternDescription" destination="und-8H-avO" id="FBj-lP-Vhe"/>
-                        <outlet property="patternMovie" destination="XQS-U4-xhL" id="PQv-BD-OY8"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nql-Fr-CIc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="833.84615384615381" y="-90.284360189573462"/>
-        </scene>
     </scenes>
     <resources>
         <image name="logo" width="142.75399780273438" height="141.89100646972656"/>
