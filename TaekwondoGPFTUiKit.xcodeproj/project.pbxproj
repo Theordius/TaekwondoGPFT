@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1022689129159CC5003A8A80 /* TheoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022689029159CC5003A8A80 /* TheoryView.swift */; };
+		10283D212938C0F000250E2F /* Theory.json in Resources */ = {isa = PBXBuildFile; fileRef = 10283D202938C0F000250E2F /* Theory.json */; };
+		10283D232938C28C00250E2F /* TheoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10283D222938C28C00250E2F /* TheoryDetailView.swift */; };
+		10283D252938C36200250E2F /* TheoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10283D242938C36200250E2F /* TheoryDetailsViewModel.swift */; };
 		10599D48292584EC005E42F0 /* URLLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D47292584EC005E42F0 /* URLLoader.swift */; };
 		10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4929258F72005E42F0 /* OnlineShop.swift */; };
 		10599D4C29258F85005E42F0 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4B29258F85005E42F0 /* Calendar.swift */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		1022689029159CC5003A8A80 /* TheoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryView.swift; sourceTree = "<group>"; };
+		10283D202938C0F000250E2F /* Theory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theory.json; sourceTree = "<group>"; };
+		10283D222938C28C00250E2F /* TheoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailView.swift; sourceTree = "<group>"; };
+		10283D242938C36200250E2F /* TheoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailsViewModel.swift; sourceTree = "<group>"; };
 		10599D47292584EC005E42F0 /* URLLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLLoader.swift; sourceTree = "<group>"; };
 		10599D4929258F72005E42F0 /* OnlineShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShop.swift; sourceTree = "<group>"; };
 		10599D4B29258F85005E42F0 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 			children = (
 				10CDA58828E4CF92000B4005 /* AppDelegate.swift */,
 				10CDA58A28E4CF92000B4005 /* SceneDelegate.swift */,
+				10283D202938C0F000250E2F /* Theory.json */,
 				1081A5AF291A7A4800666376 /* Patterns.json */,
 			);
 			path = "Support Files";
@@ -134,11 +141,12 @@
 			isa = PBXGroup;
 			children = (
 				10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */,
-				10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */,
+				10283D242938C36200250E2F /* TheoryDetailsViewModel.swift */,
 				10CDA5A928E4D249000B4005 /* PatternsViewModel.swift */,
 				10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */,
 				1081A5A9291933A700666376 /* CalendarViewModel.swift */,
 				1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */,
+				10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */,
 				10CDA59F28E4D163000B4005 /* Models */,
 			);
 			path = ViewModels;
@@ -165,6 +173,7 @@
 				1081A5A52919219000666376 /* CalendarView.swift */,
 				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
 				10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */,
+				10283D222938C28C00250E2F /* TheoryDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -230,6 +239,7 @@
 			files = (
 				10CDA59528E4CF93000B4005 /* Main.storyboard in Resources */,
 				1081A5B0291A7A4800666376 /* Patterns.json in Resources */,
+				10283D212938C0F000250E2F /* Theory.json in Resources */,
 				10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,7 +260,9 @@
 				1081A5A2291917C000666376 /* Buttons.swift in Sources */,
 				10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */,
 				10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */,
+				10283D252938C36200250E2F /* TheoryDetailsViewModel.swift in Sources */,
 				1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */,
+				10283D232938C28C00250E2F /* TheoryDetailView.swift in Sources */,
 				1081A5A42919215700666376 /* PatternsView.swift in Sources */,
 				10599D48292584EC005E42F0 /* URLLoader.swift in Sources */,
 				1081A5AE291A764200666376 /* Logo.swift in Sources */,

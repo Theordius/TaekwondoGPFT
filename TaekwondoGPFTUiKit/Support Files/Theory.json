@@ -1,0 +1,176 @@
+[
+    {
+        "id": "1",
+        "name": "CHON - JI",
+        "description" : "CHON JI jest pierwszym układem formalnym w Taekwon - do, zawiera 19 elementów technicznych. W jęzuku koreńskim Chon JI oznacza niebo - ziemia",
+        
+        
+    },
+    
+    {
+        "id": "2",
+        "name": "DAN - GUN",
+        "description" : "To jest DAN - GUN",
+        
+        
+    },
+    
+    {
+        "id": "3",
+        "name": "DO - SAN",
+        "description" : "To jest DO - SAN",
+        
+    },
+    
+    {
+        "id": "4",
+        "name": "WON - HYO",
+        "description" : "To jest WON -HYO",
+        
+        
+    },
+    
+    {
+        "id": "5",
+        "name": "YUL - GOK",
+        "description" : "To jest YUL - GOK",
+        
+    },
+    
+    {
+        "id": "6",
+        "name": "JOONG - GUN",
+        "description" : "To jestJOONG - GUN",
+        
+    },
+    
+    {
+        "id": "7",
+        "name": "TOI - GYE",
+        "description" : "To jest TOI - GYE",
+        
+    },
+    
+    {
+        "id": "8",
+        "name": "HWA - RANG",
+        "description" : "To jest HWA - RANG",
+        
+    },
+    
+    {
+           "id": "9",
+           "name": "CHOONG - MOO",
+           "description" : "To jest Chon JI",
+           
+       },
+    
+    {
+            "id": "10",
+            "name": "GWANG - GAE",
+            "description" : "To jest GWANG - GAE",
+            
+        },
+        
+        {
+            "id": "11",
+            "name": "PO - EUN",
+            "description" : "To jest PO - EUN",
+            
+        },
+        
+        {
+             "id": "12",
+             "name": "GE - BEAK",
+             "description" : "To jest GE - BEAK",
+             
+         },
+         
+         
+         {
+             "id": "13",
+             "name": "EUI - AM",
+             "description" : "To jest EUI - AM",
+             
+         },
+         
+         
+         {
+             "id": "14",
+             "name": "CHOONG - JANG",
+             "description" : "To jest CHOONG - JANG",
+             
+         },
+         
+         {
+             "id": "15",
+             "name": "KO - DANG",
+             "description" : "To jest KO - DANG",
+             
+         },
+         
+         {
+             "id": "16",
+             "name": "SAM - IL",
+             "description" : "To jest SAM - IL",
+             
+         },
+         
+         {
+             "id": "17",
+             "name": "YOO - SIN",
+             "description" : "To jest Chon JI",
+             
+         },
+         
+         {
+             "id": "18",
+             "name": "CHOI - YONG",
+             "description" : "To jest CHOI - YONG",
+             
+         },
+         
+         {
+             "id": "19",
+             "name": "YONG - GAE",
+             "description" : "To jest Chon JI",
+             
+         },
+         
+         {
+             "id": "20",
+             "name": "UL - JI",
+             "description" : "To jest UL - JI",
+             
+         },
+         
+         {
+             "id": "21",
+             "name": "MOON - MOO",
+             "description" : "To jest MOON - MOO",
+             
+         },
+         
+         {
+             "id": "22",
+             "name": "SO - SAN",
+             "description" : "To jest SO - SAN",
+             
+         },
+         
+         {
+             "id": "23",
+             "name": "SE - JONG",
+             "description" : "To jest SE - JONG",
+             
+         },
+         
+         {
+             "id": "24",
+             "name": "TONG - IL",
+             "description" : "To jest TONG - IL",
+             
+             
+         }
+
+]

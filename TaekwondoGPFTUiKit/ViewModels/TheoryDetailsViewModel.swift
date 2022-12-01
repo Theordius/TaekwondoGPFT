@@ -1,14 +1,15 @@
 //
-//  TheoryViewModel.swift
+//  TheoryDetailsViewModel.swift
 //  TaekwondoGPFTUiKit
 //
-//  Created by Rafał Gęsior on 28/09/2022.
+//  Created by Rafał Gęsior on 01/12/2022.
 //
 
 import Foundation
 import UIKit
 
-class TheoryViewModel {
+
+class TheoryDetailsViewModel {
     public var theory: [Theory]
     
     init() {
