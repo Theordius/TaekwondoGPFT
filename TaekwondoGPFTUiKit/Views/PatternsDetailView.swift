@@ -16,22 +16,28 @@ class PatternsDetailView: UIViewController {
     var patternImages = [UIImage]()
     var patternDescription: UILabel!
     
+    let attributes: [NSAttributedString.Key: Any] = [
+        .foregroundColor: UIColor.systemGreen,
+        .backgroundColor: UIColor.clear,
+        .font: UIFont.italicSystemFont(ofSize: 18),
+        .baselineOffset: 5,
+    ]
+    
     override func loadView() {
         view = UIView()
         view.backgroundColor = .systemBackground
         
         let patternMovieView = UIImageView(image: patternMovie!)
+        let description = NSAttributedString(string: (detailItem?.description)!, attributes: attributes)
+        
         patternMovieView.translatesAutoresizingMaskIntoConstraints = false
         patternMovieView.setContentHuggingPriority(UILayoutPriority(1), for: .vertical)
         view.addSubview(patternMovieView)
         
-        patternDescription = UILabel()
+        patternDescription = UILabel(frame: CGRect(x: 0, y: 0, width: 220, height: 220))
         patternDescription.translatesAutoresizingMaskIntoConstraints = false
-        patternDescription.textAlignment = .center
-        patternDescription.backgroundColor = .systemBlue
         patternDescription.numberOfLines = 0
-        patternDescription.font = UIFont.systemFont(ofSize: 14)
-        patternDescription.text = detailItem?.description
+        patternDescription.attributedText = description
         patternDescription.setContentHuggingPriority(UILayoutPriority(1), for: .vertical)
         view.addSubview(patternDescription)
         

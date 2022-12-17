@@ -1,30 +1,30 @@
 [
     {
         "id": "1",
-        "name": "CHON - JI",
-        "description" : "CHON JI jest pierwszym układem formalnym w Taekwon - do, zawiera 19 elementów technicznych. W jęzuku koreńskim Chon JI oznacza niebo - ziemia",
+        "name": "LICZEBNIKI KOREAŃSKIE",
+        "description" : "1. -> Hana 2 -> Tul 3 -> Set 4 -> Net 5 -> Dasot 6 - Yasot 7 -> Ilgot 8 - Yodol 9 - Ahop 10 -> Yol ",
         
         
     },
     
     {
         "id": "2",
-        "name": "DAN - GUN",
-        "description" : "To jest DAN - GUN",
+        "name": "STREFY ATAKU",
+        "description" : "W Taekwon-do wyróżniamy 3 strefy ataku. Niska - Najunde, Średnia - Kaunde oraz wysoka - Nepunde",
         
         
     },
     
     {
         "id": "3",
-        "name": "DO - SAN",
-        "description" : "To jest DO - SAN",
+        "name": "TAEKWON - DO ZNACZENIE",
+        "description" : "W języku koreańsskim słowo TAE oznacza stopę lub uderzenie stopą, KWON oznacza pięść lub uderzenie pięścią, natomiast DO oznacza drogę/zasadę ",
         
     },
     
     {
         "id": "4",
-        "name": "WON - HYO",
+        "name": "POWIERZCHNIE ATAKUJĄCE: RĘCZNE",
         "description" : "To jest WON -HYO",
         
         
@@ -32,145 +32,37 @@
     
     {
         "id": "5",
-        "name": "YUL - GOK",
+        "name": "POWIERZCHNIE ATAKUJĄCE: NOŻNE",
         "description" : "To jest YUL - GOK",
         
     },
     
     {
         "id": "6",
-        "name": "JOONG - GUN",
+        "name": "POZYCJE W TAEKWON-DO",
         "description" : "To jestJOONG - GUN",
         
     },
     
     {
         "id": "7",
-        "name": "TOI - GYE",
-        "description" : "To jest TOI - GYE",
+        "name": "KOPNIĘCIA",
+        "description" : "To be done",
         
     },
     
     {
         "id": "8",
-        "name": "HWA - RANG",
-        "description" : "To jest HWA - RANG",
+        "name": "TECHNIKI RĘCZNE",
+        "description" : "To be done",
         
     },
     
     {
-           "id": "9",
-           "name": "CHOONG - MOO",
-           "description" : "To jest Chon JI",
-           
-       },
-    
-    {
-            "id": "10",
-            "name": "GWANG - GAE",
-            "description" : "To jest GWANG - GAE",
-            
-        },
+        "id": "9",
+        "name": "TWÓRCA TAEKWNO -DO ",
+        "description" : "To be done",
         
-        {
-            "id": "11",
-            "name": "PO - EUN",
-            "description" : "To jest PO - EUN",
-            
-        },
-        
-        {
-             "id": "12",
-             "name": "GE - BEAK",
-             "description" : "To jest GE - BEAK",
-             
-         },
-         
-         
-         {
-             "id": "13",
-             "name": "EUI - AM",
-             "description" : "To jest EUI - AM",
-             
-         },
-         
-         
-         {
-             "id": "14",
-             "name": "CHOONG - JANG",
-             "description" : "To jest CHOONG - JANG",
-             
-         },
-         
-         {
-             "id": "15",
-             "name": "KO - DANG",
-             "description" : "To jest KO - DANG",
-             
-         },
-         
-         {
-             "id": "16",
-             "name": "SAM - IL",
-             "description" : "To jest SAM - IL",
-             
-         },
-         
-         {
-             "id": "17",
-             "name": "YOO - SIN",
-             "description" : "To jest Chon JI",
-             
-         },
-         
-         {
-             "id": "18",
-             "name": "CHOI - YONG",
-             "description" : "To jest CHOI - YONG",
-             
-         },
-         
-         {
-             "id": "19",
-             "name": "YONG - GAE",
-             "description" : "To jest Chon JI",
-             
-         },
-         
-         {
-             "id": "20",
-             "name": "UL - JI",
-             "description" : "To jest UL - JI",
-             
-         },
-         
-         {
-             "id": "21",
-             "name": "MOON - MOO",
-             "description" : "To jest MOON - MOO",
-             
-         },
-         
-         {
-             "id": "22",
-             "name": "SO - SAN",
-             "description" : "To jest SO - SAN",
-             
-         },
-         
-         {
-             "id": "23",
-             "name": "SE - JONG",
-             "description" : "To jest SE - JONG",
-             
-         },
-         
-         {
-             "id": "24",
-             "name": "TONG - IL",
-             "description" : "To jest TONG - IL",
-             
-             
-         }
+    }
 
 ]

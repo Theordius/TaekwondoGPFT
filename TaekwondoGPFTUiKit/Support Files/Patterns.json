@@ -10,7 +10,7 @@
     {
         "id": "2",
         "name": "DAN - GUN",
-        "description" : "To jest DAN - GUN",
+        "description" : "DAN - GUN był legendarnym założycielem Korei, układ zawiera 21 elementów technicznych",
         
         
     },
@@ -18,14 +18,14 @@
     {
         "id": "3",
         "name": "DO - SAN",
-        "description" : "To jest DO - SAN",
+        "description" : "DO - SAN jest pseudonimem koreńskiego patrioty Anh Chang HO, walczącego o niepodległość Korei i szerzenie edukacji. Układ zawiera 24 elementy techniczne",
         
     },
     
     {
         "id": "4",
         "name": "WON - HYO",
-        "description" : "To jest WON -HYO",
+        "description" : "WON - HYO był legendarnym buddyjskim mnichem żyjącym w czasach dynastii Sila w VI w., który wprowadził buddyzm do Korei. Układ zawiera 28 elementów technicznych",
         
         
     },
@@ -33,56 +33,56 @@
     {
         "id": "5",
         "name": "YUL - GOK",
-        "description" : "To jest YUL - GOK",
+        "description" : "YUL - GOK to pseudonim wybitnego uczonego Yii nazywanego \"Konfucjuszem Korei\", zawiera 38 element ilość elementów technicznych symbolizuje szerokość geograficzną",
         
     },
     
     {
         "id": "6",
         "name": "JOONG - GUN",
-        "description" : "To jestJOONG - GUN",
+        "description" : "Nazwa układu pochodzi od koreińskiego patriotry Ahn Joong - Gun, który dokonał zamachu stanu na gubernatora Hiro Bumi Ito odpowiedzialnego za przyłączenie Korei do Japonii w 1910 roku. Liczba elementów technicznych symbolizuje wiek poety, w którym został stracony",
         
     },
     
     {
         "id": "7",
         "name": "TOI - GYE",
-        "description" : "To jest TOI - GYE",
+        "description" : "TOI - GYE to pseudonim literacji wybitenego filozofa i uczonego Yi - Hwang, wielkiego znawcy neokonfukcjonizmu. Ilość elementów technicznych symbolizuje 37 stopniowi szerokości geograficznej, gdzie się urodził",
         
     },
     
     {
         "id": "8",
         "name": "HWA - RANG",
-        "description" : "To jest HWA - RANG",
+        "description" : "HWA - RANG to nazwa dobrowolnej organizacji wojskowej skupiającej w swoich szeregach \"kwiat młodzieży\", powstałęj na początku VII wieku za czasów dynastii Silla. 29 elementów technicznych nawiązuje do ówczesnej 29 dywizji elietarnej piechoty, w której rozwijano i doskonalono techniki walki będące pierwowzorem współczesnego Taekwon-do ",
         
     },
     
     {
            "id": "9",
            "name": "CHOONG - MOO",
-           "description" : "To jest Chon JI",
+           "description" : "CHOONG - MOO to imię nadane wielkiemu admirałowi Yi Soon-Sin. Uważa się go za wynalazcę prototypu łodzi podwodnej. Układ zawiera 30 elementów technicznych",
            
        },
     
     {
             "id": "10",
-            "name": "GWANG - GAE",
-            "description" : "To jest GWANG - GAE",
+            "name": "KWANG - GAE",
+            "description" : "KWANG - GAE to nazwisko XIX któla królestwa Gogueryeo Kwang-Gye-Toh-Wang, który odzyskał dla Korei dużą część dawnych terenów z Mandżurią włącznie. Zawiera 39 elementów technicznych, których liczba odnosi się do do dwóch pierwszych cyfr daty 391 n.e, tj. roku jego wstąpienia na tron",
             
         },
         
         {
             "id": "11",
             "name": "PO - EUN",
-            "description" : "To jest PO - EUN",
+            "description" : "PO - EUN to pseudonim XIV wiecznego poety i badacza natury Jeong Mong - ju, którego poemat 'nie będę służył obcemu władcy, choćbyście mnie ukrzyżwowali tysiąc razy' jest znany każdemy Koerańczykowi. Diagram układu (--) symbolizuje jego wiedność władzy, aż do końca dynastii Koryo",
             
         },
         
         {
              "id": "12",
              "name": "GE - BEAK",
-             "description" : "To jest GE - BEAK",
+             "description" : "GE - BEAK to nazwisko generała z czasów księstwa Baekje",
              
          },
          
@@ -90,7 +90,7 @@
          {
              "id": "13",
              "name": "EUI - AM",
-             "description" : "To jest EUI - AM",
+             "description" : "EUI - AM to pseudonim SOn Byong Hi, przywódcy w walce o niepodległość narodową",
              
          },
          
@@ -98,77 +98,77 @@
          {
              "id": "14",
              "name": "CHOONG - JANG",
-             "description" : "To jest CHOONG - JANG",
+             "description" : "CHOONG - JANG to pseudonim generała Kim Dung Ryang z czasów dynastii Lee(XIV w.)",
              
          },
          
          {
              "id": "15",
-             "name": "KO - DANG",
-             "description" : "To jest KO - DANG",
+             "name": "JU - CHE",
+             "description" : "JU - CHE to pojęcie filozoficzne określające człowieka jako byt w pełni władający sobą i naturą",
              
          },
          
          {
              "id": "16",
              "name": "SAM - IL",
-             "description" : "To jest SAM - IL",
+             "description" : "SAM - IL to ruch narodowowyzwoleńczy związany z 1 marca 1919 r.",
              
          },
          
          {
              "id": "17",
              "name": "YOO - SIN",
-             "description" : "To jest Chon JI",
+             "description" : "YO - SIN to nazwisko generała Kim Yoo SIn, naczelnego wodza z czasów dynastii Koryo",
              
          },
          
          {
              "id": "18",
              "name": "CHOI - YONG",
-             "description" : "To jest CHOI - YONG",
+             "description" : "CHOI - YONG to nazwisko naczelnego dowódcy armii Choi Tong z czasów dynastii Koryo",
              
          },
          
          {
              "id": "19",
              "name": "YONG - GAE",
-             "description" : "To jest Chon JI",
+             "description" : "YONG - GAE - to nazwisko generała z czasów królestwa Goguryeo Yon Somoon",
              
          },
          
          {
              "id": "20",
              "name": "UL - JI",
-             "description" : "To jest UL - JI",
+             "description" : "UL - JI to nazwisko generała UI-JI Moon Dok, któremu powiodła się obrona kraju przed wrogą armią liczącą ok. 1 miliona żołnieży",
              
          },
          
          {
              "id": "21",
              "name": "MOON - MOO",
-             "description" : "To jest MOON - MOO",
+             "description" : "MOON - MOO to imię 30 króla z dynastii Silla",
              
          },
          
          {
              "id": "22",
              "name": "SO - SAN",
-             "description" : "To jest SO - SAN",
+             "description" : "SO - SAN to pseudonim mnicha Choi Hyong Ung z czasów dynastii Lee, twórcy klasztornych sił zbrojnych dla wsparcia działań wojennych zmierzających do odparcia najazdu Japończyków na półwysep koreński",
              
          },
          
          {
              "id": "23",
              "name": "SE - JONG",
-             "description" : "To jest SE - JONG",
+             "description" : "SE - JONG to nazwisko największego koerańskiego króla, wynalazcy alfabetu koreńskiego w 1443 r.",
              
          },
          
          {
              "id": "24",
              "name": "TONG - IL",
-             "description" : "To jest TONG - IL",
+             "description" : "TONG - IL oznacza dosłownie zjednoczenie",
              
              
          }
