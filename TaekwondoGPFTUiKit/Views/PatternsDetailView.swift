@@ -16,16 +16,20 @@ class PatternsDetailView: UIViewController {
     var patternImages = [UIImage]()
     var patternDescription: UILabel!
     
-    let attributes: [NSAttributedString.Key: Any] = [
-        .foregroundColor: UIColor.systemGreen,
-        .backgroundColor: UIColor.clear,
-        .font: UIFont.italicSystemFont(ofSize: 18),
-        .baselineOffset: 5,
-    ]
-    
     override func loadView() {
         view = UIView()
         view.backgroundColor = .systemBackground
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.systemGreen,
+            .backgroundColor: UIColor.clear,
+            .font: UIFont.italicSystemFont(ofSize: 18),
+            .baselineOffset: 5,
+            .paragraphStyle: paragraphStyle
+        ]
+        
+        paragraphStyle.alignment = .left
         
         let patternMovieView = UIImageView(image: patternMovie!)
         let description = NSAttributedString(string: (detailItem?.description)!, attributes: attributes)

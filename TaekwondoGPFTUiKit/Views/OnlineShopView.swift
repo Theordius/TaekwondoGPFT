@@ -15,7 +15,6 @@ class OnlineShopView: UIViewController, WKNavigationDelegate {
     
     var webView : WKWebView!
     var progressView: UIProgressView!
-    let url = URL(string: "https://sklep.gpft.pl")!
     
     override func loadView() {
         webView = WKWebView()
@@ -32,8 +31,6 @@ class OnlineShopView: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
-        
         let spacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
         progressView = UIProgressView(progressViewStyle: .default)
         progressView.sizeToFit()
@@ -43,7 +40,8 @@ class OnlineShopView: UIViewController, WKNavigationDelegate {
         toolbarItems = [progressButton, spacer]
         navigationController?.isToolbarHidden = false
         
-        webView.load(URLRequest(url: url))
+        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
+        webView.load("https://sklep.gpft.pl")
         webView.allowsBackForwardNavigationGestures = true
         
     }

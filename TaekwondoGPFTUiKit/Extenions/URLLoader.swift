@@ -8,19 +8,11 @@
 import Foundation
 import WebKit
 
-final class URLLoader: UIViewController, WKNavigationDelegate {
-    
-    var webView: WKWebView!
-    let url = URL(string: "")
-    
-    enum urlError: Error, Equatable {
-        case pageFailedToLoad(_ message: String = "")
-    }
-    
-    func loadURL() {
-        webView = WKWebView()
-        webView.navigationDelegate = self
-        view = webView
-        
+extension WKWebView {
+    func load(_ urlString: String) {
+        if let url = URL(string: urlString) {
+            let request = URLRequest(url: url)
+            load(request)
+        }
     }
 }

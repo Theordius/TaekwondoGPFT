@@ -6,25 +6,54 @@
 //
 
 import UIKit
+import WebKit
 
-class CalendarView: UIViewController {
+class CalendarView: UIViewController, WKNavigationDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .systemBackground
-
-        // Do any additional setup after loading the view.
+    //TODO: viewModel implementation
+    // var viewModel = OnlineShopViewModel()
+    
+    var webView : WKWebView!
+    var progressView: UIProgressView!
+    
+    override func loadView() {
+        webView = WKWebView()
+        webView.navigationDelegate = self
+        view = webView
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "estimatedProgress" {
+            progressView.progress = Float(webView.estimatedProgress)
+        }
     }
-    */
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let spacer = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+        progressView = UIProgressView(progressViewStyle: .default)
+        progressView.sizeToFit()
+        
+        let progressButton = UIBarButtonItem(customView: progressView)
+        
+        toolbarItems = [progressButton, spacer]
+        navigationController?.isToolbarHidden = false
+        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
+        
+        self.webView.load("https://www.facebook.com/taekwondopft/")
+        self.webView.allowsBackForwardNavigationGestures = true
+        
+    }
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        
+        if webView.isLoading == false {
+            title = webView.title
+            navigationController?.isToolbarHidden = true
+            
+        } else {
+            return
+        }
+    }
 }
