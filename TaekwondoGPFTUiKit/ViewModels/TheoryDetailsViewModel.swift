@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-
 class TheoryDetailsViewModel {
+    
     public var theory: [Theory]
     
     init() {

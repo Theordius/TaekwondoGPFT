@@ -41,8 +41,8 @@ class CalendarView: UIViewController, WKNavigationDelegate {
         navigationController?.isToolbarHidden = false
         webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
         
-        self.webView.load("https://www.facebook.com/taekwondopft/")
-        self.webView.allowsBackForwardNavigationGestures = true
+        webView.load("https://www.facebook.com/taekwondopft/")
+        webView.allowsBackForwardNavigationGestures = true
         
     }
     

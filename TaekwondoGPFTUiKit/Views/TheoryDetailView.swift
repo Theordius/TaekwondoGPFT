@@ -9,21 +9,29 @@ import UIKit
 
 class TheoryDetailView: UIViewController {
     
-    var viewModel = TheoryDetailsViewModel()
+    let viewModel = TheoryDetailsViewModel()
+    let font = UIFont.boldSystemFont(ofSize: 18)
+    
     var detailItem: Theory?
     var theoryDescription: UILabel!
     var theoryImage = UIImage(named: "logo")
-   
-    
-    
-    let attributes: [NSAttributedString.Key: Any] = [
-        .foregroundColor: UIColor.systemGreen,
-        .backgroundColor: UIColor.clear,
-        .font: UIFont.italicSystemFont(ofSize: 18),
-        .baselineOffset: 5,
-    ]
     
     override func loadView() {
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .left
+        paragraphStyle.lineBreakStrategy = .standard
+        paragraphStyle.headIndent = 2.0
+        paragraphStyle.paragraphSpacing = 5.0
+        
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.systemBlue,
+            .backgroundColor: UIColor.clear,
+            .font: font,
+            .baselineOffset: 5,
+            .paragraphStyle: paragraphStyle
+            
+        ]
         view = UIView()
         view.backgroundColor = .systemBackground
         
@@ -58,7 +66,9 @@ class TheoryDetailView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         
+        title =  self.detailItem?.name
+        navigationItem.largeTitleDisplayMode = .never
+      
     }
 }

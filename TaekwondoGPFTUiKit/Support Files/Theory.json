@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "LICZEBNIKI KOREAŃSKIE",
-        "description" : "1. -> Hana 2 -> Tul 3 -> Set 4 -> Net 5 -> Dasot 6 - Yasot 7 -> Ilgot 8 - Yodol 9 - Ahop 10 -> Yol ",
+        "description" : " 1. -> Hana \n 2. -> Tul \n 3. -> Set \n 4. -> Net \n 5. -> Dasot \n 6. -> Yasot \n 7. -> Ilgot \n 8. -> Yodol \n 9. -> Ahop \n 10. -> Yol ",
         
         
     },
@@ -10,8 +10,7 @@
     {
         "id": "2",
         "name": "STREFY ATAKU",
-        "description" : "W Taekwon-do wyróżniamy 3 strefy ataku. Niska - Najunde, Średnia - Kaunde oraz wysoka - Nepunde",
-        
+        "description" : "   W Taekwon - do wyróżniamy 3 strefy ataku. \n \n Niska - Najunde \n Średnia - Kaunde \n Wysoka - Nepunde",
         
     },
     

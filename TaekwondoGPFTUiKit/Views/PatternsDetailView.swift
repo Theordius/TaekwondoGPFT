@@ -16,18 +16,25 @@ class PatternsDetailView: UIViewController {
     var patternImages = [UIImage]()
     var patternDescription: UILabel!
     
+    let font = UIFont.boldSystemFont(ofSize: 18)
+    
     override func loadView() {
+        
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.alignment = .justified
+       
+        let attributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: UIColor.systemBlue,
+            .backgroundColor: UIColor.clear,
+            .font: font,
+            .baselineOffset: 5,
+            .paragraphStyle: paragraphStyle
+            
+        ]
+        
         view = UIView()
         view.backgroundColor = .systemBackground
         
-        let paragraphStyle = NSMutableParagraphStyle()
-        let attributes: [NSAttributedString.Key: Any] = [
-            .foregroundColor: UIColor.systemGreen,
-            .backgroundColor: UIColor.clear,
-            .font: UIFont.italicSystemFont(ofSize: 18),
-            .baselineOffset: 5,
-            .paragraphStyle: paragraphStyle
-        ]
         
         paragraphStyle.alignment = .left
         
