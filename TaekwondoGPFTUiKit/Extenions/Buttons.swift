@@ -12,6 +12,7 @@ let myButton1 = UIButton()
 let myButton2 = UIButton()
 let myButton3 = UIButton()
 let myButton4 = UIButton()
+let stackView = UIStackView(arrangedSubviews: [myButton1, myButton2, myButton3, myButton4])
 
 extension UIViewController {
     func buttonConfiguration(button: UIButton, config: UIButton.Configuration, title: String, subtitle: String, bgColor: UIColor, foregroundColor: UIColor) {
@@ -25,5 +26,23 @@ extension UIViewController {
         b.configuration?.imagePlacement = .top
         b.configuration?.imagePadding = 6
         b.configuration?.cornerStyle = .large
+    }
+    
+    func stackedButtonsView() {
+        
+        stackView.axis = .vertical
+        stackView.spacing = 15
+        stackView.distribution = .fillEqually
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        view.addSubview(stackView)
+        
+        NSLayoutConstraint.activate([
+        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        stackView.heightAnchor.constraint(equalToConstant: 276),
+        stackView.widthAnchor.constraint(equalToConstant: view.frame.width - 80)
+        
+        ])
     }
 }

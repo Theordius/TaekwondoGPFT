@@ -9,16 +9,13 @@ import UIKit
 
 class FirstScreen: UIViewController {
     
-    let theoryButton = UIButton()
-    let stackView = UIStackView(arrangedSubviews: [myButton1, myButton2, myButton3, myButton4])
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         
         mainLogo()
         stackedButtonsView()
-
+        
         buttonConfiguration(button: myButton1, config: .filled(), title: "TEORIA", subtitle: "Teoria Taekwon - do", bgColor: .blue, foregroundColor: .white)
         myButton1.addTarget(self, action: #selector(goToTheoryScreen), for: .touchUpInside)
         
@@ -33,24 +30,7 @@ class FirstScreen: UIViewController {
         
     }
     
-    func stackedButtonsView() {
-        
-        stackView.axis = .vertical
-        stackView.spacing = 15
-        stackView.distribution = .fillEqually
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(stackView)
-        
-        NSLayoutConstraint.activate([
-        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-        stackView.heightAnchor.constraint(equalToConstant: 276),
-        stackView.widthAnchor.constraint(equalToConstant: view.frame.width - 80)
-        
-        ])
-    }
-    
+
     //MARK: - Basic Navigation
     
     @objc func goToTheoryScreen() {
