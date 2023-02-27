@@ -1,4 +1,4 @@
-# TaekwondoGPFTUiKit
+# TaekwondoGPFT
 Taekwondo App for GPFT in Poland
 
 Application for Taekwon - Do enthusiasts based on my professional expieriecnce and Taekwon - do knowledge.
