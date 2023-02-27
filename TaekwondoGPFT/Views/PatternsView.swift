@@ -1,6 +1,6 @@
 //
 //  PatternsView.swift
-//  TaekwondoGPFTUiKit
+//  TaekwondoGPFTU
 //
 //  Created by Rafał Gęsior on 07/11/2022.
 //

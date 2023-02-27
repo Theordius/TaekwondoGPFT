@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TaekwondoGPFTUiKit
+//  TaekwondoGPFT
 //
 //  Created by Rafał Gęsior on 28/09/2022.
 //

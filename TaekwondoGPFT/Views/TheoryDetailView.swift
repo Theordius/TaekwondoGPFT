@@ -1,6 +1,6 @@
 //
 //  TheoryDetailView.swift
-//  TaekwondoGPFTUiKit
+//  TaekwondoGPFT
 //
 //  Created by Rafał Gęsior on 01/12/2022.
 //

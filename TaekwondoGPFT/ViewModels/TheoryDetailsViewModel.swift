@@ -1,12 +1,12 @@
 //
 //  TheoryDetailsViewModel.swift
-//  TaekwondoGPFTUiKit
+//  TaekwondoGPFTU
 //
 //  Created by Rafał Gęsior on 01/12/2022.
 //
 
 import Foundation
-import UIKit
+import SwiftUI
 
 class TheoryDetailsViewModel {
     

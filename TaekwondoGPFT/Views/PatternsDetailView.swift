@@ -1,6 +1,6 @@
 //
 //  PatternsDetailViewController.swift
-//  TaekwondoGPFTUiKit
+//  TaekwondoGPFT
 //
 //  Created by Rafał Gęsior on 21/11/2022.
 //

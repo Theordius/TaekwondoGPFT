@@ -1,12 +1,12 @@
 //
 //  PatternsViewModel.swift
-//  TaekwondoGPFTUiKit
+//  TaekwondoGPFTU
 //
 //  Created by Rafał Gęsior on 28/09/2022.
 //
 
 import Foundation
-import UIKit
+import SwiftUI
 
 class PatternsViewModel {
     

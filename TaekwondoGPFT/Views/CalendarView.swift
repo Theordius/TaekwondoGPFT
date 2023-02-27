@@ -1,6 +1,6 @@
 //
 //  CalendarView.swift
-//  TaekwondoGPFTUiKit
+//  TaekwondoGPFT
 //
 //  Created by Rafał Gęsior on 07/11/2022.
 //

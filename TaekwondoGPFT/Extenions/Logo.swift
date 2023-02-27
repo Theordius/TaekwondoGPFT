@@ -1,6 +1,6 @@
 //
 //  Logo.swift
-//  TaekwondoGPFTUiKit
+//  TaekwondoGPF
 //
 //  Created by Rafał Gęsior on 08/11/2022.
 //  Logo configuration model

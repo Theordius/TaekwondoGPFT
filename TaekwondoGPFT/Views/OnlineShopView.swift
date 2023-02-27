@@ -1,6 +1,6 @@
 //
 //  OnlieShopView.swift
-//  TaekwondoGPFTUiKit
+//  TaekwondoGPFT
 //
 //  Created by Rafał Gęsior on 09/11/2022.
 //
