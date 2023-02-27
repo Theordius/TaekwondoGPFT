@@ -12,8 +12,10 @@ let myButton1 = UIButton()
 let myButton2 = UIButton()
 let myButton3 = UIButton()
 let myButton4 = UIButton()
+
 let stackView = UIStackView(arrangedSubviews: [myButton1, myButton2, myButton3, myButton4])
 
+/// Extention to UIViewController to configure reusable buttons
 extension UIViewController {
     func buttonConfiguration(button: UIButton, config: UIButton.Configuration, title: String, subtitle: String, bgColor: UIColor, foregroundColor: UIColor) {
         let b = button
