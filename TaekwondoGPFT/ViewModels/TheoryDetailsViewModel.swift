@@ -10,14 +10,6 @@ import SwiftUI
 
 class TheoryDetailsViewModel {
     
-    public var theory: [Theory]
+    public var theory: [Theory] = Bundle.main.decode("Theory.json")
     
-    init() {
-        let loader = JSONLoader()
-        do {
-            theory = try loader.loadJSON("Theory.json")
-        } catch {
-            fatalError("File not found")
-        }
-    }
 }

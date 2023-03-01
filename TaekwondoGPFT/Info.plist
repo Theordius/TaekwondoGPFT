@@ -2,24 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationSceneManifest</key>
+	<key>UILaunchScreen</key>
 	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
+		<key>UIColorName</key>
+		<string>launch-screen-color</string>
+		<key>UIImageName</key>
+		<string>launch-screen-image</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
 		<false/>
-		<key>UISceneConfigurations</key>
-		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
-			<array>
-				<dict>
-					<key>UISceneConfigurationName</key>
-					<string>Default Configuration</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
-			</array>
-		</dict>
+		<key>UILaunchScreen</key>
+		<dict/>
 	</dict>
 </dict>
 </plist>

@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct OnlineShop: Hashable {
     let url: URL
 }

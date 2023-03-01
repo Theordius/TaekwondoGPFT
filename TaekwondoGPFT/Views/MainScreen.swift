@@ -12,7 +12,32 @@ struct MainScreen: View {
     
     //MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            ContentView()
+                .tabItem {
+                    Image(systemName: "square.grid.2x2")
+                    Text("Browse")
+                }
+            
+           TimerView()
+                .tabItem {
+                    Image(systemName: "play.rectangle")
+                    Text("Timer")
+                }
+            
+            MapView()
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Mapa")
+                }
+            
+            GalleryView()
+                .tabItem {
+                    Image(systemName: "photo")
+                    Text("Galeria")
+                }
+            
+        } //: TAB
     }
 }
 

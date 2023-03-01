@@ -9,14 +9,6 @@ import Foundation
 import SwiftUI
 
 class PatternsDetailsViewModel {
-    public var patterns: [Patterns]
+    public var patterns: [Patterns] = Bundle.main.decode("Patterns.json")
     
-    init() {
-        let loader = JSONLoader()
-        do {
-            patterns = try loader.loadJSON("Patterns.json")
-        } catch {
-            fatalError("File not found")
-        }
-    }
 }
