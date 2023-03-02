@@ -10,6 +10,7 @@ import SwiftUI
 struct CustomButton: View {
     //MARK: - PROPERTIES
     @State private var selection: String? = nil
+    
     var title: String
     var subtitle: String
     var tag: String
@@ -27,15 +28,19 @@ struct CustomButton: View {
         }) {
             VStack(alignment: .center) {
                 Text(title)
+                   
                     .font(.title2)
                     .fontWeight(.bold)
                     .foregroundColor(.red)
                 
                 Text(subtitle)
+                   
                     .font(.subheadline)
                     .fontWeight(.medium)
                     .foregroundColor(.white)
             }
+            .fixedSize(horizontal: true, vertical: false)
+            .frame(width: 200)
         } //: BUTTON
     }
 }

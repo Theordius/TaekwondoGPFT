@@ -36,8 +36,7 @@ struct ContentView: View {
                 }
                .padding(.vertical, -12)
                .buttonStyle(BlueCapsule())
-               .frame(width: .infinity)
-              
+                            
         
             }
             
