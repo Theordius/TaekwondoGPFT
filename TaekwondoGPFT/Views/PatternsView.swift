@@ -1,60 +1,24 @@
 //
 //  PatternsView.swift
-//  TaekwondoGPFTU
+//  TaekwondoGPFT
 //
-//  Created by Rafał Gęsior on 07/11/2022.
+//  Created by Rafał Gęsior on 02/03/2023.
 //
 
-import UIKit
+import SwiftUI
 
-class PatternsView: UIViewController, UITableViewDelegate, UITableViewDataSource {
+struct PatternsView: View {
+    //MARK: - PROPERTIES
     
-    var viewModel = PatternsViewModel()
-    let tableView = UITableView()
-    var backgroundConfiguration = UIBackgroundConfiguration.listPlainCell()
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.addSubview(tableView)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "patterns")
-        tableView.rowHeight = 60
-        tableView.separatorStyle = .none
-        tableView.delegate = self
-        tableView.dataSource = self
-        backgroundConfiguration.backgroundColor = .systemGray6
-        backgroundConfiguration.backgroundInsets = NSDirectionalEdgeInsets(top: 5, leading: 5, bottom: 5, trailing: 5)
-        backgroundConfiguration.cornerRadius = 5
-       
+    //MARK: - BODY
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.patterns.count
-    }
-    
-    //MARK: - Table View Delegates
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "patterns", for: indexPath)
-        let pattern = viewModel.patterns[indexPath.row]
-        cell.accessoryType = UITableViewCell.AccessoryType.disclosureIndicator
-        cell.textLabel?.text = pattern.name
-        cell.backgroundConfiguration = backgroundConfiguration
-        return cell
-        
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = PatternsDetailView()
-        vc.detailItem = viewModel.patterns[indexPath.row]
-        navigationController?.pushViewController(vc, animated: true)
-        }
-    }
+}
 
-
-
+//MARK: - PREVIEW
+struct PatternsView_Previews: PreviewProvider {
+    static var previews: some View {
+        PatternsView()
+    }
+}

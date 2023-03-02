@@ -9,43 +9,43 @@ import SwiftUI
 
 struct CustomButton: View {
     //MARK: - PROPERTIES
+    @State private var selection: String? = nil
     var title: String
     var subtitle: String
+    var tag: String
     
     //MARK: - BODY
     var body: some View {
+        
+        NavigationLink(destination: TheoryView(), tag: "A", selection: $selection) {EmptyView()}
+        NavigationLink(destination: PatternsView(), tag: "B", selection: $selection) { EmptyView() }
+        NavigationLink(destination: Text("Sklep Online"), tag: "C", selection: $selection) { EmptyView() }
+        NavigationLink(destination: Text("Kalendarz"), tag: "D", selection: $selection) { EmptyView() }
+        
         Button(action: {
-            print("Button 1")
+            selection = tag
         }) {
-                VStack(alignment: .center) {
-                    Text(title)
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .foregroundColor(.red)
-                        
-                    Text(subtitle)
-                        .font(.subheadline)
-                        .fontWeight(.medium)
-                        .foregroundColor(.white)
+            VStack(alignment: .center) {
+                Text(title)
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+                
+                Text(subtitle)
+                    .font(.subheadline)
+                    .fontWeight(.medium)
+                    .foregroundColor(.white)
             }
-            
-            .padding(.vertical, 2)
-            .frame(width: 280, height: 48)
-
-            
         } //: BUTTON
-        .background(Color.blue)
-        .cornerRadius(12)
-      
-      
     }
 }
-
 
 
 //MARK: - PREVIEW
 struct Buttons_Previews: PreviewProvider {
     static var previews: some View {
-        CustomButton(title: "TEORIA", subtitle: "Teoria Taekwon-do")
+        NavigationView {
+            CustomButton(title: "TEORIA", subtitle: "Teoria Taekwon-do", tag: "A")
+        }
     }
 }

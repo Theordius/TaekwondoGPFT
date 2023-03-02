@@ -8,31 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    
     //MARK: - PROPERTIES
+    @State private var selection: String? = nil
+    
     let haptics = UIImpactFeedbackGenerator()
     
     var body: some View {
-        VStack {
-
-            Group {
-                Spacer()
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 180, height: 180)
-                
-                Text("")
-               
-                CustomButton(title: "TEORIA", subtitle: "Teoria Taekwon - DO")
-                CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy Formalne TKD")
-                CustomButton(title: "SKLEP - ONLINE", subtitle: "Nasz Sklep ON - LINE")
-                CustomButton(title: "KALENDARIUM", subtitle: "Kalendarz Imprez")
-                Spacer()
+        NavigationView {
+            VStack {
+                Group {
+                    Spacer()
+                    Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 180, height: 180)
+                    
+                    Text("")
+                    
+                    CustomButton(title: "TEORIA", subtitle: "Teoria Taekwon - DO", tag: "A")
+                    CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy Formalne", tag: "B")
+                    CustomButton(title: "SKLEP ONLINE", subtitle: "Nasz sklep Online", tag: "C")
+                    CustomButton(title: "KALENDARZ", subtitle: "Kalendarz Imprez", tag: "D")
+                    
+                    Spacer()
+                }
+               .padding(.vertical, -12)
+               .buttonStyle(BlueCapsule())
+               .frame(width: .infinity)
+              
+        
             }
-            .padding(.vertical, 2)
-    
+            
         }
-      
         
     }
     
