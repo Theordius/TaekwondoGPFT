@@ -23,8 +23,8 @@ struct ContentView: View {
                 
                 Text("")
                
-                CustomButton(title: "TEORIA", subtitle: "Teoria Taekwond-DO")
-                CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy Formalne")
+                CustomButton(title: "TEORIA", subtitle: "Teoria Taekwon - DO")
+                CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy Formalne TKD")
                 CustomButton(title: "SKLEP - ONLINE", subtitle: "Nasz Sklep ON - LINE")
                 CustomButton(title: "KALENDARIUM", subtitle: "Kalendarz Imprez")
                 Spacer()

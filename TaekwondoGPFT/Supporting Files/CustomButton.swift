@@ -17,8 +17,7 @@ struct CustomButton: View {
         Button(action: {
             print("Button 1")
         }) {
-            HStack(alignment: .center) {
-                VStack(alignment: .center, spacing: 4) {
+                VStack(alignment: .center) {
                     Text(title)
                         .font(.title2)
                         .fontWeight(.bold)
@@ -28,8 +27,6 @@ struct CustomButton: View {
                         .font(.subheadline)
                         .fontWeight(.medium)
                         .foregroundColor(.white)
-                       
-                }
             }
             
             .padding(.vertical, 2)
