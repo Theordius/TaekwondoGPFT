@@ -13,7 +13,7 @@
 		100B976B29AFE10A00D29ED7 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B976A29AFE10A00D29ED7 /* GalleryView.swift */; };
 		100B976D29AFE40600D29ED7 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B976C29AFE40600D29ED7 /* CreditsView.swift */; };
 		100B976F29AFE50100D29ED7 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B976E29AFE50100D29ED7 /* MotionAnimationView.swift */; };
-		100B977229AFE99B00D29ED7 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B977129AFE99B00D29ED7 /* Buttons.swift */; };
+		100B977229AFE99B00D29ED7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B977129AFE99B00D29ED7 /* CustomButton.swift */; };
 		1022689129159CC5003A8A80 /* TheoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022689029159CC5003A8A80 /* TheoryView.swift */; };
 		10283D212938C0F000250E2F /* Theory.json in Resources */ = {isa = PBXBuildFile; fileRef = 10283D202938C0F000250E2F /* Theory.json */; };
 		10283D232938C28C00250E2F /* TheoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10283D222938C28C00250E2F /* TheoryDetailView.swift */; };
@@ -23,7 +23,7 @@
 		10599D4C29258F85005E42F0 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4B29258F85005E42F0 /* Calendar.swift */; };
 		10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */; };
 		10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */; };
-		1062826229AD4A1B00EBBD3E /* TaekwondoGPFSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826129AD4A1B00EBBD3E /* TaekwondoGPFSApp.swift */; };
+		1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */; };
 		1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826329AD4A7500EBBD3E /* ContentView.swift */; };
 		1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826529AD4AC500EBBD3E /* MainScreen.swift */; };
 		1081A5A42919215700666376 /* PatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A32919215700666376 /* PatternsView.swift */; };
@@ -63,7 +63,7 @@
 		100B976A29AFE10A00D29ED7 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		100B976C29AFE40600D29ED7 /* CreditsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		100B976E29AFE50100D29ED7 /* MotionAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
-		100B977129AFE99B00D29ED7 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		100B977129AFE99B00D29ED7 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		1022689029159CC5003A8A80 /* TheoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryView.swift; sourceTree = "<group>"; };
 		10283D202938C0F000250E2F /* Theory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theory.json; sourceTree = "<group>"; };
 		10283D222938C28C00250E2F /* TheoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailView.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		10599D4B29258F85005E42F0 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsDetailView.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsDetailsViewModel.swift; sourceTree = "<group>"; };
-		1062826129AD4A1B00EBBD3E /* TaekwondoGPFSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFSApp.swift; sourceTree = "<group>"; };
+		1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTApp.swift; sourceTree = "<group>"; };
 		1062826329AD4A7500EBBD3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1062826529AD4AC500EBBD3E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		1081A5A32919215700666376 /* PatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsView.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		100B976529AFE0C100D29ED7 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				1062826129AD4A1B00EBBD3E /* TaekwondoGPFSApp.swift */,
+				1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */,
 				1062826329AD4A7500EBBD3E /* ContentView.swift */,
 				100B976629AFE0D100D29ED7 /* MapView.swift */,
 				100B976829AFE0E600D29ED7 /* TimerView.swift */,
@@ -118,7 +118,7 @@
 		100B977029AFE98100D29ED7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				100B977129AFE99B00D29ED7 /* Buttons.swift */,
+				100B977129AFE99B00D29ED7 /* CustomButton.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -321,9 +321,9 @@
 				1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */,
 				100B976929AFE0E600D29ED7 /* TimerView.swift in Sources */,
 				10CDA5B028E4D309000B4005 /* Theory.swift in Sources */,
-				100B977229AFE99B00D29ED7 /* Buttons.swift in Sources */,
+				100B977229AFE99B00D29ED7 /* CustomButton.swift in Sources */,
 				10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */,
-				1062826229AD4A1B00EBBD3E /* TaekwondoGPFSApp.swift in Sources */,
+				1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */,
 				10CDA5AC28E4D2EF000B4005 /* Patterns.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

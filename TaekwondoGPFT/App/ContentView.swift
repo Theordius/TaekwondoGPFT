@@ -13,19 +13,26 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Image("logo")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 160, height: 160)
-            
+
             Group {
-                Buttons(title: "TEORIA", subtitle: "Teoria Taekwond-DO", buttonImage: "logo")
-                Buttons(title: "UKŁADY FORMALNE", subtitle: "Teoria Taekwond-DO", buttonImage: "logo")
-                Buttons(title: "SKLEP - ONLINE", subtitle: "Teoria Taekwond-DO", buttonImage: "logo")
-                Buttons(title: "KALENDARIUM", subtitle: "Teoria Taekwond-DO", buttonImage: "logo")
+                Spacer()
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 180, height: 180)
+                
+                Text("")
+               
+                CustomButton(title: "TEORIA", subtitle: "Teoria Taekwond-DO")
+                CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy Formalne")
+                CustomButton(title: "SKLEP - ONLINE", subtitle: "Nasz Sklep ON - LINE")
+                CustomButton(title: "KALENDARIUM", subtitle: "Kalendarz Imprez")
+                Spacer()
             }
             .padding(.vertical, 2)
+    
         }
+      
         
     }
     
