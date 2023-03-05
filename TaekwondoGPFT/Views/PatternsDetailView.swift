@@ -20,7 +20,7 @@ struct PatternDetailView: View {
     }
 
 
-struct FruitDetailView_Previews: PreviewProvider {
+struct PatternsDetailView_Previews: PreviewProvider {
     static let patterns: [Patterns] = Bundle.main.decode("Patterns.json")
     static var previews: some View {
         PatternDetailView(pattern: patterns[0])

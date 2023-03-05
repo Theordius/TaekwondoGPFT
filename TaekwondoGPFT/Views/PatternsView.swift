@@ -13,7 +13,6 @@ struct PatternsView: View {
     
     //MARK: - BODY
     var body: some View {
-        NavigationView {
             List {
                 ForEach(vm.patterns) { item in
                     NavigationLink(destination: PatternDetailView(pattern: item)) {
@@ -22,7 +21,7 @@ struct PatternsView: View {
                     }
                 }
             }
-        }
+        .navigationTitle("UKŁADY FORMALNE")
     }
 }
 

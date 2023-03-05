@@ -25,7 +25,7 @@ struct PatternRow: View {
             
         }
         .foregroundColor(.green)
-        
+        .background(.ultraThickMaterial)
     }
 }
 

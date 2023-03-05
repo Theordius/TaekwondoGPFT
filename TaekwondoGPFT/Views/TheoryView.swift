@@ -13,7 +13,6 @@ struct TheoryView: View {
     
     //MARK: - BODY
     var body: some View {
-            NavigationView {
                 List {
                     ForEach(vm.theory) { item in
                         NavigationLink(destination: TheoryDetailView(theory: item)) {
@@ -22,7 +21,7 @@ struct TheoryView: View {
                         }
                     }
                 }
-            }
+            .navigationTitle("TEORIA TAEKWON-DO")
         }
     }
 
