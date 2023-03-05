@@ -9,12 +9,22 @@ import SwiftUI
 
 struct TheoryView: View {
     //MARK: - PROPERTIES
+    @StateObject var vm = Self.ViewModel()
     
     //MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            NavigationView {
+                List {
+                    ForEach(vm.theory) { item in
+                        NavigationLink(destination: TheoryDetailView(theory: item)) {
+                            TheoryRow(theory: item)
+                                .padding()
+                        }
+                    }
+                }
+            }
+        }
     }
-}
 
 //MARK: - PREVIEW
 struct TheoryView_Previews: PreviewProvider {

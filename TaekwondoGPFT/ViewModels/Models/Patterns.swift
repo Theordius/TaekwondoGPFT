@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 
 struct Patterns: Hashable, Identifiable, Codable {

@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-class PatternsViewModel {
-    
-    public var patterns: [Patterns] = Bundle.main.decode("Patterns.json")
-    
+extension PatternsView {
+    class ViewModel: ObservableObject {
+       @Published public var patterns: [Patterns] = Bundle.main.decode("Patterns.json")
+    }
 }

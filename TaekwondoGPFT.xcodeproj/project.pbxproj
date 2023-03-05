@@ -30,6 +30,8 @@
 		1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */; };
 		1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826329AD4A7500EBBD3E /* ContentView.swift */; };
 		1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826529AD4AC500EBBD3E /* MainScreen.swift */; };
+		107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA329B4BC8E00C0C25F /* PatternRow.swift */; };
+		107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA529B4EA5500C0C25F /* TheoryRow.swift */; };
 		1081A5A62919219000666376 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A52919219000666376 /* CalendarView.swift */; };
 		1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A9291933A700666376 /* CalendarViewModel.swift */; };
 		1081A5B0291A7A4800666376 /* Patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 1081A5AF291A7A4800666376 /* Patterns.json */; };
@@ -83,6 +85,8 @@
 		1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTApp.swift; sourceTree = "<group>"; };
 		1062826329AD4A7500EBBD3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1062826529AD4AC500EBBD3E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		107F9DA329B4BC8E00C0C25F /* PatternRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRow.swift; sourceTree = "<group>"; };
+		107F9DA529B4EA5500C0C25F /* TheoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryRow.swift; sourceTree = "<group>"; };
 		1081A5A52919219000666376 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		1081A5A9291933A700666376 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		1081A5AF291A7A4800666376 /* Patterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Patterns.json; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				100B976629AFE0D100D29ED7 /* MapView.swift */,
 				100B976829AFE0E600D29ED7 /* TimerView.swift */,
 				100B976A29AFE10A00D29ED7 /* GalleryView.swift */,
+				107F9DA329B4BC8E00C0C25F /* PatternRow.swift */,
+				107F9DA529B4EA5500C0C25F /* TheoryRow.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -219,15 +225,15 @@
 		10CDA5A028E4D195000B4005 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1081A5A52919219000666376 /* CalendarView.swift */,
+				100B977529B0BABD00D29ED7 /* TheoryView.swift */,
+				100B977729B0C07200D29ED7 /* PatternsView.swift */,
 				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
+				1081A5A52919219000666376 /* CalendarView.swift */,
 				10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */,
 				10283D222938C28C00250E2F /* TheoryDetailView.swift */,
 				1062826529AD4AC500EBBD3E /* MainScreen.swift */,
 				100B976C29AFE40600D29ED7 /* CreditsView.swift */,
 				100B976E29AFE50100D29ED7 /* MotionAnimationView.swift */,
-				100B977529B0BABD00D29ED7 /* TheoryView.swift */,
-				100B977729B0C07200D29ED7 /* PatternsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,6 +322,8 @@
 				1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */,
 				10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */,
 				10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */,
+				107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */,
+				107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */,
 				10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */,
 				10283D252938C36200250E2F /* TheoryDetailsViewModel.swift in Sources */,
 				1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */,

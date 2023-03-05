@@ -9,10 +9,20 @@ import SwiftUI
 
 struct PatternsView: View {
     //MARK: - PROPERTIES
+    @StateObject var vm = Self.ViewModel()
     
     //MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                ForEach(vm.patterns) { item in
+                    NavigationLink(destination: PatternDetailView(pattern: item)) {
+                        PatternRow(pattern: item)
+                            .padding()
+                    }
+                }
+            }
+        }
     }
 }
 

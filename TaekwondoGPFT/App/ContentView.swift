@@ -8,13 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    
-    //MARK: - PROPERTIES
-    @State private var selection: String? = nil
-    
-    let haptics = UIImpactFeedbackGenerator()
-    
     var body: some View {
         NavigationView {
             VStack {

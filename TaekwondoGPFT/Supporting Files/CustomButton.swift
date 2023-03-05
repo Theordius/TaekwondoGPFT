@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CustomButton: View {
     //MARK: - PROPERTIES
+    
     @State private var selection: String? = nil
     
     var title: String
@@ -20,8 +21,8 @@ struct CustomButton: View {
         
         NavigationLink(destination: TheoryView(), tag: "A", selection: $selection) {EmptyView()}
         NavigationLink(destination: PatternsView(), tag: "B", selection: $selection) { EmptyView() }
-        NavigationLink(destination: Text("Sklep Online"), tag: "C", selection: $selection) { EmptyView() }
-        NavigationLink(destination: Text("Kalendarz"), tag: "D", selection: $selection) { EmptyView() }
+        NavigationLink(destination: Text("Online Shop"), tag: "C", selection: $selection) { EmptyView() }
+        NavigationLink(destination: Text("Calendar"), tag: "D", selection: $selection) { EmptyView() }
         
         Button(action: {
             selection = tag

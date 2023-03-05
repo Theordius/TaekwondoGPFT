@@ -8,7 +8,8 @@
 import Foundation
 import SwiftUI
 
-class TheoryViewModel {
-    public var theory: [Theory] = Bundle.main.decode("Theory.json")
-    
+extension TheoryView {
+    class ViewModel: ObservableObject {
+        @Published public var theory: [Theory] = Bundle.main.decode("Theory.json")
+    }
 }
