@@ -15,13 +15,13 @@ struct MainScreen: View {
         TabView {
             ContentView()
                 .tabItem {
-                    Image(systemName: "square.grid.2x2")
-                    Text("Browse")
+                    Image(systemName: "figure.martial.arts")
+                    Text("Strefa Trenera")
                 }
             
            TimerView()
                 .tabItem {
-                    Image(systemName: "play.rectangle")
+                    Image(systemName: "timer")
                     Text("Timer")
                 }
             

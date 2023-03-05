@@ -19,8 +19,8 @@ struct CustomButton: View {
     //MARK: - BODY
     var body: some View {
         
-        NavigationLink(destination: TheoryView(), tag: "A", selection: $selection) {EmptyView()}
-        NavigationLink(destination: PatternsView(), tag: "B", selection: $selection) { EmptyView() }
+        NavigationLink(destination: PatternsView(), tag: "A", selection: $selection) { EmptyView() }
+        NavigationLink(destination: TheoryView(), tag: "B", selection: $selection) {EmptyView()}
         NavigationLink(destination: Text("Online Shop"), tag: "C", selection: $selection) { EmptyView() }
         NavigationLink(destination: Text("Calendar"), tag: "D", selection: $selection) { EmptyView() }
         

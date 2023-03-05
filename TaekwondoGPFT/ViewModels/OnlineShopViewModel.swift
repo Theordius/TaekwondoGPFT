@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
-class OnlineShopViewModel {
-    
+extension OnlineShopView {
+    class ViewModel: ObservableObject {
+    }
 }

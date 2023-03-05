@@ -20,8 +20,8 @@ struct ContentView: View {
                     
                     Text("")
                     
-                    CustomButton(title: "TEORIA", subtitle: "Teoria Taekwon - DO", tag: "A")
-                    CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy Formalne", tag: "B")
+                    CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy Formalne", tag: "A")
+                    CustomButton(title: "TEORIA", subtitle: "Teoria Taekwon - DO", tag: "B")
                     CustomButton(title: "SKLEP ONLINE", subtitle: "Nasz sklep Online", tag: "C")
                     CustomButton(title: "KALENDARZ", subtitle: "Kalendarz Imprez", tag: "D")
                     
