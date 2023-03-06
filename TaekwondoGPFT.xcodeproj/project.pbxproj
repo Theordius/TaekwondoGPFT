@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100B976429AFDEB500D29ED7 /* Bundle - CodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B976329AFDEB500D29ED7 /* Bundle - CodableExtension.swift */; };
+		100B976729AFE0D100D29ED7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B976629AFE0D100D29ED7 /* MapView.swift */; };
+		100B976929AFE0E600D29ED7 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B976829AFE0E600D29ED7 /* TimerView.swift */; };
+		100B976B29AFE10A00D29ED7 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B976A29AFE10A00D29ED7 /* GalleryView.swift */; };
+		100B976D29AFE40600D29ED7 /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B976C29AFE40600D29ED7 /* CreditsView.swift */; };
+		100B976F29AFE50100D29ED7 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B976E29AFE50100D29ED7 /* MotionAnimationView.swift */; };
+		100B977229AFE99B00D29ED7 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B977129AFE99B00D29ED7 /* CustomButton.swift */; };
+		100B977429B0B58400D29ED7 /* BlueCapsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B977329B0B58400D29ED7 /* BlueCapsule.swift */; };
+		100B977629B0BABD00D29ED7 /* TheoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B977529B0BABD00D29ED7 /* TheoryView.swift */; };
+		100B977829B0C07200D29ED7 /* PatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B977729B0C07200D29ED7 /* PatternsView.swift */; };
+		100B977A29B1207300D29ED7 /* GrowingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B977929B1207300D29ED7 /* GrowingButton.swift */; };
+		100B977C29B1210C00D29ED7 /* BlueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100B977B29B1210C00D29ED7 /* BlueButton.swift */; };
+		10283D212938C0F000250E2F /* Theory.json in Resources */ = {isa = PBXBuildFile; fileRef = 10283D202938C0F000250E2F /* Theory.json */; };
+		10283D232938C28C00250E2F /* TheoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10283D222938C28C00250E2F /* TheoryDetailView.swift */; };
+		10283D252938C36200250E2F /* TheoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10283D242938C36200250E2F /* TheoryDetailsViewModel.swift */; };
+		10599D48292584EC005E42F0 /* WKWebKit - URLLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D47292584EC005E42F0 /* WKWebKit - URLLoader.swift */; };
+		10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4929258F72005E42F0 /* OnlineShop.swift */; };
+		10599D4C29258F85005E42F0 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4B29258F85005E42F0 /* Calendar.swift */; };
+		10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */; };
+		10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */; };
+		1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */; };
+		1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826329AD4A7500EBBD3E /* ContentView.swift */; };
+		1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826529AD4AC500EBBD3E /* MainScreen.swift */; };
+		107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA329B4BC8E00C0C25F /* PatternRow.swift */; };
+		107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA529B4EA5500C0C25F /* TheoryRow.swift */; };
+		107F9DB329B5E45200C0C25F /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DB229B5E45200C0C25F /* VideoPlayer.swift */; };
+		107F9DB629B5E4AA00C0C25F /* Chon-gi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 107F9DB529B5E4AA00C0C25F /* Chon-gi.mp4 */; };
+		107F9DB829B5EC6100C0C25F /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */; };
+		1081A5A62919219000666376 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A52919219000666376 /* CalendarView.swift */; };
+		1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A9291933A700666376 /* CalendarViewModel.swift */; };
+		1081A5B0291A7A4800666376 /* Patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 1081A5AF291A7A4800666376 /* Patterns.json */; };
+		1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */; };
+		1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B5291BDF3600666376 /* OnlineShopView.swift */; };
+		10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CDA59128E4CF93000B4005 /* Assets.xcassets */; };
+		10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */; };
+		10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */; };
+		10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A928E4D249000B4005 /* PatternsViewModel.swift */; };
+		10CDA5AC28E4D2EF000B4005 /* Patterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5AB28E4D2EF000B4005 /* Patterns.swift */; };
+		10CDA5AE28E4D2FD000B4005 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5AD28E4D2FD000B4005 /* Events.swift */; };
+		10CDA5B028E4D309000B4005 /* Theory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5AF28E4D309000B4005 /* Theory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		1062824529AD478B00EBBD3E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = file.rcproject;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# rctool\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		100B976129AFDA3100D29ED7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		100B976329AFDEB500D29ED7 /* Bundle - CodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle - CodableExtension.swift"; sourceTree = "<group>"; };
+		100B976629AFE0D100D29ED7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		100B976829AFE0E600D29ED7 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		100B976A29AFE10A00D29ED7 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		100B976C29AFE40600D29ED7 /* CreditsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		100B976E29AFE50100D29ED7 /* MotionAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		100B977129AFE99B00D29ED7 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		100B977329B0B58400D29ED7 /* BlueCapsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCapsule.swift; sourceTree = "<group>"; };
+		100B977529B0BABD00D29ED7 /* TheoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryView.swift; sourceTree = "<group>"; };
+		100B977729B0C07200D29ED7 /* PatternsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsView.swift; sourceTree = "<group>"; };
+		100B977929B1207300D29ED7 /* GrowingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingButton.swift; sourceTree = "<group>"; };
+		100B977B29B1210C00D29ED7 /* BlueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButton.swift; sourceTree = "<group>"; };
+		10283D202938C0F000250E2F /* Theory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theory.json; sourceTree = "<group>"; };
+		10283D222938C28C00250E2F /* TheoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailView.swift; sourceTree = "<group>"; };
+		10283D242938C36200250E2F /* TheoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailsViewModel.swift; sourceTree = "<group>"; };
+		10599D47292584EC005E42F0 /* WKWebKit - URLLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebKit - URLLoader.swift"; sourceTree = "<group>"; };
+		10599D4929258F72005E42F0 /* OnlineShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShop.swift; sourceTree = "<group>"; };
+		10599D4B29258F85005E42F0 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
+		10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsDetailView.swift; sourceTree = "<group>"; wrapsLines = 1; };
+		10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsDetailsViewModel.swift; sourceTree = "<group>"; };
+		1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTApp.swift; sourceTree = "<group>"; };
+		1062826329AD4A7500EBBD3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1062826529AD4AC500EBBD3E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		107F9DA329B4BC8E00C0C25F /* PatternRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRow.swift; sourceTree = "<group>"; };
+		107F9DA529B4EA5500C0C25F /* TheoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryRow.swift; sourceTree = "<group>"; };
+		107F9DB229B5E45200C0C25F /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		107F9DB529B5E4AA00C0C25F /* Chon-gi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chon-gi.mp4"; sourceTree = "<group>"; };
+		107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		1081A5A52919219000666376 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		1081A5A9291933A700666376 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		1081A5AF291A7A4800666376 /* Patterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Patterns.json; sourceTree = "<group>"; };
+		1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopViewModel.swift; sourceTree = "<group>"; };
+		1081A5B5291BDF3600666376 /* OnlineShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopView.swift; sourceTree = "<group>"; };
+		10CDA58528E4CF92000B4005 /* TaekwondoGPFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaekwondoGPFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CDA59128E4CF93000B4005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryViewModel.swift; sourceTree = "<group>"; };
+		10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewModel.swift; sourceTree = "<group>"; };
+		10CDA5A928E4D249000B4005 /* PatternsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsViewModel.swift; sourceTree = "<group>"; };
+		10CDA5AB28E4D2EF000B4005 /* Patterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patterns.swift; sourceTree = "<group>"; };
+		10CDA5AD28E4D2FD000B4005 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		10CDA5AF28E4D309000B4005 /* Theory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10CDA58228E4CF92000B4005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100B976529AFE0C100D29ED7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */,
+				1062826329AD4A7500EBBD3E /* ContentView.swift */,
+				100B976629AFE0D100D29ED7 /* MapView.swift */,
+				100B976829AFE0E600D29ED7 /* TimerView.swift */,
+				100B976A29AFE10A00D29ED7 /* GalleryView.swift */,
+				107F9DA329B4BC8E00C0C25F /* PatternRow.swift */,
+				107F9DA529B4EA5500C0C25F /* TheoryRow.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		100B977029AFE98100D29ED7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				100B977B29B1210C00D29ED7 /* BlueButton.swift */,
+				100B977129AFE99B00D29ED7 /* CustomButton.swift */,
+				100B977929B1207300D29ED7 /* GrowingButton.swift */,
+				107F9DB229B5E45200C0C25F /* VideoPlayer.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1022688F29159BE7003A8A80 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		1062824629AD495000EBBD3E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				10283D202938C0F000250E2F /* Theory.json */,
+				1081A5AF291A7A4800666376 /* Patterns.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		107F9DB429B5E49400C0C25F /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				107F9DB529B5E4AA00C0C25F /* Chon-gi.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		10CDA57C28E4CF92000B4005 = {
+			isa = PBXGroup;
+			children = (
+				10CDA58728E4CF92000B4005 /* TaekwondoGPFT */,
+				10CDA58628E4CF92000B4005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10CDA58628E4CF92000B4005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10CDA58528E4CF92000B4005 /* TaekwondoGPFT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10CDA58728E4CF92000B4005 /* TaekwondoGPFT */ = {
+			isa = PBXGroup;
+			children = (
+				100B977029AFE98100D29ED7 /* Supporting Files */,
+				100B976529AFE0C100D29ED7 /* App */,
+				1062824629AD495000EBBD3E /* Data */,
+				10CDA59E28E4D159000B4005 /* ViewModels */,
+				10CDA5A028E4D195000B4005 /* Views */,
+				107F9DB429B5E49400C0C25F /* Videos */,
+				10CDA59C28E4D0C6000B4005 /* Extenions */,
+				1022688F29159BE7003A8A80 /* Support Files */,
+				10CDA59128E4CF93000B4005 /* Assets.xcassets */,
+				100B976129AFDA3100D29ED7 /* Info.plist */,
+			);
+			path = TaekwondoGPFT;
+			sourceTree = "<group>";
+		};
+		10CDA59C28E4D0C6000B4005 /* Extenions */ = {
+			isa = PBXGroup;
+			children = (
+				100B976329AFDEB500D29ED7 /* Bundle - CodableExtension.swift */,
+				10599D47292584EC005E42F0 /* WKWebKit - URLLoader.swift */,
+				100B977329B0B58400D29ED7 /* BlueCapsule.swift */,
+			);
+			path = Extenions;
+			sourceTree = "<group>";
+		};
+		10CDA59E28E4D159000B4005 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */,
+				10283D242938C36200250E2F /* TheoryDetailsViewModel.swift */,
+				10CDA5A928E4D249000B4005 /* PatternsViewModel.swift */,
+				10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */,
+				1081A5A9291933A700666376 /* CalendarViewModel.swift */,
+				1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */,
+				10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */,
+				10CDA59F28E4D163000B4005 /* Models */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		10CDA59F28E4D163000B4005 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10CDA5AB28E4D2EF000B4005 /* Patterns.swift */,
+				10CDA5AD28E4D2FD000B4005 /* Events.swift */,
+				10CDA5AF28E4D309000B4005 /* Theory.swift */,
+				10599D4B29258F85005E42F0 /* Calendar.swift */,
+				10599D4929258F72005E42F0 /* OnlineShop.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		10CDA5A028E4D195000B4005 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				100B977529B0BABD00D29ED7 /* TheoryView.swift */,
+				100B977729B0C07200D29ED7 /* PatternsView.swift */,
+				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
+				1081A5A52919219000666376 /* CalendarView.swift */,
+				10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */,
+				10283D222938C28C00250E2F /* TheoryDetailView.swift */,
+				1062826529AD4AC500EBBD3E /* MainScreen.swift */,
+				100B976C29AFE40600D29ED7 /* CreditsView.swift */,
+				100B976E29AFE50100D29ED7 /* MotionAnimationView.swift */,
+				107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10CDA58428E4CF92000B4005 /* TaekwondoGPFT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CDA59928E4CF93000B4005 /* Build configuration list for PBXNativeTarget "TaekwondoGPFT" */;
+			buildPhases = (
+				10CDA58128E4CF92000B4005 /* Sources */,
+				10CDA58228E4CF92000B4005 /* Frameworks */,
+				10CDA58328E4CF92000B4005 /* Resources */,
+			);
+			buildRules = (
+				1062824529AD478B00EBBD3E /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = TaekwondoGPFT;
+			productName = TaekwondoGPFTUiKit;
+			productReference = 10CDA58528E4CF92000B4005 /* TaekwondoGPFT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10CDA57D28E4CF92000B4005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					10CDA58428E4CF92000B4005 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 10CDA58028E4CF92000B4005 /* Build configuration list for PBXProject "TaekwondoGPFT" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				pl,
+			);
+			mainGroup = 10CDA57C28E4CF92000B4005;
+			productRefGroup = 10CDA58628E4CF92000B4005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10CDA58428E4CF92000B4005 /* TaekwondoGPFT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10CDA58328E4CF92000B4005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1081A5B0291A7A4800666376 /* Patterns.json in Resources */,
+				10283D212938C0F000250E2F /* Theory.json in Resources */,
+				10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */,
+				107F9DB629B5E4AA00C0C25F /* Chon-gi.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10CDA58128E4CF92000B4005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100B976D29AFE40600D29ED7 /* CreditsView.swift in Sources */,
+				100B977429B0B58400D29ED7 /* BlueCapsule.swift in Sources */,
+				100B977A29B1207300D29ED7 /* GrowingButton.swift in Sources */,
+				10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */,
+				1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */,
+				100B976429AFDEB500D29ED7 /* Bundle - CodableExtension.swift in Sources */,
+				10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */,
+				100B976F29AFE50100D29ED7 /* MotionAnimationView.swift in Sources */,
+				1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */,
+				10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */,
+				10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */,
+				107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */,
+				107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */,
+				10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */,
+				10283D252938C36200250E2F /* TheoryDetailsViewModel.swift in Sources */,
+				1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */,
+				10283D232938C28C00250E2F /* TheoryDetailView.swift in Sources */,
+				100B977C29B1210C00D29ED7 /* BlueButton.swift in Sources */,
+				10599D48292584EC005E42F0 /* WKWebKit - URLLoader.swift in Sources */,
+				1081A5A62919219000666376 /* CalendarView.swift in Sources */,
+				10CDA5AE28E4D2FD000B4005 /* Events.swift in Sources */,
+				107F9DB329B5E45200C0C25F /* VideoPlayer.swift in Sources */,
+				10599D4C29258F85005E42F0 /* Calendar.swift in Sources */,
+				107F9DB829B5EC6100C0C25F /* VideoPlayerView.swift in Sources */,
+				100B976B29AFE10A00D29ED7 /* GalleryView.swift in Sources */,
+				1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */,
+				100B976729AFE0D100D29ED7 /* MapView.swift in Sources */,
+				1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */,
+				100B976929AFE0E600D29ED7 /* TimerView.swift in Sources */,
+				100B977829B0C07200D29ED7 /* PatternsView.swift in Sources */,
+				10CDA5B028E4D309000B4005 /* Theory.swift in Sources */,
+				100B977629B0BABD00D29ED7 /* TheoryView.swift in Sources */,
+				100B977229AFE99B00D29ED7 /* CustomButton.swift in Sources */,
+				10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */,
+				1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */,
+				10CDA5AC28E4D2EF000B4005 /* Patterns.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		10CDA59728E4CF93000B4005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10CDA59828E4CF93000B4005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10CDA59A28E4CF93000B4005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				Appearance = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MD5T682WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaekwondoGPFT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Taekwondo GPFT";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		10CDA59B28E4CF93000B4005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				Appearance = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MD5T682WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TaekwondoGPFT/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Taekwondo GPFT";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10CDA58028E4CF92000B4005 /* Build configuration list for PBXProject "TaekwondoGPFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CDA59728E4CF93000B4005 /* Debug */,
+				10CDA59828E4CF93000B4005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CDA59928E4CF93000B4005 /* Build configuration list for PBXNativeTarget "TaekwondoGPFT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CDA59A28E4CF93000B4005 /* Debug */,
+				10CDA59B28E4CF93000B4005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10CDA57D28E4CF92000B4005 /* Project object */;
+}
