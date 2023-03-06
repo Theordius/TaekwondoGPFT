@@ -16,11 +16,10 @@ struct PatternDetailView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 26) {
-            Image("logo")
-                .resizable()
+           VideoPlayerView(videoSelected: "Chon-gi", videoTitle: "Chon-gi")
+                .frame(width: 360, height: 360)
                 .scaledToFit()
-                .frame(width: 180, height: 180)
-            Text("")
+        
             
             Divider().padding(.horizontal,6)
             
