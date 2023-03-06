@@ -16,9 +16,31 @@ struct TheoryDetailView: View {
     //MARK: - BODY
     
     var body: some View {
-        Text(theory.name)
+        VStack(alignment: .center, spacing: 26) {
+            Image("logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 180, height: 180)
+            Text("")
+            
+            Divider().padding(.horizontal,6)
+            
+            Text(theory.name)
+                .font(.headline)
+                .foregroundColor(.blue)
+            
+            Divider().padding(.horizontal, 6)
+            
+            Text(theory.description ?? "To be done")
+                .font(.system(.subheadline))
+                .fontWeight(.bold)
+                .multilineTextAlignment(.leading)
+                .lineLimit(.max)
+            
         }
+        .padding(.vertical, 5)
     }
+}
 
 
 struct TheoryDetailView_Previews: PreviewProvider {

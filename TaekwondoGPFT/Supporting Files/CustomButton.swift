@@ -30,9 +30,9 @@ struct CustomButton: View {
             VStack(alignment: .center) {
                 Text(title)
                    
-                    .font(.title2)
+                    .font(.headline)
                     .fontWeight(.bold)
-                    .foregroundColor(.red)
+                    .foregroundColor(.accentColor)
                 
                 Text(subtitle)
                    

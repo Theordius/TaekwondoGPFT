@@ -16,27 +16,30 @@ struct MainScreen: View {
             ContentView()
                 .tabItem {
                     Image(systemName: "figure.martial.arts")
-                    Text("Strefa Trenera")
+                    Text("Strona Główna")
+                    
                 }
             
-           TimerView()
+            TimerView()
                 .tabItem {
                     Image(systemName: "timer")
                     Text("Timer")
+                    
                 }
             
             MapView()
                 .tabItem {
                     Image(systemName: "map")
-                    Text("Mapa")
+                    Text("Nasze Sekcje")
+                    
                 }
             
             GalleryView()
                 .tabItem {
                     Image(systemName: "photo")
                     Text("Galeria")
+                    
                 }
-            
         } //: TAB
     }
 }

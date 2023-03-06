@@ -15,9 +15,34 @@ struct PatternDetailView: View {
     //MARK: - BODY
     
     var body: some View {
-        Text(pattern.name)
+        VStack(alignment: .center, spacing: 26) {
+            Image("logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 180, height: 180)
+            Text("")
+            
+            Divider().padding(.horizontal,6)
+            
+            Text(pattern.name)
+                .font(.headline)
+                .foregroundColor(.blue)
+            
+            Divider().padding(.horizontal, 6)
+            
+            Text(pattern.description!)
+                .font(.system(.subheadline))
+                .fontWeight(.bold)
+                .multilineTextAlignment(.leading)
+                .lineLimit(.max)
+            
         }
+        .padding()
+       
     }
+    
+    
+}
 
 
 struct PatternsDetailView_Previews: PreviewProvider {
