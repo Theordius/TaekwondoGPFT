@@ -32,6 +32,8 @@
 		1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826529AD4AC500EBBD3E /* MainScreen.swift */; };
 		107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA329B4BC8E00C0C25F /* PatternRow.swift */; };
 		107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA529B4EA5500C0C25F /* TheoryRow.swift */; };
+		107F9DB329B5E45200C0C25F /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DB229B5E45200C0C25F /* VideoPlayer.swift */; };
+		107F9DB629B5E4AA00C0C25F /* Chon-gi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 107F9DB529B5E4AA00C0C25F /* Chon-gi.mp4 */; };
 		1081A5A62919219000666376 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A52919219000666376 /* CalendarView.swift */; };
 		1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A9291933A700666376 /* CalendarViewModel.swift */; };
 		1081A5B0291A7A4800666376 /* Patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 1081A5AF291A7A4800666376 /* Patterns.json */; };
@@ -87,6 +89,8 @@
 		1062826529AD4AC500EBBD3E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		107F9DA329B4BC8E00C0C25F /* PatternRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRow.swift; sourceTree = "<group>"; };
 		107F9DA529B4EA5500C0C25F /* TheoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryRow.swift; sourceTree = "<group>"; };
+		107F9DB229B5E45200C0C25F /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		107F9DB529B5E4AA00C0C25F /* Chon-gi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chon-gi.mp4"; sourceTree = "<group>"; };
 		1081A5A52919219000666376 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		1081A5A9291933A700666376 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		1081A5AF291A7A4800666376 /* Patterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Patterns.json; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 				100B977B29B1210C00D29ED7 /* BlueButton.swift */,
 				100B977129AFE99B00D29ED7 /* CustomButton.swift */,
 				100B977929B1207300D29ED7 /* GrowingButton.swift */,
+				107F9DB229B5E45200C0C25F /* VideoPlayer.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,6 +156,14 @@
 				1081A5AF291A7A4800666376 /* Patterns.json */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		107F9DB429B5E49400C0C25F /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				107F9DB529B5E4AA00C0C25F /* Chon-gi.mp4 */,
+			);
+			path = Videos;
 			sourceTree = "<group>";
 		};
 		10CDA57C28E4CF92000B4005 = {
@@ -177,6 +190,7 @@
 				1062824629AD495000EBBD3E /* Data */,
 				10CDA59E28E4D159000B4005 /* ViewModels */,
 				10CDA5A028E4D195000B4005 /* Views */,
+				107F9DB429B5E49400C0C25F /* Videos */,
 				10CDA59C28E4D0C6000B4005 /* Extenions */,
 				1022688F29159BE7003A8A80 /* Support Files */,
 				10CDA59128E4CF93000B4005 /* Assets.xcassets */,
@@ -301,6 +315,7 @@
 				1081A5B0291A7A4800666376 /* Patterns.json in Resources */,
 				10283D212938C0F000250E2F /* Theory.json in Resources */,
 				10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */,
+				107F9DB629B5E4AA00C0C25F /* Chon-gi.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +347,7 @@
 				10599D48292584EC005E42F0 /* WKWebKit - URLLoader.swift in Sources */,
 				1081A5A62919219000666376 /* CalendarView.swift in Sources */,
 				10CDA5AE28E4D2FD000B4005 /* Events.swift in Sources */,
+				107F9DB329B5E45200C0C25F /* VideoPlayer.swift in Sources */,
 				10599D4C29258F85005E42F0 /* Calendar.swift in Sources */,
 				100B976B29AFE10A00D29ED7 /* GalleryView.swift in Sources */,
 				1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */,
