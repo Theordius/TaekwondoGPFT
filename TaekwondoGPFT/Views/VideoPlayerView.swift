@@ -20,6 +20,7 @@ struct VideoPlayerView: View {
             VideoPlayer(player: playVideo(fileName: videoSelected, fileFormat: "mp4")) {
                 //Text(videoTitle)
             }
+            .frame(height: 400)
             .overlay(
             Image("logo")
                 .resizable()

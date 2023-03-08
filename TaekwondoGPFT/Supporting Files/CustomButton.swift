@@ -51,7 +51,8 @@ struct CustomButton: View {
 struct Buttons_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CustomButton(title: "TEORIA", subtitle: "Teoria Taekwon-do", tag: "A")
+            CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne", tag: "A")
+                .previewLayout(.sizeThatFits)
         }
     }
 }
