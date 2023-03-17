@@ -22,6 +22,8 @@
 		10283D212938C0F000250E2F /* Theory.json in Resources */ = {isa = PBXBuildFile; fileRef = 10283D202938C0F000250E2F /* Theory.json */; };
 		10283D232938C28C00250E2F /* TheoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10283D222938C28C00250E2F /* TheoryDetailView.swift */; };
 		10283D252938C36200250E2F /* TheoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10283D242938C36200250E2F /* TheoryDetailsViewModel.swift */; };
+		10392FE729C45B1600A7F76C /* Locations.json in Resources */ = {isa = PBXBuildFile; fileRef = 10392FE629C45B1600A7F76C /* Locations.json */; };
+		10392FE929C45C6700A7F76C /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10392FE829C45C6700A7F76C /* LocationModel.swift */; };
 		10599D48292584EC005E42F0 /* WKWebKit - URLLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D47292584EC005E42F0 /* WKWebKit - URLLoader.swift */; };
 		10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4929258F72005E42F0 /* OnlineShop.swift */; };
 		10599D4C29258F85005E42F0 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4B29258F85005E42F0 /* Calendar.swift */; };
@@ -80,6 +82,8 @@
 		10283D202938C0F000250E2F /* Theory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Theory.json; sourceTree = "<group>"; };
 		10283D222938C28C00250E2F /* TheoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailView.swift; sourceTree = "<group>"; };
 		10283D242938C36200250E2F /* TheoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryDetailsViewModel.swift; sourceTree = "<group>"; };
+		10392FE629C45B1600A7F76C /* Locations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Locations.json; sourceTree = "<group>"; };
+		10392FE829C45C6700A7F76C /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		10599D47292584EC005E42F0 /* WKWebKit - URLLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebKit - URLLoader.swift"; sourceTree = "<group>"; };
 		10599D4929258F72005E42F0 /* OnlineShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShop.swift; sourceTree = "<group>"; };
 		10599D4B29258F85005E42F0 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 			children = (
 				10283D202938C0F000250E2F /* Theory.json */,
 				1081A5AF291A7A4800666376 /* Patterns.json */,
+				10392FE629C45B1600A7F76C /* Locations.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				10CDA5AF28E4D309000B4005 /* Theory.swift */,
 				10599D4B29258F85005E42F0 /* Calendar.swift */,
 				10599D4929258F72005E42F0 /* OnlineShop.swift */,
+				10392FE829C45C6700A7F76C /* LocationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -319,6 +325,7 @@
 				10283D212938C0F000250E2F /* Theory.json in Resources */,
 				10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */,
 				107F9DB629B5E4AA00C0C25F /* Chon-gi.mp4 in Resources */,
+				10392FE729C45B1600A7F76C /* Locations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +339,7 @@
 				100B976D29AFE40600D29ED7 /* CreditsView.swift in Sources */,
 				100B977429B0B58400D29ED7 /* BlueCapsule.swift in Sources */,
 				100B977A29B1207300D29ED7 /* GrowingButton.swift in Sources */,
+				10392FE929C45C6700A7F76C /* LocationModel.swift in Sources */,
 				10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */,
 				1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */,
 				100B976429AFDEB500D29ED7 /* Bundle - CodableExtension.swift in Sources */,

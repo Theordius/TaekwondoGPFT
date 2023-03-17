@@ -1,0 +1,44 @@
+[
+  {
+    "id" : "oborniki",
+    "name" : "Ko - Dang",
+    "image" : "logo",
+    "latitude" : -2.3333333,
+    "longitude" : 34.8333333
+  },
+  {
+    "id" : "",
+    "name" : "Chon - Gi",
+    "image" : "logo",
+    "latitude" : -23.9883848,
+    "longitude" : 31.5525515
+  },
+  {
+    "id" : "sekcja2",
+    "name" : "Sekcja nr 2",
+    "image" : "logo",
+    "latitude" : -18.7305642,
+    "longitude" : 24.4292148
+  },
+  {
+    "id" : "sekcja3",
+    "name" : "sekcja nr 3",
+    "image" : "logo",
+    "latitude" : 3.8495757,
+    "longitude" : 33.7525049
+  },
+  {
+    "id" : "sekcja4",
+    "name" : "Sekcja nr 5",
+    "image" : "logo",
+    "latitude" : -18.8555909,
+    "longitude" : 16.327131
+  },
+  {
+    "id" : "sekcja5",
+    "name" : "Solonga National Park",
+    "image" : "logo",
+    "latitude" : -1.9999932,
+    "longitude" : 21.0002492
+  }
+]
