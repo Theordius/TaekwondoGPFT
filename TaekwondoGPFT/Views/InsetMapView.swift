@@ -23,7 +23,7 @@ struct InsetMapView: View {
                             .foregroundColor(Color.white)
                             .imageScale(.large)
                         
-                        Text("Locations")
+                        Text("Nasze Sekcje")
                             .foregroundColor(.accentColor)
                             .fontWeight(.bold)
                     } //: HSTACK

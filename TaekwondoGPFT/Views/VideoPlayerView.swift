@@ -18,7 +18,7 @@ struct VideoPlayerView: View {
     var body: some View {
         VStack {
             VideoPlayer(player: playVideo(fileName: videoSelected, fileFormat: "mp4")) {
-                //Text(videoTitle)
+    
             }
             .frame(height: 400)
             .overlay(

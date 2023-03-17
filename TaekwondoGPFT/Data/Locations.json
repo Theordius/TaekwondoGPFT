@@ -3,42 +3,42 @@
     "id" : "oborniki",
     "name" : "Ko - Dang",
     "image" : "logo",
-    "latitude" : -2.3333333,
-    "longitude" : 34.8333333
+    "latitude" : 51.3010,
+    "longitude" : 16.9148
   },
   {
-    "id" : "",
+    "id" : "strzelin",
     "name" : "Chon - Gi",
     "image" : "logo",
-    "latitude" : -23.9883848,
-    "longitude" : 31.5525515
+    "latitude" : 50.7812,
+    "longitude" : 17.0646
   },
   {
-    "id" : "sekcja2",
+    "id" : "milicz",
     "name" : "Sekcja nr 2",
     "image" : "logo",
-    "latitude" : -18.7305642,
-    "longitude" : 24.4292148
+    "latitude" : 51.5276,
+    "longitude" : 17.2712
   },
   {
-    "id" : "sekcja3",
+    "id" : "warszawa",
     "name" : "sekcja nr 3",
     "image" : "logo",
-    "latitude" : 3.8495757,
-    "longitude" : 33.7525049
+    "latitude" : 52.2297,
+    "longitude" : 21.0122
   },
   {
-    "id" : "sekcja4",
+    "id" : "katowice",
     "name" : "Sekcja nr 5",
     "image" : "logo",
-    "latitude" : -18.8555909,
-    "longitude" : 16.327131
+    "latitude" : 50.2649,
+    "longitude" : 19.0238
   },
   {
-    "id" : "sekcja5",
-    "name" : "Solonga National Park",
+    "id" : "poznan",
+    "name" : "Sekcja nr 6",
     "image" : "logo",
-    "latitude" : -1.9999932,
-    "longitude" : 21.0002492
+    "latitude" : 52.4064,
+    "longitude" : 16.9252
   }
 ]

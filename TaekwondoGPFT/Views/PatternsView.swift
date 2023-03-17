@@ -28,6 +28,9 @@ struct PatternsView: View {
 //MARK: - PREVIEW
 struct PatternsView_Previews: PreviewProvider {
     static var previews: some View {
-        PatternsView()
+        NavigationView {
+            PatternsView()
+                .previewLayout(.sizeThatFits)
+        }
     }
 }
