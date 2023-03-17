@@ -9,12 +9,12 @@ import SwiftUI
 
 struct TheoryView: View {
     //MARK: - PROPERTIES
-    @StateObject var vm = Self.ViewModel()
+    @StateObject var viewModel = Self.ViewModel()
     
     //MARK: - BODY
     var body: some View {
         List {
-            ForEach(vm.theory) { item in
+            ForEach(viewModel.theory) { item in
                 NavigationLink(destination: TheoryDetailView(theory: item)) {
                     TheoryRow(theory: item)
                         .padding()

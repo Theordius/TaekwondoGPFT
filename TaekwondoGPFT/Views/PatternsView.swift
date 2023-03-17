@@ -9,12 +9,12 @@ import SwiftUI
 
 struct PatternsView: View {
     //MARK: - PROPERTIES
-    @StateObject var vm = Self.ViewModel()
+    @StateObject var viewModel = Self.ViewModel()
     
     //MARK: - BODY
     var body: some View {
             List {
-                ForEach(vm.patterns) { item in
+                ForEach(viewModel.patterns) { item in
                     NavigationLink(destination: PatternDetailView(pattern: item)) {
                         PatternRow(pattern: item)
                             .padding()

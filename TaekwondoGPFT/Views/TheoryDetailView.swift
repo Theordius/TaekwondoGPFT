@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TheoryDetailView: View {
     //MARK: - PROPERTIES
-    @StateObject var vm = Self.ViewModel()
+    @StateObject var viewModel = Self.ViewModel()
     
     var theory: Theory
     

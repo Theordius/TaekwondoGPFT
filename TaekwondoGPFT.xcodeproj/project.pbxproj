@@ -36,7 +36,7 @@
 		1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826529AD4AC500EBBD3E /* MainScreen.swift */; };
 		107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA329B4BC8E00C0C25F /* PatternRow.swift */; };
 		107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA529B4EA5500C0C25F /* TheoryRow.swift */; };
-		107F9DB329B5E45200C0C25F /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DB229B5E45200C0C25F /* VideoPlayer.swift */; };
+		107F9DB329B5E45200C0C25F /* VideoPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DB229B5E45200C0C25F /* VideoPlayerService.swift */; };
 		107F9DB629B5E4AA00C0C25F /* Chon-gi.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 107F9DB529B5E4AA00C0C25F /* Chon-gi.mp4 */; };
 		107F9DB829B5EC6100C0C25F /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */; };
 		1081A5A62919219000666376 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A52919219000666376 /* CalendarView.swift */; };
@@ -98,7 +98,7 @@
 		1062826529AD4AC500EBBD3E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		107F9DA329B4BC8E00C0C25F /* PatternRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRow.swift; sourceTree = "<group>"; };
 		107F9DA529B4EA5500C0C25F /* TheoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryRow.swift; sourceTree = "<group>"; };
-		107F9DB229B5E45200C0C25F /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		107F9DB229B5E45200C0C25F /* VideoPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerService.swift; sourceTree = "<group>"; };
 		107F9DB529B5E4AA00C0C25F /* Chon-gi.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Chon-gi.mp4"; sourceTree = "<group>"; };
 		107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		1081A5A52919219000666376 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -147,16 +147,16 @@
 				100B977B29B1210C00D29ED7 /* BlueButton.swift */,
 				100B977129AFE99B00D29ED7 /* CustomButton.swift */,
 				100B977929B1207300D29ED7 /* GrowingButton.swift */,
-				107F9DB229B5E45200C0C25F /* VideoPlayer.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1022688F29159BE7003A8A80 /* Support Files */ = {
+		10392FF029C4A09600A7F76C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				107F9DB229B5E45200C0C25F /* VideoPlayerService.swift */,
 			);
-			path = "Support Files";
+			path = Services;
 			sourceTree = "<group>";
 		};
 		1062824629AD495000EBBD3E /* Data */ = {
@@ -196,14 +196,14 @@
 		10CDA58728E4CF92000B4005 /* TaekwondoGPFT */ = {
 			isa = PBXGroup;
 			children = (
-				100B977029AFE98100D29ED7 /* Supporting Files */,
 				100B976529AFE0C100D29ED7 /* App */,
 				1062824629AD495000EBBD3E /* Data */,
 				10CDA59E28E4D159000B4005 /* ViewModels */,
 				10CDA5A028E4D195000B4005 /* Views */,
 				107F9DB429B5E49400C0C25F /* Videos */,
+				10392FF029C4A09600A7F76C /* Services */,
+				100B977029AFE98100D29ED7 /* Supporting Files */,
 				10CDA59C28E4D0C6000B4005 /* Extenions */,
-				1022688F29159BE7003A8A80 /* Support Files */,
 				10CDA59128E4CF93000B4005 /* Assets.xcassets */,
 				100B976129AFDA3100D29ED7 /* Info.plist */,
 			);
@@ -366,7 +366,7 @@
 				1081A5A62919219000666376 /* CalendarView.swift in Sources */,
 				10CDA5AE28E4D2FD000B4005 /* Events.swift in Sources */,
 				10392FEF29C4618300A7F76C /* InsetMapView.swift in Sources */,
-				107F9DB329B5E45200C0C25F /* VideoPlayer.swift in Sources */,
+				107F9DB329B5E45200C0C25F /* VideoPlayerService.swift in Sources */,
 				10599D4C29258F85005E42F0 /* Calendar.swift in Sources */,
 				107F9DB829B5EC6100C0C25F /* VideoPlayerView.swift in Sources */,
 				100B976B29AFE10A00D29ED7 /* GalleryView.swift in Sources */,

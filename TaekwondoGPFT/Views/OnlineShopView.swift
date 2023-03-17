@@ -12,7 +12,7 @@ import SwiftUI
 
 struct OnlineShopView: View {
     //MARK: - PROPERTIES
-    @StateObject var vm = Self.ViewModel()
+    @StateObject var viewModel = Self.ViewModel()
     
     //MARK: - BODY
     var body: some View {
