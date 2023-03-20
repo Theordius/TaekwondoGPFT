@@ -14,25 +14,23 @@ struct VideoPlayerView: View {
     var videoSelected: String
     var videoTitle: String
     var videoFormat: String = "mp4"
-   
-        
+    
+    
     //MARK: - BODY
     var body: some View {
         VStack {
-            VideoPlayer(player: play(fileName: videoSelected, fileFormat: "mp4")) {
-    
-            }
-            .frame(height: 400)
-            .overlay(
-                
-            Image("logo") 
-                .resizable()
-                .scaledToFit()
-                .frame(width: 32, height: 32)
-                .padding(.top, 6)
-                .padding(.horizontal, 8)
-            , alignment: .topLeading
-            )
+            VideoPlayer(player: play(fileName: videoSelected, fileFormat: "mp4"))
+                .frame(height: 400)
+                .overlay(
+                    
+                    Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 32, height: 32)
+                        .padding(.top, 6)
+                        .padding(.horizontal, 8)
+                    , alignment: .topLeading
+                )
         } //: VSTACK
         .accentColor(.accentColor)
         .navigationBarTitle(videoTitle, displayMode: .inline)
