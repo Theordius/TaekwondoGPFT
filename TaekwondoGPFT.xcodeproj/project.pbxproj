@@ -144,9 +144,6 @@
 		100B977029AFE98100D29ED7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				100B977B29B1210C00D29ED7 /* BlueButton.swift */,
-				100B977129AFE99B00D29ED7 /* CustomButton.swift */,
-				100B977929B1207300D29ED7 /* GrowingButton.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,6 +154,42 @@
 				107F9DB229B5E45200C0C25F /* VideoPlayerService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		10392FF129C8582500A7F76C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				10392FEE29C4618300A7F76C /* InsetMapView.swift */,
+				1062826529AD4AC500EBBD3E /* MainScreen.swift */,
+				100B977729B0C07200D29ED7 /* PatternsView.swift */,
+				100B976C29AFE40600D29ED7 /* CreditsView.swift */,
+				100B977529B0BABD00D29ED7 /* TheoryView.swift */,
+				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
+				107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		10392FF229C8583000A7F76C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */,
+				10283D222938C28C00250E2F /* TheoryDetailView.swift */,
+				1081A5A52919219000666376 /* CalendarView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		10392FF329C8587A00A7F76C /* CustomObjects */ = {
+			isa = PBXGroup;
+			children = (
+				10392FEC29C4600300A7F76C /* MapAnnotationView.swift */,
+				100B976E29AFE50100D29ED7 /* MotionAnimationView.swift */,
+				100B977B29B1210C00D29ED7 /* BlueButton.swift */,
+				100B977129AFE99B00D29ED7 /* CustomButton.swift */,
+				100B977929B1207300D29ED7 /* GrowingButton.swift */,
+			);
+			path = CustomObjects;
 			sourceTree = "<group>";
 		};
 		1062824629AD495000EBBD3E /* Data */ = {
@@ -251,18 +284,9 @@
 		10CDA5A028E4D195000B4005 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				100B977529B0BABD00D29ED7 /* TheoryView.swift */,
-				100B977729B0C07200D29ED7 /* PatternsView.swift */,
-				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
-				1081A5A52919219000666376 /* CalendarView.swift */,
-				10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */,
-				10283D222938C28C00250E2F /* TheoryDetailView.swift */,
-				1062826529AD4AC500EBBD3E /* MainScreen.swift */,
-				100B976C29AFE40600D29ED7 /* CreditsView.swift */,
-				100B976E29AFE50100D29ED7 /* MotionAnimationView.swift */,
-				107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */,
-				10392FEC29C4600300A7F76C /* MapAnnotationView.swift */,
-				10392FEE29C4618300A7F76C /* InsetMapView.swift */,
+				10392FF129C8582500A7F76C /* Home */,
+				10392FF229C8583000A7F76C /* Detail */,
+				10392FF329C8587A00A7F76C /* CustomObjects */,
 			);
 			path = Views;
 			sourceTree = "<group>";
