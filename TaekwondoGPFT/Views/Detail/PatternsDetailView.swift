@@ -16,7 +16,7 @@ struct PatternDetailView: View {
     
     var body: some View {
         VStack(alignment: .center, spacing: 26) {
-           VideoPlayerView(videoSelected: "Chon-gi", videoTitle: "Chon-gi")
+            VideoPlayerView(videoSelected: pattern.videoName ?? "chon-gi", videoTitle: pattern.name)
                 .frame(width: 360, height: 360)
                 .scaledToFit()
         

@@ -13,4 +13,5 @@ struct Patterns: Hashable, Identifiable, Codable {
     let id: String
     let name: String
     var description: String?
+    var videoName: String?
 }

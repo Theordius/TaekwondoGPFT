@@ -9,24 +9,12 @@ import AVKit
 import Foundation
 import SwiftUI
 
-
-//var videoPlayer: AVPlayer?
-//
-//func play(fileName: String, fileFormat: String) -> AVPlayer {
-//    if Bundle.main.url(forResource: fileName, withExtension: fileFormat) != nil {
-//        videoPlayer = AVPlayer(url: Bundle.main.url(forResource: fileName, withExtension: fileFormat)!)
-//        videoPlayer?.play()
-//    }
-//    return videoPlayer!
-//}
-
-
 protocol VideoPlayerService {
     func playVideo() -> AVPlayer
     func stopVideo()
 }
 
-struct MediaPlayer {
+struct MediaPlayer: VideoPlayerService {
     
     let avPlayer: AVPlayer
     init(videoTitle: String, videoFormat: String) {
@@ -42,7 +30,6 @@ struct MediaPlayer {
     func stopVideo() {
         avPlayer.pause()
     }
-    
 }
 
 

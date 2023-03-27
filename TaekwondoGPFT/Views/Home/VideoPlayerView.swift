@@ -22,7 +22,7 @@ struct VideoPlayerView: View {
             VideoPlayer(player: player.avPlayer)
                 .frame(height: 400)
                 .overlay(
-                    
+
                     Image("logo")
                         .resizable()
                         .scaledToFit()
