@@ -14,12 +14,12 @@ struct VideoPlayerView: View {
     var videoSelected: String
     var videoTitle: String
     var videoFormat: String = "mp4"
-    
+    @State var player = MediaPlayer(videoTitle: "Chon-gi", videoFormat: "mp4")
     
     //MARK: - BODY
     var body: some View {
         VStack {
-            VideoPlayer(player: play(fileName: videoSelected, fileFormat: "mp4"))
+            VideoPlayer(player: player.avPlayer)
                 .frame(height: 400)
                 .overlay(
                     
@@ -32,6 +32,7 @@ struct VideoPlayerView: View {
                     , alignment: .topLeading
                 )
         } //: VSTACK
+
         .accentColor(.accentColor)
         .navigationBarTitle(videoTitle, displayMode: .inline)
     }
