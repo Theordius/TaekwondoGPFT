@@ -209,6 +209,7 @@
 				10392FE629C45B1600A7F76C /* Locations.json */,
 				1081A5AF291A7A4800666376 /* Patterns.json */,
 				10283D202938C0F000250E2F /* Theory.json */,
+				1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -272,7 +273,6 @@
 				10CDA5A928E4D249000B4005 /* PatternsViewModel.swift */,
 				10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */,
 				1081A5A9291933A700666376 /* CalendarViewModel.swift */,
-				1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */,
 				10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */,
 				10CDA59F28E4D163000B4005 /* Models */,
 			);
