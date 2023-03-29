@@ -26,6 +26,10 @@
 		10392FE929C45C6700A7F76C /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10392FE829C45C6700A7F76C /* LocationModel.swift */; };
 		10392FED29C4600300A7F76C /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10392FEC29C4600300A7F76C /* MapAnnotationView.swift */; };
 		10392FEF29C4618300A7F76C /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10392FEE29C4618300A7F76C /* InsetMapView.swift */; };
+		104AE64C29D4B787000E0ED2 /* Gallery.json in Resources */ = {isa = PBXBuildFile; fileRef = 104AE64B29D4B787000E0ED2 /* Gallery.json */; };
+		104AE64E29D4B877000E0ED2 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104AE64D29D4B877000E0ED2 /* GalleryModel.swift */; };
+		104AE65029D4B96A000E0ED2 /* GalleryGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104AE64F29D4B96A000E0ED2 /* GalleryGridItemView.swift */; };
+		104AE65229D4BC20000E0ED2 /* InsetGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104AE65129D4BC20000E0ED2 /* InsetGalleryView.swift */; };
 		10599D48292584EC005E42F0 /* WKWebKit - URLLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D47292584EC005E42F0 /* WKWebKit - URLLoader.swift */; };
 		10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4929258F72005E42F0 /* OnlineShop.swift */; };
 		10599D4C29258F85005E42F0 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4B29258F85005E42F0 /* Calendar.swift */; };
@@ -88,6 +92,10 @@
 		10392FE829C45C6700A7F76C /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		10392FEC29C4600300A7F76C /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
 		10392FEE29C4618300A7F76C /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
+		104AE64B29D4B787000E0ED2 /* Gallery.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Gallery.json; sourceTree = "<group>"; };
+		104AE64D29D4B877000E0ED2 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
+		104AE64F29D4B96A000E0ED2 /* GalleryGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryGridItemView.swift; sourceTree = "<group>"; };
+		104AE65129D4BC20000E0ED2 /* InsetGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetGalleryView.swift; sourceTree = "<group>"; };
 		10599D47292584EC005E42F0 /* WKWebKit - URLLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebKit - URLLoader.swift"; sourceTree = "<group>"; };
 		10599D4929258F72005E42F0 /* OnlineShop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShop.swift; sourceTree = "<group>"; };
 		10599D4B29258F85005E42F0 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
@@ -166,6 +174,7 @@
 				100B977529B0BABD00D29ED7 /* TheoryView.swift */,
 				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
 				107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */,
+				104AE65129D4BC20000E0ED2 /* InsetGalleryView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 				100B977B29B1210C00D29ED7 /* BlueButton.swift */,
 				100B977129AFE99B00D29ED7 /* CustomButton.swift */,
 				100B977929B1207300D29ED7 /* GrowingButton.swift */,
+				104AE64F29D4B96A000E0ED2 /* GalleryGridItemView.swift */,
 			);
 			path = CustomObjects;
 			sourceTree = "<group>";
@@ -195,9 +205,10 @@
 		1062824629AD495000EBBD3E /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				10283D202938C0F000250E2F /* Theory.json */,
-				1081A5AF291A7A4800666376 /* Patterns.json */,
+				104AE64B29D4B787000E0ED2 /* Gallery.json */,
 				10392FE629C45B1600A7F76C /* Locations.json */,
+				1081A5AF291A7A4800666376 /* Patterns.json */,
+				10283D202938C0F000250E2F /* Theory.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -277,6 +288,7 @@
 				10599D4B29258F85005E42F0 /* Calendar.swift */,
 				10599D4929258F72005E42F0 /* OnlineShop.swift */,
 				10392FE829C45C6700A7F76C /* LocationModel.swift */,
+				104AE64D29D4B877000E0ED2 /* GalleryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -353,6 +365,7 @@
 			files = (
 				1081A5B0291A7A4800666376 /* Patterns.json in Resources */,
 				10283D212938C0F000250E2F /* Theory.json in Resources */,
+				104AE64C29D4B787000E0ED2 /* Gallery.json in Resources */,
 				10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */,
 				107F9DB629B5E4AA00C0C25F /* Chon-gi.mp4 in Resources */,
 				10392FE729C45B1600A7F76C /* Locations.json in Resources */,
@@ -377,9 +390,11 @@
 				100B976F29AFE50100D29ED7 /* MotionAnimationView.swift in Sources */,
 				1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */,
 				10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */,
+				104AE65229D4BC20000E0ED2 /* InsetGalleryView.swift in Sources */,
 				10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */,
 				107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */,
 				107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */,
+				104AE64E29D4B877000E0ED2 /* GalleryModel.swift in Sources */,
 				10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */,
 				10283D252938C36200250E2F /* TheoryDetailsViewModel.swift in Sources */,
 				1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */,
@@ -400,6 +415,7 @@
 				100B976929AFE0E600D29ED7 /* TimerView.swift in Sources */,
 				100B977829B0C07200D29ED7 /* PatternsView.swift in Sources */,
 				10CDA5B028E4D309000B4005 /* Theory.swift in Sources */,
+				104AE65029D4B96A000E0ED2 /* GalleryGridItemView.swift in Sources */,
 				100B977629B0BABD00D29ED7 /* TheoryView.swift in Sources */,
 				100B977229AFE99B00D29ED7 /* CustomButton.swift in Sources */,
 				10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */,
