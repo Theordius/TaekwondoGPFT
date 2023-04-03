@@ -21,7 +21,7 @@ struct CustomButton: View {
         
         NavigationLink(destination: PatternsView(), tag: "A", selection: $selection) { EmptyView() }
         NavigationLink(destination: TheoryView(), tag: "B", selection: $selection) {EmptyView()}
-        NavigationLink(destination: OnlineShopView(url: .publicUrl, viewModel: viewModel), tag: "C", selection: $selection) { EmptyView() }
+        NavigationLink(destination: WebView(viewModel: viewModel), tag: "C", selection: $selection) { EmptyView() }
         NavigationLink(destination: Text("Calendar"), tag: "D", selection: $selection) { EmptyView() }
         
         Button(action: {

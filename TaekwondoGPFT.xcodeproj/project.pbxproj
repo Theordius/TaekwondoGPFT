@@ -55,6 +55,8 @@
 		10CDA5AC28E4D2EF000B4005 /* Patterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5AB28E4D2EF000B4005 /* Patterns.swift */; };
 		10CDA5AE28E4D2FD000B4005 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5AD28E4D2FD000B4005 /* Events.swift */; };
 		10CDA5B028E4D309000B4005 /* Theory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5AF28E4D309000B4005 /* Theory.swift */; };
+		10D821F229DAD2CF00B61924 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F129DAD2CF00B61924 /* Loader.swift */; };
+		10D821F429DAE05500B61924 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F329DAE05500B61924 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -122,6 +124,8 @@
 		10CDA5AB28E4D2EF000B4005 /* Patterns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patterns.swift; sourceTree = "<group>"; };
 		10CDA5AD28E4D2FD000B4005 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		10CDA5AF28E4D309000B4005 /* Theory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theory.swift; sourceTree = "<group>"; };
+		10D821F129DAD2CF00B61924 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		10D821F329DAE05500B61924 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
 				107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */,
 				104AE65129D4BC20000E0ED2 /* InsetGalleryView.swift */,
+				10D821F329DAE05500B61924 /* WebView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				10392FEC29C4600300A7F76C /* MapAnnotationView.swift */,
 				100B976E29AFE50100D29ED7 /* MotionAnimationView.swift */,
 				100B977B29B1210C00D29ED7 /* BlueButton.swift */,
+				10D821F129DAD2CF00B61924 /* Loader.swift */,
 				100B977129AFE99B00D29ED7 /* CustomButton.swift */,
 				100B977929B1207300D29ED7 /* GrowingButton.swift */,
 				104AE64F29D4B96A000E0ED2 /* GalleryGridItemView.swift */,
@@ -400,6 +406,7 @@
 				1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */,
 				10283D232938C28C00250E2F /* TheoryDetailView.swift in Sources */,
 				10392FED29C4600300A7F76C /* MapAnnotationView.swift in Sources */,
+				10D821F429DAE05500B61924 /* WebView.swift in Sources */,
 				100B977C29B1210C00D29ED7 /* BlueButton.swift in Sources */,
 				10599D48292584EC005E42F0 /* WKWebKit - URLLoader.swift in Sources */,
 				1081A5A62919219000666376 /* CalendarView.swift in Sources */,
@@ -421,6 +428,7 @@
 				10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */,
 				1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */,
 				10CDA5AC28E4D2EF000B4005 /* Patterns.swift in Sources */,
+				10D821F229DAD2CF00B61924 /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

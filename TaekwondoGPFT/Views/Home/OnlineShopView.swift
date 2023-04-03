@@ -91,6 +91,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
                 }
                 
                 self.parent.viewModel.showWebTitle.send(title)
+               
             }
             
             /* An observer that observes 'viewModel.valuePublisher' to get value from TextField and
