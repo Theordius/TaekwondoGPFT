@@ -57,6 +57,7 @@
 		10CDA5B028E4D309000B4005 /* Theory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5AF28E4D309000B4005 /* Theory.swift */; };
 		10D821F229DAD2CF00B61924 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F129DAD2CF00B61924 /* Loader.swift */; };
 		10D821F429DAE05500B61924 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F329DAE05500B61924 /* WebView.swift */; };
+		10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F529DAE99D00B61924 /* ProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -126,6 +127,7 @@
 		10CDA5AF28E4D309000B4005 /* Theory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theory.swift; sourceTree = "<group>"; };
 		10D821F129DAD2CF00B61924 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		10D821F329DAE05500B61924 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		10D821F529DAE99D00B61924 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +206,7 @@
 				100B977129AFE99B00D29ED7 /* CustomButton.swift */,
 				100B977929B1207300D29ED7 /* GrowingButton.swift */,
 				104AE64F29D4B96A000E0ED2 /* GalleryGridItemView.swift */,
+				10D821F529DAE99D00B61924 /* ProgressBar.swift */,
 			);
 			path = CustomObjects;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */,
 				104AE65229D4BC20000E0ED2 /* InsetGalleryView.swift in Sources */,
 				10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */,
+				10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */,
 				107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */,
 				107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */,
 				104AE64E29D4B877000E0ED2 /* GalleryModel.swift in Sources */,

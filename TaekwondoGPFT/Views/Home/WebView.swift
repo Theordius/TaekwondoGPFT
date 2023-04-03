@@ -46,7 +46,9 @@ struct WebView: View {
             
             // A simple loader that is shown when WebView is loading any page and hides when loading is finished.
             if showLoader {
-                Loader()
+               ProgressBar()
+                    .frame(width: 200, height: 200)
+                   
             }
         }
     }
