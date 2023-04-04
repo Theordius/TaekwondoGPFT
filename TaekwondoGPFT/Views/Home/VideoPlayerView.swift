@@ -19,18 +19,27 @@ struct VideoPlayerView: View {
     //MARK: - BODY
     var body: some View {
         VStack {
-            VideoPlayer(player: player.avPlayer)
-                .frame(height: 400)
-                .overlay(
-
-                    Image("logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 32, height: 32)
-                        .padding(.top, 6)
-                        .padding(.horizontal, 8)
-                    , alignment: .topLeading
-                )
+            if let player =  player {
+                VideoPlayer(player: player.avPlayer)
+                    .frame(height: 400)
+                    .overlay(
+                        Image("logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 32, height: 32)
+                            .padding(.top, 6)
+                            .padding(.horizontal, 8)
+                        , alignment: .topLeading
+                    )
+            } else {
+                Image("logo")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                    .padding(.top, 6)
+                    .padding(.horizontal, 8)
+            }
+              
         } //: VSTACK
 
         .accentColor(.accentColor)
