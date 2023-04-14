@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+
 class ViewModel: ObservableObject {
     var webViewNavigationPublisher = PassthroughSubject<WebViewNavigation, Never>()
     var showWebTitle = PassthroughSubject<String, Never>()

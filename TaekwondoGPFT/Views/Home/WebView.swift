@@ -11,7 +11,6 @@ struct WebView: View {
     //MARK: - PROPERTIES
     @ObservedObject var viewModel = ViewModel()
     @State var showLoader = false
-    @State var message = ""
     @State var webTitle = ""
     
     //MARK: - BODY
@@ -19,25 +18,14 @@ struct WebView: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                /* Here I created a text field that takes string value and when send
-                 button is clicked 'viewModel.valuePublisher' sends that value to WebView
-                 then WebView sends that value to web app that you will load. In this
-                 project's local .html file can not receive it because it is static you should
-                 test with a web app then it will work because static website can not receive values
-                 at runtime where dynamic web app can */
-                
-                
-                Text(webTitle).font(.title).onReceive(self.viewModel.showWebTitle.receive(on: RunLoop.main)) { value in
+                Text(webTitle).font(.subheadline).onReceive(self.viewModel.showWebTitle.receive(on: RunLoop.main)) { value in
                     self.webTitle = value
                 }
                 
                 /* This is our WebView. Here if you pass .localUrl it will load LocalWebsite.html file
                  into the WebView and if you pass .publicUrl it will load the public website depending on
                  your url provided. See WebView implementation for more info. */
-                OnlineShopView(url: .publicUrl, viewModel: viewModel).overlay (
-                    RoundedRectangle(cornerRadius: 4, style: .circular)
-                        .stroke(Color.gray, lineWidth: 0.5)
-                ).padding(.leading, 20).padding(.trailing, 20)
+                OnlineShopView(url: .publicUrl, viewModel: viewModel)
                 
                
             }.onReceive(self.viewModel.showLoader.receive(on: RunLoop.main)) { value in
