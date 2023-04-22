@@ -1,0 +1,176 @@
+[
+    {
+        "id": "1",
+        "name": "CHON - JI",
+        "description" : "CHON JI jest pierwszym układem formalnym w Taekwon - do, zawiera 19 elementów technicznych. W jęzuku koreńskim Chon JI oznacza niebo - ziemia",
+        "videoName" : "Chon-gi",
+        
+        
+    },
+    
+    {
+        "id": "2",
+        "name": "DAN - GUN",
+        "description" : "DAN - GUN był legendarnym założycielem Korei, układ zawiera 21 elementów technicznych",
+        "videoName" : "Chon-gi",
+        
+    },
+    
+    {
+        "id": "3",
+        "name": "DO - SAN",
+        "description" : "DO - SAN jest pseudonimem koreńskiego patrioty Anh Chang HO, walczącego o niepodległość Korei i szerzenie edukacji. Układ zawiera 24 elementy techniczne",
+        "videoName" : "Chon-gi",
+    },
+    
+    {
+        "id": "4",
+        "name": "WON - HYO",
+        "description" : "WON - HYO był legendarnym buddyjskim mnichem żyjącym w czasach dynastii Sila w VI w., który wprowadził buddyzm do Korei. Układ zawiera 28 elementów technicznych",
+        "videoName" : "Chon-gi",
+        
+    },
+    
+    {
+        "id": "5",
+        "name": "YUL - GOK",
+        "description" : "YUL - GOK to pseudonim wybitnego uczonego Yii nazywanego \"Konfucjuszem Korei\", zawiera 38 element ilość elementów technicznych symbolizuje szerokość geograficzną",
+        "videoName" : "Chon-gi",
+    },
+    
+    {
+        "id": "6",
+        "name": "JOONG - GUN",
+        "description" : "Nazwa układu pochodzi od koreińskiego patriotry Ahn Joong - Gun, który dokonał zamachu stanu na gubernatora Hiro Bumi Ito odpowiedzialnego za przyłączenie Korei do Japonii w 1910 roku. Liczba elementów technicznych symbolizuje wiek poety, w którym został stracony",
+        "videoName" : "Chon-gi",
+    },
+    
+    {
+        "id": "7",
+        "name": "TOI - GYE",
+        "description" : "TOI - GYE to pseudonim literacji wybitenego filozofa i uczonego Yi - Hwang, wielkiego znawcy neokonfukcjonizmu. Ilość elementów technicznych symbolizuje 37 stopniowi szerokości geograficznej, gdzie się urodził",..
+        "videoName" : "Chon-gi",
+    },
+    
+    {
+        "id": "8",
+        "name": "HWA - RANG",
+        "description" : "HWA - RANG to nazwa dobrowolnej organizacji wojskowej skupiającej w swoich szeregach \"kwiat młodzieży\", powstałęj na początku VII wieku za czasów dynastii Silla. 29 elementów technicznych nawiązuje do ówczesnej 29 dywizji elietarnej piechoty, w której rozwijano i doskonalono techniki walki będące pierwowzorem współczesnego Taekwon-do ",
+        "videoName" : "Chon-gi",
+    },
+    
+    {
+           "id": "9",
+           "name": "CHOONG - MOO",
+           "description" : "CHOONG - MOO to imię nadane wielkiemu admirałowi Yi Soon-Sin. Uważa się go za wynalazcę prototypu łodzi podwodnej. Układ zawiera 30 elementów technicznych",
+           "videoName" : "Chon-gi",
+       },
+    
+    {
+            "id": "10",
+            "name": "KWANG - GAE",
+            "description" : "KWANG - GAE to nazwisko XIX któla królestwa Gogueryeo Kwang-Gye-Toh-Wang, który odzyskał dla Korei dużą część dawnych terenów z Mandżurią włącznie. Zawiera 39 elementów technicznych, których liczba odnosi się do do dwóch pierwszych cyfr daty 391 n.e, tj. roku jego wstąpienia na tron",
+            "videoName" : "Chon-gi",..
+        },
+        
+        {
+            "id": "11",
+            "name": "PO - EUN",
+            "description" : "PO - EUN to pseudonim XIV wiecznego poety i badacza natury Jeong Mong - ju, którego poemat 'nie będę służył obcemu władcy, choćbyście mnie ukrzyżwowali tysiąc razy' jest znany każdemy Koerańczykowi. Diagram układu (--) symbolizuje jego wiedność władzy, aż do końca dynastii Koryo",
+            "videoName" : "Chon-gi",
+        },
+        
+        {
+             "id": "12",
+             "name": "GE - BEAK",
+             "description" : "GE - BEAK to nazwisko generała z czasów księstwa Baekje",
+             "videoName" : "Chon-gi",
+         },
+         
+         
+         {
+             "id": "13",
+             "name": "EUI - AM",
+             "description" : "EUI - AM to pseudonim SOn Byong Hi, przywódcy w walce o niepodległość narodową",
+             "videoName" : "Chon-gi"
+         
+         
+         {
+             "id": "14",
+             "name": "CHOONG - JANG",
+             "description" : "CHOONG - JANG to pseudonim generała Kim Dung Ryang z czasów dynastii Lee(XIV w.)",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "15",
+             "name": "JU - CHE",
+             "description" : "JU - CHE to pojęcie filozoficzne określające człowieka jako byt w pełni władający sobą i naturą",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "16",
+             "name": "SAM - IL",
+             "description" : "SAM - IL to ruch narodowowyzwoleńczy związany z 1 marca 1919 r.",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "17",
+             "name": "YOO - SIN",
+             "description" : "YO - SIN to nazwisko generała Kim Yoo SIn, naczelnego wodza z czasów dynastii Koryo",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "18",
+             "name": "CHOI - YONG",
+             "description" : "CHOI - YONG to nazwisko naczelnego dowódcy armii Choi Tong z czasów dynastii Koryo",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "19",
+             "name": "YONG - GAE",
+             "description" : "YONG - GAE - to nazwisko generała z czasów królestwa Goguryeo Yon Somoon",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "20",
+             "name": "UL - JI",
+             "description" : "UL - JI to nazwisko generała UI-JI Moon Dok, któremu powiodła się obrona kraju przed wrogą armią liczącą ok. 1 miliona żołnieży",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "21",
+             "name": "MOON - MOO",
+             "description" : "MOON - MOO to imię 30 króla z dynastii Silla",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "22",
+             "name": "SO - SAN",
+             "description" : "SO - SAN to pseudonim mnicha Choi Hyong Ung z czasów dynastii Lee, twórcy klasztornych sił zbrojnych dla wsparcia działań wojennych zmierzających do odparcia najazdu Japończyków na półwysep koreński",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "23",
+             "name": "SE - JONG",
+             "description" : "SE - JONG to nazwisko największego koerańskiego króla, wynalazcy alfabetu koreńskiego w 1443 r.",
+             "videoName" : "Chon-gi",
+         },
+         
+         {
+             "id": "24",
+             "name": "TONG - IL",
+             "description" : "TONG - IL oznacza dosłownie zjednoczenie",
+             "videoName" : "Chon-gi",
+             
+         }
+]
+

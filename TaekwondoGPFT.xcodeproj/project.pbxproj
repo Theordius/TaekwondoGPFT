@@ -48,6 +48,11 @@
 		1081A5B0291A7A4800666376 /* Patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 1081A5AF291A7A4800666376 /* Patterns.json */; };
 		1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */; };
 		1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B5291BDF3600666376 /* OnlineShopView.swift */; };
+		10A13E5929F4544600633D6F /* TaekwondoGPFTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */; };
+		10A13E6629F4546300633D6F /* TaekwondoGPFTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */; };
+		10A13E6829F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */; };
+		10A13E6F29F454F300633D6F /* Bundle-CodableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6E29F454F300633D6F /* Bundle-CodableExtensionTests.swift */; };
+		10A13E7129F4663500633D6F /* CorruptedJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 10A13E7029F4663500633D6F /* CorruptedJSON.json */; };
 		10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CDA59128E4CF93000B4005 /* Assets.xcassets */; };
 		10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */; };
 		10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */; };
@@ -73,6 +78,23 @@
 			script = "# rctool\n";
 		};
 /* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		10A13E5A29F4544600633D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10CDA57D28E4CF92000B4005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CDA58428E4CF92000B4005;
+			remoteInfo = TaekwondoGPFT;
+		};
+		10A13E6929F4546300633D6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10CDA57D28E4CF92000B4005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10CDA58428E4CF92000B4005;
+			remoteInfo = TaekwondoGPFT;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		100B976129AFDA3100D29ED7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -117,6 +139,13 @@
 		1081A5AF291A7A4800666376 /* Patterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Patterns.json; sourceTree = "<group>"; };
 		1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopViewModel.swift; sourceTree = "<group>"; };
 		1081A5B5291BDF3600666376 /* OnlineShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopView.swift; sourceTree = "<group>"; };
+		10A13E5629F4544600633D6F /* TaekwondoGPFTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTTests.swift; sourceTree = "<group>"; };
+		10A13E6329F4546300633D6F /* TaekwondoGPFTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTUITests.swift; sourceTree = "<group>"; };
+		10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10A13E6E29F454F300633D6F /* Bundle-CodableExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-CodableExtensionTests.swift"; sourceTree = "<group>"; };
+		10A13E7029F4663500633D6F /* CorruptedJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CorruptedJSON.json; sourceTree = "<group>"; };
 		10CDA58528E4CF92000B4005 /* TaekwondoGPFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaekwondoGPFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CDA59128E4CF93000B4005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryViewModel.swift; sourceTree = "<group>"; };
@@ -131,6 +160,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		10A13E5329F4544600633D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A13E6029F4546300633D6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10CDA58228E4CF92000B4005 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +261,7 @@
 				10392FE629C45B1600A7F76C /* Locations.json */,
 				1081A5AF291A7A4800666376 /* Patterns.json */,
 				10283D202938C0F000250E2F /* Theory.json */,
+				10A13E7029F4663500633D6F /* CorruptedJSON.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -230,10 +274,30 @@
 			path = Videos;
 			sourceTree = "<group>";
 		};
+		10A13E5729F4544600633D6F /* TaekwondoGPFTTests */ = {
+			isa = PBXGroup;
+			children = (
+				10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */,
+				10A13E6E29F454F300633D6F /* Bundle-CodableExtensionTests.swift */,
+			);
+			path = TaekwondoGPFTTests;
+			sourceTree = "<group>";
+		};
+		10A13E6429F4546300633D6F /* TaekwondoGPFTUITests */ = {
+			isa = PBXGroup;
+			children = (
+				10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */,
+				10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */,
+			);
+			path = TaekwondoGPFTUITests;
+			sourceTree = "<group>";
+		};
 		10CDA57C28E4CF92000B4005 = {
 			isa = PBXGroup;
 			children = (
 				10CDA58728E4CF92000B4005 /* TaekwondoGPFT */,
+				10A13E5729F4544600633D6F /* TaekwondoGPFTTests */,
+				10A13E6429F4546300633D6F /* TaekwondoGPFTUITests */,
 				10CDA58628E4CF92000B4005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -242,6 +306,8 @@
 			isa = PBXGroup;
 			children = (
 				10CDA58528E4CF92000B4005 /* TaekwondoGPFT.app */,
+				10A13E5629F4544600633D6F /* TaekwondoGPFTTests.xctest */,
+				10A13E6329F4546300633D6F /* TaekwondoGPFTUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -315,6 +381,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		10A13E5529F4544600633D6F /* TaekwondoGPFTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A13E5C29F4544700633D6F /* Build configuration list for PBXNativeTarget "TaekwondoGPFTTests" */;
+			buildPhases = (
+				10A13E5229F4544600633D6F /* Sources */,
+				10A13E5329F4544600633D6F /* Frameworks */,
+				10A13E5429F4544600633D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10A13E5B29F4544600633D6F /* PBXTargetDependency */,
+			);
+			name = TaekwondoGPFTTests;
+			productName = TaekwondoGPFTTests;
+			productReference = 10A13E5629F4544600633D6F /* TaekwondoGPFTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10A13E6229F4546300633D6F /* TaekwondoGPFTUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10A13E6B29F4546300633D6F /* Build configuration list for PBXNativeTarget "TaekwondoGPFTUITests" */;
+			buildPhases = (
+				10A13E5F29F4546300633D6F /* Sources */,
+				10A13E6029F4546300633D6F /* Frameworks */,
+				10A13E6129F4546300633D6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10A13E6A29F4546300633D6F /* PBXTargetDependency */,
+			);
+			name = TaekwondoGPFTUITests;
+			productName = TaekwondoGPFTUITests;
+			productReference = 10A13E6329F4546300633D6F /* TaekwondoGPFTUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		10CDA58428E4CF92000B4005 /* TaekwondoGPFT */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10CDA59928E4CF93000B4005 /* Build configuration list for PBXNativeTarget "TaekwondoGPFT" */;
@@ -340,9 +442,17 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					10A13E5529F4544600633D6F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 10CDA58428E4CF92000B4005;
+					};
+					10A13E6229F4546300633D6F = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 10CDA58428E4CF92000B4005;
+					};
 					10CDA58428E4CF92000B4005 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -363,17 +473,34 @@
 			projectRoot = "";
 			targets = (
 				10CDA58428E4CF92000B4005 /* TaekwondoGPFT */,
+				10A13E5529F4544600633D6F /* TaekwondoGPFTTests */,
+				10A13E6229F4546300633D6F /* TaekwondoGPFTUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		10A13E5429F4544600633D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A13E6129F4546300633D6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10CDA58328E4CF92000B4005 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1081A5B0291A7A4800666376 /* Patterns.json in Resources */,
 				10283D212938C0F000250E2F /* Theory.json in Resources */,
+				10A13E7129F4663500633D6F /* CorruptedJSON.json in Resources */,
 				104AE64C29D4B787000E0ED2 /* Gallery.json in Resources */,
 				10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */,
 				107F9DB629B5E4AA00C0C25F /* Chon-gi.mp4 in Resources */,
@@ -384,6 +511,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		10A13E5229F4544600633D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A13E6F29F454F300633D6F /* Bundle-CodableExtensionTests.swift in Sources */,
+				10A13E5929F4544600633D6F /* TaekwondoGPFTTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10A13E5F29F4546300633D6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10A13E6829F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift in Sources */,
+				10A13E6629F4546300633D6F /* TaekwondoGPFTUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		10CDA58128E4CF92000B4005 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,7 +583,94 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		10A13E5B29F4544600633D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CDA58428E4CF92000B4005 /* TaekwondoGPFT */;
+			targetProxy = 10A13E5A29F4544600633D6F /* PBXContainerItemProxy */;
+		};
+		10A13E6A29F4546300633D6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10CDA58428E4CF92000B4005 /* TaekwondoGPFT */;
+			targetProxy = 10A13E6929F4546300633D6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		10A13E5D29F4544700633D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MD5T682WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaekwondoGPFT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TaekwondoGPFT";
+			};
+			name = Debug;
+		};
+		10A13E5E29F4544700633D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MD5T682WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFTTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaekwondoGPFT.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TaekwondoGPFT";
+			};
+			name = Release;
+		};
+		10A13E6C29F4546300633D6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MD5T682WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaekwondoGPFT;
+			};
+			name = Debug;
+		};
+		10A13E6D29F4546300633D6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4MD5T682WB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFTUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TaekwondoGPFT;
+			};
+			name = Release;
+		};
 		10CDA59728E4CF93000B4005 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -626,6 +858,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		10A13E5C29F4544700633D6F /* Build configuration list for PBXNativeTarget "TaekwondoGPFTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A13E5D29F4544700633D6F /* Debug */,
+				10A13E5E29F4544700633D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10A13E6B29F4546300633D6F /* Build configuration list for PBXNativeTarget "TaekwondoGPFTUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10A13E6C29F4546300633D6F /* Debug */,
+				10A13E6D29F4546300633D6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		10CDA58028E4CF92000B4005 /* Build configuration list for PBXProject "TaekwondoGPFT" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

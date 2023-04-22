@@ -28,6 +28,28 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "10A13E5529F4544600633D6F"
+               BuildableName = "TaekwondoGPFTTests.xctest"
+               BlueprintName = "TaekwondoGPFTTests"
+               ReferencedContainer = "container:TaekwondoGPFT.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "10A13E6229F4546300633D6F"
+               BuildableName = "TaekwondoGPFTUITests.xctest"
+               BlueprintName = "TaekwondoGPFTUITests"
+               ReferencedContainer = "container:TaekwondoGPFT.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
