@@ -11,6 +11,11 @@ import XCTest
 final class Bundle_CodableExtensionTests: XCTestCase {
     var sut: Bundle!
     
+    enum TestError: Error, Equatable {
+        case fileNotFound(_ message: String = "")
+        case fileDataCorrupted(_ message: String = "")
+    }
+    
     override func setUpWithError() throws {
         try super.setUpWithError()
         sut = Bundle.main
@@ -30,10 +35,22 @@ final class Bundle_CodableExtensionTests: XCTestCase {
     
     func testBundleLoadsNonExistingFile() {
        // TODO
+        do {
+            let _: [Patterns] = sut.decode("NonExistingFile.json")
+        } catch {
+            return
+        }
+        XCTFail("Should throw \(TestError.fileNotFound())")
     }
     
     func testBundleLoadsCorruptedFile() {
        //TODO - Will have to change the way JSON is being loaded
+        do {
+            let _: [Patterns] = sut.decode("CorruptedJSON.json")
+        } catch {
+            return
+        }
+        XCTFail("Should throw \(TestError.fileDataCorrupted())")
     }
     
     func testPerformanceExample() throws {
