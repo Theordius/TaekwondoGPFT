@@ -10,6 +10,15 @@ import SwiftUI
 
 extension PatternsView {
     class ViewModel: ObservableObject {
-       @Published public var patterns: [Patterns] = Bundle.main.decode("Patterns.json")
+       @Published public var patterns = [Patterns]()
+        
+        init() {
+            let loader = JSONLoader()
+            do {
+                patterns = try loader.loadJSON("Patterns.json")
+            } catch {
+                fatalError("File not found")
+            }
+        }
     }
 }

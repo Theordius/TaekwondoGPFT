@@ -51,9 +51,9 @@
 		10A13E5929F4544600633D6F /* TaekwondoGPFTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */; };
 		10A13E6629F4546300633D6F /* TaekwondoGPFTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */; };
 		10A13E6829F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */; };
-		10A13E6F29F454F300633D6F /* Bundle-CodableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6E29F454F300633D6F /* Bundle-CodableExtensionTests.swift */; };
 		10A13E7129F4663500633D6F /* CorruptedJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 10A13E7029F4663500633D6F /* CorruptedJSON.json */; };
 		10A13E7329F5AA4200633D6F /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E7229F5AA4200633D6F /* JSONLoader.swift */; };
+		10A13E7B29F7057E00633D6F /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E7A29F7057E00633D6F /* JSONLoaderTests.swift */; };
 		10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CDA59128E4CF93000B4005 /* Assets.xcassets */; };
 		10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */; };
 		10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */; };
@@ -145,9 +145,9 @@
 		10A13E6329F4546300633D6F /* TaekwondoGPFTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTUITests.swift; sourceTree = "<group>"; };
 		10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		10A13E6E29F454F300633D6F /* Bundle-CodableExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-CodableExtensionTests.swift"; sourceTree = "<group>"; };
 		10A13E7029F4663500633D6F /* CorruptedJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CorruptedJSON.json; sourceTree = "<group>"; };
 		10A13E7229F5AA4200633D6F /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		10A13E7A29F7057E00633D6F /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
 		10CDA58528E4CF92000B4005 /* TaekwondoGPFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaekwondoGPFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CDA59128E4CF93000B4005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryViewModel.swift; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */,
-				10A13E6E29F454F300633D6F /* Bundle-CodableExtensionTests.swift */,
+				10A13E7A29F7057E00633D6F /* JSONLoaderTests.swift */,
 			);
 			path = TaekwondoGPFTTests;
 			sourceTree = "<group>";
@@ -518,7 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10A13E6F29F454F300633D6F /* Bundle-CodableExtensionTests.swift in Sources */,
+				10A13E7B29F7057E00633D6F /* JSONLoaderTests.swift in Sources */,
 				10A13E5929F4544600633D6F /* TaekwondoGPFTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
