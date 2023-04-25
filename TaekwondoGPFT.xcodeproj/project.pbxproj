@@ -64,6 +64,7 @@
 		10D821F229DAD2CF00B61924 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F129DAD2CF00B61924 /* Loader.swift */; };
 		10D821F429DAE05500B61924 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F329DAE05500B61924 /* WebView.swift */; };
 		10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F529DAE99D00B61924 /* ProgressBar.swift */; };
+		AEAFAB0929F7C3C700169C35 /* AppMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB0829F7C3C700169C35 /* AppMonitoring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -159,6 +160,7 @@
 		10D821F129DAD2CF00B61924 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		10D821F329DAE05500B61924 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		10D821F529DAE99D00B61924 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		AEAFAB0829F7C3C700169C35 /* AppMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMonitoring.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,13 +200,6 @@
 				107F9DA529B4EA5500C0C25F /* TheoryRow.swift */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		100B977029AFE98100D29ED7 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		10392FF029C4A09600A7F76C /* Services */ = {
@@ -323,7 +318,7 @@
 				10CDA5A028E4D195000B4005 /* Views */,
 				107F9DB429B5E49400C0C25F /* Videos */,
 				10392FF029C4A09600A7F76C /* Services */,
-				100B977029AFE98100D29ED7 /* Supporting Files */,
+				AEAFAB0729F7C3B000169C35 /* SupportingFiles */,
 				10CDA59C28E4D0C6000B4005 /* Extenions */,
 				10CDA59128E4CF93000B4005 /* Assets.xcassets */,
 				100B976129AFDA3100D29ED7 /* Info.plist */,
@@ -379,6 +374,14 @@
 				10392FF329C8587A00A7F76C /* CustomObjects */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AEAFAB0729F7C3B000169C35 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AEAFAB0829F7C3C700169C35 /* AppMonitoring.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -539,6 +542,7 @@
 				100B976D29AFE40600D29ED7 /* CreditsView.swift in Sources */,
 				100B977429B0B58400D29ED7 /* BlueCapsule.swift in Sources */,
 				100B977A29B1207300D29ED7 /* GrowingButton.swift in Sources */,
+				AEAFAB0929F7C3C700169C35 /* AppMonitoring.swift in Sources */,
 				10392FE929C45C6700A7F76C /* LocationModel.swift in Sources */,
 				10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */,
 				1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */,
@@ -609,7 +613,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MD5T682WB;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFTTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -628,7 +632,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MD5T682WB;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFTTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -646,7 +650,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MD5T682WB;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFTUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -664,7 +668,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MD5T682WB;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pl.rgkonsulting.TaekwondoGPFTUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

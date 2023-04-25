@@ -20,7 +20,20 @@ struct CustomButton: View {
     var body: some View {
         
         NavigationLink(destination: PatternsView(), tag: "A", selection: $selection) { EmptyView() }
-        NavigationLink(destination: TheoryView(), tag: "B", selection: $selection) {EmptyView()}
+        if let model = TheoryView.ViewModel() {
+            NavigationLink(
+                destination: TheoryView(viewModel: model),
+                tag: "B",
+                selection: $selection
+            ) { EmptyView() }
+        } else {
+            NavigationLink(
+                destination: EmptyView(),
+                tag: "B",
+                selection: $selection
+            ) { EmptyView() }
+        }
+        
         NavigationLink(destination: WebView(viewModel: viewModel), tag: "C", selection: $selection) { EmptyView() }
         NavigationLink(destination: Text("Calendar"), tag: "D", selection: $selection) { EmptyView() }
         

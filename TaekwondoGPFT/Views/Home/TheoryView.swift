@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TheoryView: View {
     //MARK: - PROPERTIES
-    @StateObject var viewModel = Self.ViewModel()
+    @StateObject var viewModel: Self.ViewModel
     
     //MARK: - BODY
     var body: some View {
@@ -29,6 +29,6 @@ struct TheoryView: View {
 //MARK: - PREVIEW
 struct TheoryView_Previews: PreviewProvider {
     static var previews: some View {
-        TheoryView()
+        TheoryView(viewModel: .init()!)
     }
 }

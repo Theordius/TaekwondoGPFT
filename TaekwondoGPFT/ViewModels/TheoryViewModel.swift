@@ -9,15 +9,22 @@ import Foundation
 import SwiftUI
 
 extension TheoryView {
-    class ViewModel: ObservableObject {
-        @Published public var theory = [Theory]()
+    final class ViewModel: ObservableObject {
+        @Published var theory: [Theory] = []
          
-         init() {
-             let loader = JSONLoader()
+         init?(
+            fileName: String = "Theory.json",
+            loader: JSONLoader = JSONLoader(),
+            appMonitoring: AppMonitoring = AppMonitoring()
+         ) {
              do {
-                 theory = try loader.loadJSON("Theory.json")
+                 theory = try loader.loadJSON(fileName)
              } catch {
-                 fatalError("File not found")
+                 appMonitoring.record(
+                    error: .jsonDecodingFailure(undelyingError: error)
+                 )
+                 
+                 return nil
              }
          }
      }
