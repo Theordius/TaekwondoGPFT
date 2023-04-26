@@ -51,9 +51,9 @@
 		10A13E5929F4544600633D6F /* TaekwondoGPFTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */; };
 		10A13E6629F4546300633D6F /* TaekwondoGPFTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */; };
 		10A13E6829F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */; };
-		10A13E6F29F454F300633D6F /* Bundle-CodableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6E29F454F300633D6F /* Bundle-CodableExtensionTests.swift */; };
 		10A13E7129F4663500633D6F /* CorruptedJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 10A13E7029F4663500633D6F /* CorruptedJSON.json */; };
 		10A13E7329F5AA4200633D6F /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E7229F5AA4200633D6F /* JSONLoader.swift */; };
+		10A13E7B29F7057E00633D6F /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E7A29F7057E00633D6F /* JSONLoaderTests.swift */; };
 		10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CDA59128E4CF93000B4005 /* Assets.xcassets */; };
 		10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */; };
 		10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */; };
@@ -64,6 +64,7 @@
 		10D821F229DAD2CF00B61924 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F129DAD2CF00B61924 /* Loader.swift */; };
 		10D821F429DAE05500B61924 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F329DAE05500B61924 /* WebView.swift */; };
 		10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F529DAE99D00B61924 /* ProgressBar.swift */; };
+		10DBBDBC29F8FE8E008AFF80 /* AppMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -145,9 +146,9 @@
 		10A13E6329F4546300633D6F /* TaekwondoGPFTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTUITests.swift; sourceTree = "<group>"; };
 		10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		10A13E6E29F454F300633D6F /* Bundle-CodableExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-CodableExtensionTests.swift"; sourceTree = "<group>"; };
 		10A13E7029F4663500633D6F /* CorruptedJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CorruptedJSON.json; sourceTree = "<group>"; };
 		10A13E7229F5AA4200633D6F /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		10A13E7A29F7057E00633D6F /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
 		10CDA58528E4CF92000B4005 /* TaekwondoGPFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaekwondoGPFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CDA59128E4CF93000B4005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryViewModel.swift; sourceTree = "<group>"; };
@@ -159,6 +160,8 @@
 		10D821F129DAD2CF00B61924 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		10D821F329DAE05500B61924 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		10D821F529DAE99D00B61924 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMonitoring.swift; sourceTree = "<group>"; };
+		10DBBDBD29F9043B008AFF80 /* TaekwondoGPFT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaekwondoGPFT.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,7 @@
 		100B977029AFE98100D29ED7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -280,7 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */,
-				10A13E6E29F454F300633D6F /* Bundle-CodableExtensionTests.swift */,
+				10A13E7A29F7057E00633D6F /* JSONLoaderTests.swift */,
 			);
 			path = TaekwondoGPFTTests;
 			sourceTree = "<group>";
@@ -317,6 +321,7 @@
 		10CDA58728E4CF92000B4005 /* TaekwondoGPFT */ = {
 			isa = PBXGroup;
 			children = (
+				10DBBDBD29F9043B008AFF80 /* TaekwondoGPFT.entitlements */,
 				100B976529AFE0C100D29ED7 /* App */,
 				1062824629AD495000EBBD3E /* Data */,
 				10CDA59E28E4D159000B4005 /* ViewModels */,
@@ -518,7 +523,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10A13E6F29F454F300633D6F /* Bundle-CodableExtensionTests.swift in Sources */,
+				10A13E7B29F7057E00633D6F /* JSONLoaderTests.swift in Sources */,
 				10A13E5929F4544600633D6F /* TaekwondoGPFTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +544,7 @@
 				100B976D29AFE40600D29ED7 /* CreditsView.swift in Sources */,
 				100B977429B0B58400D29ED7 /* BlueCapsule.swift in Sources */,
 				100B977A29B1207300D29ED7 /* GrowingButton.swift in Sources */,
+				10DBBDBC29F8FE8E008AFF80 /* AppMonitoring.swift in Sources */,
 				10392FE929C45C6700A7F76C /* LocationModel.swift in Sources */,
 				10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */,
 				1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */,
@@ -797,6 +803,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				Appearance = "";
+				CODE_SIGN_ENTITLEMENTS = TaekwondoGPFT/TaekwondoGPFT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MD5T682WB;
@@ -831,6 +838,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				Appearance = "";
+				CODE_SIGN_ENTITLEMENTS = TaekwondoGPFT/TaekwondoGPFT.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4MD5T682WB;

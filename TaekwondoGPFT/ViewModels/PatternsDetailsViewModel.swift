@@ -10,6 +10,19 @@ import SwiftUI
 
 extension PatternDetailView {
     class ViewModel: ObservableObject {
-        @Published public var patterns: [Patterns] = Bundle.main.decode("Patterns.json")
+        @Published public var patterns: [Patterns] = []
+        
+        private let loader = JSONLoader()
+        private let fileName: String = "Patterns.json"
+        private let appMonitoring: AppMonitoring = AppMonitoring()
+        
+        init?() {
+            do {
+                patterns = try loader.loadJSON(fileName)
+            } catch {
+                appMonitoring.recordError()
+                return nil
+            }
+        }
     }
 }
