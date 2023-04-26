@@ -10,15 +10,19 @@ import SwiftUI
 
 extension TheoryDetailView {
     class ViewModel: ObservableObject {
-        @Published public var theory = [Theory]()
-         
-         init() {
-             let loader = JSONLoader()
-             do {
-                 theory = try loader.loadJSON("Theory.json")
-             } catch {
-                 fatalError("File not found")
-             }
-         }
-     }
- }
+        @Published public var theory: [Theory] = []
+        
+        private let loader = JSONLoader()
+        private let fileName: String = "Theory.json"
+        private let appMonitoring: AppMonitoring = AppMonitoring()
+        
+        init?() {
+            do {
+                theory = try loader.loadJSON(fileName)
+            } catch {
+                appMonitoring.recordError()
+                return nil
+            }
+        }
+    }
+}

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PatternsView: View {
     //MARK: - PROPERTIES
-    @StateObject var viewModel = Self.ViewModel()
+    @StateObject var viewModel = Self.ViewModel()!
     
     //MARK: - BODY
     var body: some View {
