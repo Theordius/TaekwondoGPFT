@@ -65,6 +65,9 @@
 		10D821F429DAE05500B61924 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F329DAE05500B61924 /* WebView.swift */; };
 		10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F529DAE99D00B61924 /* ProgressBar.swift */; };
 		10DBBDBC29F8FE8E008AFF80 /* AppMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */; };
+		AEAFAB0C29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */; };
+		AEAFAB0E29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */; };
+		AEAFAB1029FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -162,6 +165,9 @@
 		10D821F529DAE99D00B61924 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 		10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMonitoring.swift; sourceTree = "<group>"; };
 		10DBBDBD29F9043B008AFF80 /* TaekwondoGPFT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaekwondoGPFT.entitlements; sourceTree = "<group>"; };
+		AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractJsonPopulatedViewModel.swift; sourceTree = "<group>"; };
+		AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherAbstractJsonPopulatedViewModel.swift; sourceTree = "<group>"; };
+		AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YetAnotherAbstractJsonPopulatedViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +356,7 @@
 		10CDA59E28E4D159000B4005 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AEAFAB0A29FA6EBE00169C35 /* Generics */,
 				10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */,
 				10283D242938C36200250E2F /* TheoryDetailsViewModel.swift */,
 				10CDA5A928E4D249000B4005 /* PatternsViewModel.swift */,
@@ -384,6 +391,16 @@
 				10392FF329C8587A00A7F76C /* CustomObjects */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		AEAFAB0A29FA6EBE00169C35 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */,
+				AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */,
+				AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */,
+			);
+			path = Generics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,6 +590,7 @@
 				107F9DB329B5E45200C0C25F /* VideoPlayerService.swift in Sources */,
 				10599D4C29258F85005E42F0 /* Calendar.swift in Sources */,
 				107F9DB829B5EC6100C0C25F /* VideoPlayerView.swift in Sources */,
+				AEAFAB0E29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift in Sources */,
 				100B976B29AFE10A00D29ED7 /* GalleryView.swift in Sources */,
 				1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */,
 				100B976729AFE0D100D29ED7 /* MapView.swift in Sources */,
@@ -580,6 +598,7 @@
 				100B976929AFE0E600D29ED7 /* TimerView.swift in Sources */,
 				10A13E7329F5AA4200633D6F /* JSONLoader.swift in Sources */,
 				100B977829B0C07200D29ED7 /* PatternsView.swift in Sources */,
+				AEAFAB0C29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift in Sources */,
 				10CDA5B028E4D309000B4005 /* Theory.swift in Sources */,
 				104AE65029D4B96A000E0ED2 /* GalleryGridItemView.swift in Sources */,
 				100B977629B0BABD00D29ED7 /* TheoryView.swift in Sources */,
@@ -587,6 +606,7 @@
 				10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */,
 				1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */,
 				10CDA5AC28E4D2EF000B4005 /* Patterns.swift in Sources */,
+				AEAFAB1029FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift in Sources */,
 				10D821F229DAD2CF00B61924 /* Loader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -815,7 +835,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -850,7 +870,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
