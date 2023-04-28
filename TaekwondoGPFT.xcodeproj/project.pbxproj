@@ -48,6 +48,7 @@
 		1081A5B0291A7A4800666376 /* Patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 1081A5AF291A7A4800666376 /* Patterns.json */; };
 		1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */; };
 		1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B5291BDF3600666376 /* OnlineShopView.swift */; };
+		108F13E329FAEEFF0037E0B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 108F13E529FAEEFF0037E0B0 /* Localizable.strings */; };
 		10A13E5929F4544600633D6F /* TaekwondoGPFTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */; };
 		10A13E6629F4546300633D6F /* TaekwondoGPFTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */; };
 		10A13E6829F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */; };
@@ -141,6 +142,9 @@
 		1081A5AF291A7A4800666376 /* Patterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Patterns.json; sourceTree = "<group>"; };
 		1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopViewModel.swift; sourceTree = "<group>"; };
 		1081A5B5291BDF3600666376 /* OnlineShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopView.swift; sourceTree = "<group>"; };
+		108F13E429FAEEFF0037E0B0 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		108F13E629FAEF310037E0B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		108F13E729FAEF3D0037E0B0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		10A13E5629F4544600633D6F /* TaekwondoGPFTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTTests.swift; sourceTree = "<group>"; };
 		10A13E6329F4546300633D6F /* TaekwondoGPFTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +333,7 @@
 				107F9DB429B5E49400C0C25F /* Videos */,
 				10392FF029C4A09600A7F76C /* Services */,
 				100B977029AFE98100D29ED7 /* Supporting Files */,
+				10DBBDC429FAB341008AFF80 /* Resources */,
 				10CDA59C28E4D0C6000B4005 /* Extenions */,
 				10CDA59128E4CF93000B4005 /* Assets.xcassets */,
 				100B976129AFDA3100D29ED7 /* Info.plist */,
@@ -384,6 +389,14 @@
 				10392FF329C8587A00A7F76C /* CustomObjects */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		10DBBDC429FAB341008AFF80 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				108F13E529FAEEFF0037E0B0 /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,12 +481,13 @@
 			};
 			buildConfigurationList = 10CDA58028E4CF92000B4005 /* Build configuration list for PBXProject "TaekwondoGPFT" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = pl;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 				pl,
+				en,
+				es,
 			);
 			mainGroup = 10CDA57C28E4CF92000B4005;
 			productRefGroup = 10CDA58628E4CF92000B4005 /* Products */;
@@ -511,6 +525,7 @@
 				10A13E7129F4663500633D6F /* CorruptedJSON.json in Resources */,
 				104AE64C29D4B787000E0ED2 /* Gallery.json in Resources */,
 				10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */,
+				108F13E329FAEEFF0037E0B0 /* Localizable.strings in Resources */,
 				107F9DB629B5E4AA00C0C25F /* Chon-gi.mp4 in Resources */,
 				10392FE729C45B1600A7F76C /* Locations.json in Resources */,
 			);
@@ -605,6 +620,19 @@
 			targetProxy = 10A13E6929F4546300633D6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		108F13E529FAEEFF0037E0B0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				108F13E429FAEEFF0037E0B0 /* pl */,
+				108F13E629FAEF310037E0B0 /* en */,
+				108F13E729FAEF3D0037E0B0 /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		10A13E5D29F4544700633D6F /* Debug */ = {
