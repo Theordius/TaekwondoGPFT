@@ -9,10 +9,10 @@ import SwiftUI
 
 struct MainScreen: View {
     //MARK: - PROPERTIES
-    private var mainPage = String(localized: "Strona Główna")
-    private var timer =  String(localized: "Timer")
-    private var ourSections = String(localized: "Nasze Sekcje")
-    private var gallery = String(localized: "Galeria")
+    private let mainPage = String(localized: "Strona Główna")
+    private let timer =  String(localized: "Timer")
+    private let ourSections = String(localized: "Nasze Sekcje")
+    private let gallery = String(localized: "Galeria")
     
     //MARK: - BODY
     var body: some View {
