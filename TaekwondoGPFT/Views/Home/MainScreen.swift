@@ -9,6 +9,10 @@ import SwiftUI
 
 struct MainScreen: View {
     //MARK: - PROPERTIES
+    private let mainPage = String(localized: "Strona Główna")
+    private let timer =  String(localized: "Timer")
+    private let ourSections = String(localized: "Nasze Sekcje")
+    private let gallery = String(localized: "Galeria")
     
     //MARK: - BODY
     var body: some View {
@@ -16,28 +20,28 @@ struct MainScreen: View {
             ContentView()
                 .tabItem {
                     Image(systemName: "figure.martial.arts")
-                    Text("Strona Główna")
+                    Text(mainPage)
                     
                 }
             
             TimerView()
                 .tabItem {
                     Image(systemName: "timer")
-                    Text("Timer")
+                    Text(timer)
                     
                 }
             
             MapView()
                 .tabItem {
                     Image(systemName: "map")
-                    Text("Nasze Sekcje")
+                    Text(ourSections)
                     
                 }
             
             GalleryView()
                 .tabItem {
                     Image(systemName: "photo")
-                    Text("Galeria")
+                    Text(gallery)
                     
                 }
         } //: TAB
