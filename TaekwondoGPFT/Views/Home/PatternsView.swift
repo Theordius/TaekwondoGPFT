@@ -14,7 +14,7 @@ struct PatternsView: View {
     //MARK: - BODY
     var body: some View {
             List {
-                ForEach(viewModel.patterns) { item in
+                ForEach(viewModel.model) { item in
                     NavigationLink(destination: PatternDetailView(pattern: item)) {
                         PatternRow(pattern: item)
                             .padding()
