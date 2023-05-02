@@ -19,47 +19,37 @@ struct CustomButton: View {
     //MARK: - BODY
     var body: some View {
         
-        NavigationLink(
-            destination: PatternsView(),
-            tag: "A",
-            selection: $selection) { EmptyView() }
-        
-        NavigationLink(
-            destination: TheoryView(),
-            tag: "B",
-            selection: $selection) {EmptyView()}
-        
-        NavigationLink(
-            destination: WebView(viewModel: viewModel),
-            tag: "C",
-            selection: $selection) { EmptyView() }
-        
-        NavigationLink(
-            destination: Text("Calendar"),
-            tag: "D",
-            selection: $selection) { EmptyView() }
-        
-        Button(action: {
-            selection = tag
-        }) {
-            VStack(alignment: .center) {
-                Text(title)
-                   
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(.accentColor)
-                
-                Text(subtitle)
-                   
-                    .font(.subheadline)
-                    .fontWeight(.medium)
-                    .foregroundColor(.white)
-            }
-            .fixedSize(horizontal: true, vertical: false)
-            .frame(width: 200)
-        } //: BUTTON
-    }
-}
+        NavigationLink(tag: tag, selection: $selection) {
+                  switch tag {
+                  case "A":
+                      PatternsView()
+                  case "B":
+                      TheoryView()
+                  case "C":
+                      WebView(viewModel: viewModel)
+                  case "D":
+                      Text("Calendar")
+                  default:
+                      EmptyView()
+                  }
+              } label: {
+                  VStack(alignment: .center) {
+                      Text(title)
+                          .font(.headline)
+                          .fontWeight(.bold)
+                          .foregroundColor(.accentColor)
+                      
+                      Text(subtitle)
+                         
+                          .font(.subheadline)
+                          .fontWeight(.medium)
+                          .foregroundColor(.white)
+                  }
+                  .fixedSize(horizontal: true, vertical: false)
+                  .frame(width: 200)
+              }
+          }
+      }
 
 
 //MARK: - PREVIEW

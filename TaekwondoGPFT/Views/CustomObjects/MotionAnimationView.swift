@@ -12,6 +12,7 @@ struct MotionAnimationView: View {
     
     @State private var randomCircle = Int.random(in: 12...16)
     @State private var isAnimating: Bool = false
+  
     
     //MARK: - FUNCTIONS
     
@@ -56,7 +57,7 @@ struct MotionAnimationView: View {
                         .animation(Animation.interpolatingSpring(stiffness: 0.5, damping: 0.5)
                             .repeatForever()
                             .speed(randomSpeed())
-                            .delay(randomDelay())
+                            .delay(randomDelay()), value: 1.0
                         )
                         .onAppear(perform: {
                             isAnimating = true

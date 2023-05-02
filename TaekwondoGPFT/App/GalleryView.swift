@@ -61,7 +61,7 @@ struct GalleryView: View {
                 } //: GRID
                 CreditsView().opacity(0.6)
                     
-                .animation(.easeIn)
+                .animation(.easeIn, value: 0.5)
                 .onAppear(perform: {
                     gridSwitch()
                   
