@@ -22,7 +22,7 @@ struct Loader: View {
                     .frame(width:40, height: 40)
                     .padding(.all, 8)
                     .rotationEffect(.degrees(spinCircle ? 0 : -360), anchor: .center)
-                    .animation(Animation.linear(duration: 0.6).repeatForever(autoreverses: false))
+                    .animation(Animation.linear(duration: 0.6).repeatForever(autoreverses: false), value: spinCircle)
                     .onAppear {
                         self.spinCircle = true
                     }
@@ -31,6 +31,7 @@ struct Loader: View {
         }
     }
 }
+
 
 //MARK: - PREVIEW
 struct Loader_Previews: PreviewProvider {

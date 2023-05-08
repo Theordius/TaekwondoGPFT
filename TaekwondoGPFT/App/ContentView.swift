@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Rectangle()
                     .fill(Gradient(colors: [.gray, .white]))
                     .ignoresSafeArea()
-                VStack {
+                VStack(alignment: .center, spacing: 35) {
                     Group {
                         Spacer()
                         Image("logo")
