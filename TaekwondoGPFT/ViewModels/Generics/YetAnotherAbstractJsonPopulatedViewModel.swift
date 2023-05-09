@@ -10,9 +10,8 @@ import Foundation
 class YetAnotherAbstractJsonPopulatedViewModel<
     JSONModelProvider: JSONModelProviding
 >: ObservableObject {
-    
     @Published var model: JSONModelProvider.Model
-    
+
     init?(
         loader: JSONLoader = JSONLoader(),
         appMonitoring: AppMonitoring = AppMonitoring()

@@ -8,7 +8,6 @@
 import Foundation
 import SwiftUI
 
-
 struct Patterns: Hashable, Identifiable, Codable {
     let id: String
     let name: String

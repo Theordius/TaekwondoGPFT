@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct TheoryView: View {
-    //MARK: - PROPERTIES
+    // MARK: - PROPERTIES
+
 //    @StateObject var viewModel2 = Self.ViewModel2(fileName: "Theory.json")!
 //    @StateObject var viewModel3 = Self.ViewModel2()!
     @StateObject var viewModel = Self.ViewModel()!
-    
-    //MARK: - BODY
+
+    // MARK: - BODY
+
     var body: some View {
         List {
             ForEach(viewModel.model) { item in
@@ -28,7 +30,8 @@ struct TheoryView: View {
     }
 }
 
-//MARK: - PREVIEW
+// MARK: - PREVIEW
+
 struct TheoryView_Previews: PreviewProvider {
     static var previews: some View {
         TheoryView()

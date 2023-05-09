@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct GalleryGridItemView: View {
-    //MARK: - PROPERTIES
+    // MARK: - PROPERTIES
+
     let gallery: Gallery
-    
-    //MARK: - BODY
+
+    // MARK: - BODY
+
     var body: some View {
         Image(gallery.image)
             .resizable()
@@ -20,7 +22,8 @@ struct GalleryGridItemView: View {
     }
 }
 
-//MARK: - PREVIEW
+// MARK: - PREVIEW
+
 struct GalleryGridItemView_Previews: PreviewProvider {
     static let gallery: [Gallery] = Bundle.main.decode("Gallery.json")
     static var previews: some View {

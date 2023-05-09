@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct TheoryRow: View {
-    //MARK: - PROPERTIES
+    // MARK: - PROPERTIES
+
     var theory: Theory
-    
-    //MARK: - BODY
+
+    // MARK: - BODY
+
     var body: some View {
         HStack {
             Image(systemName: "books.vertical")
@@ -22,14 +24,13 @@ struct TheoryRow: View {
             Text(theory.name)
                 .fontWeight(.heavy)
                 .padding(.horizontal, 6)
-            
         }
         .foregroundColor(.green)
-        
     }
 }
 
-//MARK: - PREVIEW
+// MARK: - PREVIEW
+
 struct TheoryRow_Previews: PreviewProvider {
     static let theory: [Theory] = Bundle.main.decode("Theory.json")
     static var previews: some View {

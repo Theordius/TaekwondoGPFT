@@ -15,23 +15,20 @@ protocol VideoPlayerService {
 }
 
 struct MediaPlayer: VideoPlayerService {
-    
     let avPlayer: AVPlayer
-    
+
     init?(videoTitle: String, videoFormat: String) {
         guard let fileURL = Bundle.main.url(forResource: videoTitle, withExtension: videoFormat) else { return nil }
-        self.avPlayer = AVPlayer(url: fileURL)
-        self.avPlayer.play()
+        avPlayer = AVPlayer(url: fileURL)
+        avPlayer.play()
     }
-    
+
     func playVideo() -> AVPlayer {
         avPlayer.play()
         return avPlayer
     }
-    
+
     func stopVideo() {
         avPlayer.pause()
     }
 }
-
-
