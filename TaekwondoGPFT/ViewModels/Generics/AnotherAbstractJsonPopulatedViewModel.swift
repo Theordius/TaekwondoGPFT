@@ -11,9 +11,8 @@ class AnotherAbstractJsonPopulatedViewModel<
     Model: Decodable,
     FileName: FileNameProviding
 >: ObservableObject {
-    
     @Published var model: Model
-    
+
     init?(
         loader: JSONLoader = JSONLoader(),
         appMonitoring: AppMonitoring = AppMonitoring()

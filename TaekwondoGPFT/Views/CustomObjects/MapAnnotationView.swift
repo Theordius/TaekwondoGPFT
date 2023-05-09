@@ -8,25 +8,25 @@
 import SwiftUI
 
 struct MapAnnotationView: View {
-    
-    //MARK: - PROPERTIES
-    
+    // MARK: - PROPERTIES
+
     var location: SectionLocation
     @State private var animation: Double = 0.0
-    
-    //MARK: - BODY
+
+    // MARK: - BODY
+
     var body: some View {
         ZStack {
             Circle()
                 .fill(Color.clear).opacity(0.8)
                 .frame(width: 54, height: 54, alignment: .center)
-            
+
             Circle()
                 .stroke(Color.gray, lineWidth: 2)
                 .frame(width: 52, height: 52, alignment: .center)
                 .scaleEffect(1 + CGFloat(animation))
                 .opacity(1 - animation)
-            
+
             Image(location.image)
                 .resizable()
                 .scaledToFit()
@@ -41,7 +41,8 @@ struct MapAnnotationView: View {
     }
 }
 
-//MARK: - PREVIEW
+// MARK: - PREVIEW
+
 struct MapAnnotationView_Previews: PreviewProvider {
     static var locations: [SectionLocation] = Bundle.main.decode("Locations.json")
     static var previews: some View {

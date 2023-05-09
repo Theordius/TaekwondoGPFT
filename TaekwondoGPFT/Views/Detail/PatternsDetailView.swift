@@ -8,41 +8,35 @@
 import SwiftUI
 
 struct PatternDetailView: View {
-    //MARK: - PROPERTIES
-    
+    // MARK: - PROPERTIES
+
     var pattern: Patterns
-    
-    //MARK: - BODY
-    
+
+    // MARK: - BODY
+
     var body: some View {
         VStack(alignment: .center, spacing: 26) {
             VideoPlayerView(videoSelected: pattern.videoName ?? "chon-gi", videoTitle: pattern.name)
                 .frame(width: 360, height: 360)
                 .scaledToFit()
-        
-            
-            Divider().padding(.horizontal,6)
-            
+
+            Divider().padding(.horizontal, 6)
+
             Text(pattern.name)
                 .font(.headline)
                 .foregroundColor(.blue)
-            
+
             Divider().padding(.horizontal, 6)
-            
+
             Text(pattern.description!)
                 .font(.system(.subheadline))
                 .fontWeight(.bold)
                 .multilineTextAlignment(.leading)
                 .lineLimit(.max)
-            
         }
         .padding()
-       
     }
-    
-    
 }
-
 
 struct PatternsDetailView_Previews: PreviewProvider {
     static let patterns: [Patterns] = Bundle.main.decode("Patterns.json")

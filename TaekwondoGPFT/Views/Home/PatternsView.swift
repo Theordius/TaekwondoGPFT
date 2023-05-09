@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct PatternsView: View {
-    //MARK: - PROPERTIES
+    // MARK: - PROPERTIES
+
     @StateObject var viewModel = Self.ViewModel()!
-    
-    //MARK: - BODY
+
+    // MARK: - BODY
+
     var body: some View {
-            List {
-                ForEach(viewModel.model) { item in
-                    NavigationLink(destination: PatternDetailView(pattern: item)) {
-                        PatternRow(pattern: item)
-                            .padding()
-                    }
+        List {
+            ForEach(viewModel.model) { item in
+                NavigationLink(destination: PatternDetailView(pattern: item)) {
+                    PatternRow(pattern: item)
+                        .padding()
                 }
             }
+        }
         .navigationTitle("UKŁADY FORMALNE")
     }
 }
 
-//MARK: - PREVIEW
+// MARK: - PREVIEW
+
 struct PatternsView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {

@@ -9,6 +9,5 @@ import Foundation
 import SwiftUI
 
 extension CalendarView {
-    class ViewModel: ObservableObject {
-    }
+    class ViewModel: ObservableObject { }
 }

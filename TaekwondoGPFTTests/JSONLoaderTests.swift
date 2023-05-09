@@ -11,24 +11,24 @@ import XCTest
 
 final class JSONLoaderTests: XCTestCase {
     var sut: JSONLoader!
-    
+
     override func setUpWithError() throws {
         try super.setUpWithError()
         sut = JSONLoader()
     }
-    
+
     override func tearDownWithError() throws {
         sut = nil
         try super.tearDownWithError()
     }
-    
+
     func testJSONLoader() throws {
         var patterns: [Patterns] = []
         patterns = try sut.loadJSON("Patterns.json")
         XCTAssertNotNil(patterns)
         XCTAssertEqual(patterns.count, 24)
     }
-    
+
     func testJSONLoaderFileNotFound() {
         XCTAssertThrowsError(
             try {
@@ -43,11 +43,10 @@ final class JSONLoaderTests: XCTestCase {
             )
         }
     }
-    
-    
+
     func testJSONLoaderCorruptedData() {
         do {
-            let _:[Patterns] = try sut.loadJSON("CorruptedJSON.json")
+            let _: [Patterns] = try sut.loadJSON("CorruptedJSON.json")
         } catch {
             return
         }

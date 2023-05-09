@@ -8,6 +8,4 @@
 import Foundation
 import SwiftUI
 
-class EventsViewModel {
-    
-}
+class EventsViewModel { }

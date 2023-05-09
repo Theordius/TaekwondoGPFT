@@ -9,7 +9,7 @@ import Foundation
 
 class AbstractJsonPopulatedViewModel<Model: Decodable>: ObservableObject {
     @Published var model: Model
-    
+
     init?(
         fileName: String,
         loader: JSONLoader = JSONLoader(),

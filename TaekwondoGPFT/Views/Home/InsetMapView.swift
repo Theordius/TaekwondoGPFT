@@ -5,24 +5,25 @@
 //  Created by Rafał Gęsior on 17/03/2023.
 //
 
-import SwiftUI
 import MapKit
+import SwiftUI
 
 struct InsetMapView: View {
-    //MARK: - PROPERTIES
+    // MARK: - PROPERTIES
+
     @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.9194, longitude: 19.1451), span: MKCoordinateSpan(latitudeDelta: 8.0, longitudeDelta: 8.0))
-    
-    //MARK: - BODY
-    
+
+    // MARK: - BODY
+
     var body: some View {
-       Map(coordinateRegion: $region)
+        Map(coordinateRegion: $region)
             .overlay(
                 NavigationLink(destination: MapView()) {
                     HStack {
                         Image(systemName: "mappin.circle")
                             .foregroundColor(Color.white)
                             .imageScale(.large)
-                        
+
                         Text("Nasze Sekcje")
                             .foregroundColor(.accentColor)
                             .fontWeight(.bold)
@@ -35,17 +36,16 @@ struct InsetMapView: View {
                             .cornerRadius(8)
                     )
                 } //: NAVIGATION
-                    .padding(12)
-                , alignment: .topTrailing
-                
-            
+                .padding(12),
+                alignment: .topTrailing
             )
             .frame(height: 256)
             .cornerRadius(12)
     }
 }
 
-//MARK: - PREVIEW
+// MARK: - PREVIEW
+
 struct InsetMapView_Previews: PreviewProvider {
     static var previews: some View {
         InsetMapView()

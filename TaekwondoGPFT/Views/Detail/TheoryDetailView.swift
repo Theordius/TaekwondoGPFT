@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct TheoryDetailView: View {
-    //MARK: - PROPERTIES
+    // MARK: - PROPERTIES
+
     @StateObject var viewModel = Self.ViewModel()!
-    
+
     var theory: Theory
-    
-    //MARK: - BODY
-    
+
+    // MARK: - BODY
+
     var body: some View {
         VStack(alignment: .center, spacing: 26) {
             Image("logo")
@@ -22,26 +23,24 @@ struct TheoryDetailView: View {
                 .scaledToFit()
                 .frame(width: 180, height: 180)
             Text("")
-            
-            Divider().padding(.horizontal,6)
-            
+
+            Divider().padding(.horizontal, 6)
+
             Text(theory.name)
                 .font(.headline)
                 .foregroundColor(.blue)
-            
+
             Divider().padding(.horizontal, 6)
-            
+
             Text(theory.description ?? "To be done")
                 .font(.system(.subheadline))
                 .fontWeight(.bold)
                 .multilineTextAlignment(.leading)
                 .lineLimit(.max)
-            
         }
         .padding(.vertical, 5)
     }
 }
-
 
 struct TheoryDetailView_Previews: PreviewProvider {
     static let theory: [Theory] = Bundle.main.decode("Theory.json")

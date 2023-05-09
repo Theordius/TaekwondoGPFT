@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct InsetGalleryView: View {
-    //MARK: - PROPERTIES
+    // MARK: - PROPERTIES
+
     let gallery: Gallery
-    
-    //MARK: - BODY
+
+    // MARK: - BODY
+
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .center, spacing: 15) {
@@ -27,7 +29,8 @@ struct InsetGalleryView: View {
     }
 }
 
-//MARK: - PREVIEW
+// MARK: - PREVIEW
+
 struct InsetGalleryView_Previews: PreviewProvider {
     static let gallery: [Gallery] = Bundle.main.decode("Gallery.json")
     static var previews: some View {
