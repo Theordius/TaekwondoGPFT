@@ -55,7 +55,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
         return webView
     }
 
-    func updateUIView(_ webView: WKWebView, context: Context) {
+    func updateUIView(_ webView: WKWebView, context _: Context) {
         if url == .publicUrl {
             // Load local website
             if let url = URL(string: "https://sklep.gpft.pl") {
@@ -80,7 +80,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
             webViewNavigationSubscriber?.cancel()
         }
 
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        func webView(_ webView: WKWebView, didFinish _: WKNavigation!) {
             // Get the title of loaded webcontent
             webView.evaluateJavaScript("document.title") { response, error in
                 if let error = error {
@@ -121,12 +121,12 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
             parent.viewModel.showLoader.send(false)
         }
 
-        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        func webView(_: WKWebView, didFail _: WKNavigation!, withError _: Error) {
             // Hides loader
             parent.viewModel.showLoader.send(false)
         }
 
-        func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        func webView(_: WKWebView, didCommit _: WKNavigation!) {
             // Shows loader
             parent.viewModel.showLoader.send(true)
         }
@@ -151,7 +151,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
         }
 
         // This function is essential for intercepting every navigation in the webview
-        func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        func webView(_: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
             // Suppose you don't want your user to go a restricted site
             // Here you can get many information about new url from 'navigationAction.request.description'
             if let host = navigationAction.request.url?.host {
@@ -170,7 +170,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
 // MARK: - Extensions
 
 extension OnlineShopView.Coordinator: WKScriptMessageHandler {
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+    func userContentController(_: WKUserContentController, didReceive message: WKScriptMessage) {
         // Make sure that your passed delegate is called
         if message.name == "iOSNative" {
             if let body = message.body as? [String: Any?] {

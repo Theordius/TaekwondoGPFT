@@ -398,18 +398,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-
-		AEAFAB0A29FA6EBE00169C35 /* Generics */ = {
-			isa = PBXGroup;
-			children = (
-				AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */,
-				AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */,
-				AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */,
-			);
-			path = Generics;
-      sourceTree = "<group>";
-		};
-
 		10DBBDC429FAB341008AFF80 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,7 +406,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-    
+		AEAFAB0A29FA6EBE00169C35 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */,
+				AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */,
+				AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */

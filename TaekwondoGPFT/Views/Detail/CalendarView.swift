@@ -21,7 +21,7 @@ class CalendarView: UIViewController, WKNavigationDelegate {
         view = webView
     }
 
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+    override func observeValue(forKeyPath keyPath: String?, of _: Any?, change _: [NSKeyValueChangeKey: Any]?, context _: UnsafeMutableRawPointer?) {
         if keyPath == "estimatedProgress" {
             progressView.progress = Float(webView.estimatedProgress)
         }
@@ -44,7 +44,7 @@ class CalendarView: UIViewController, WKNavigationDelegate {
         webView.allowsBackForwardNavigationGestures = true
     }
 
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    func webView(_ webView: WKWebView, didFinish _: WKNavigation!) {
         if webView.isLoading == false {
             title = webView.title
             navigationController?.isToolbarHidden = true
