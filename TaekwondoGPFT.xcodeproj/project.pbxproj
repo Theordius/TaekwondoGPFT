@@ -35,6 +35,7 @@
 		10599D4C29258F85005E42F0 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D4B29258F85005E42F0 /* Calendar.swift */; };
 		10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */; };
 		10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */; };
+		1059C0932A0AD1060011855D /* QuickAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1059C0922A0AD1060011855D /* QuickAction.swift */; };
 		1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */; };
 		1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826329AD4A7500EBBD3E /* ContentView.swift */; };
 		1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826529AD4AC500EBBD3E /* MainScreen.swift */; };
@@ -132,6 +133,7 @@
 		10599D4B29258F85005E42F0 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		10599D9C292BA26F005E42F0 /* PatternsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsDetailView.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsDetailsViewModel.swift; sourceTree = "<group>"; };
+		1059C0922A0AD1060011855D /* QuickAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAction.swift; sourceTree = "<group>"; };
 		1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTApp.swift; sourceTree = "<group>"; };
 		1062826329AD4A7500EBBD3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1062826529AD4AC500EBBD3E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */,
+				1059C0922A0AD1060011855D /* QuickAction.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -398,18 +401,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-
-		AEAFAB0A29FA6EBE00169C35 /* Generics */ = {
-			isa = PBXGroup;
-			children = (
-				AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */,
-				AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */,
-				AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */,
-			);
-			path = Generics;
-      sourceTree = "<group>";
-		};
-
 		10DBBDC429FAB341008AFF80 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -418,7 +409,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-    
+		AEAFAB0A29FA6EBE00169C35 /* Generics */ = {
+			isa = PBXGroup;
+			children = (
+				AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */,
+				AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */,
+				AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */,
+			);
+			path = Generics;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -652,6 +652,7 @@
 				AEAFAB0E29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift in Sources */,
 				100B976B29AFE10A00D29ED7 /* GalleryView.swift in Sources */,
 				1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */,
+				1059C0932A0AD1060011855D /* QuickAction.swift in Sources */,
 				100B976729AFE0D100D29ED7 /* MapView.swift in Sources */,
 				1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */,
 				100B976929AFE0E600D29ED7 /* TimerView.swift in Sources */,
@@ -824,7 +825,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -879,7 +880,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
