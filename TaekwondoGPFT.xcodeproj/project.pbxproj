@@ -50,7 +50,6 @@
 		1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */; };
 		1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B5291BDF3600666376 /* OnlineShopView.swift */; };
 		108F13E329FAEEFF0037E0B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 108F13E529FAEEFF0037E0B0 /* Localizable.strings */; };
-		10A13E5929F4544600633D6F /* TaekwondoGPFTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */; };
 		10A13E6629F4546300633D6F /* TaekwondoGPFTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */; };
 		10A13E6829F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */; };
 		10A13E7129F4663500633D6F /* CorruptedJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 10A13E7029F4663500633D6F /* CorruptedJSON.json */; };
@@ -151,7 +150,6 @@
 		108F13E629FAEF310037E0B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		108F13E729FAEF3D0037E0B0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		10A13E5629F4544600633D6F /* TaekwondoGPFTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTTests.swift; sourceTree = "<group>"; };
 		10A13E6329F4546300633D6F /* TaekwondoGPFTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTUITests.swift; sourceTree = "<group>"; };
 		10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -296,7 +294,6 @@
 		10A13E5729F4544600633D6F /* TaekwondoGPFTTests */ = {
 			isa = PBXGroup;
 			children = (
-				10A13E5829F4544600633D6F /* TaekwondoGPFTTests.swift */,
 				10A13E7A29F7057E00633D6F /* JSONLoaderTests.swift */,
 			);
 			path = TaekwondoGPFTTests;
@@ -558,6 +555,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		95610ECE29FA629300DE04BD /* swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -572,10 +570,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse \n    echo \"warning: SwiftLint not installed, download from https: //github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n    swiftlint\nelse \n    echo \"warning: SwiftLint not installed, download from https: //github.com/realm/SwiftLint\"\nfi\n";
 		};
 		959259BE29FA4CC8007CEFD9 /* swiftformat */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -590,7 +589,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat . --config \"$SRCROOT/config.swiftformat\"\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftformat >/dev/null; then\n  swiftformat . --config \"$SRCROOT/config.swiftformat\"\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -600,7 +599,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A13E7B29F7057E00633D6F /* JSONLoaderTests.swift in Sources */,
-				10A13E5929F4544600633D6F /* TaekwondoGPFTTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

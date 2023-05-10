@@ -14,7 +14,7 @@ struct QuickAction {
             localizedTitle: "Układy Formalne",
             localizedSubtitle: "Układy Formalne TKD",
             icon: UIApplicationShortcutIcon(systemImageName: "figure.martial.arts"),
-            userInfo: nil
+            userInfo: ["detailView": "patterns" as NSSecureCoding]
         )
         let actionTwo = UIApplicationShortcutItem(
             type: "pl.rgkonsulting.TaekwondoGPFT.actionTwo",
@@ -30,7 +30,7 @@ struct QuickAction {
             icon: UIApplicationShortcutIcon(systemImageName: "cart"),
             userInfo: nil
         )
-        
+
         let quickActions = [actionOne, actionTwo, actionThree]
         UIApplication.shared.shortcutItems = quickActions
     }

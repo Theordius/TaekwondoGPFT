@@ -9,9 +9,6 @@ import UIKit
 import WebKit
 
 class CalendarView: UIViewController, WKNavigationDelegate {
-    // TODO: viewModel implementation
-    // var viewModel = OnlineShopViewModel()
-
     var webView: WKWebView!
     var progressView: UIProgressView!
 
@@ -21,7 +18,11 @@ class CalendarView: UIViewController, WKNavigationDelegate {
         view = webView
     }
 
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey: Any]?, context: UnsafeMutableRawPointer?) {
+    override func observeValue(
+        forKeyPath keyPath: String?, of object: Any?,
+        change: [NSKeyValueChangeKey: Any]?,
+        context: UnsafeMutableRawPointer?
+    ) {
         if keyPath == "estimatedProgress" {
             progressView.progress = Float(webView.estimatedProgress)
         }

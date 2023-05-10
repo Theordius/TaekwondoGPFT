@@ -11,7 +11,6 @@ struct CustomButton: View {
     // MARK: - PROPERTIES
 
     @ObservedObject var viewModel = ViewModel()
-    @State private var selection: String? = nil
 
     var title: String
     var subtitle: String
@@ -20,15 +19,15 @@ struct CustomButton: View {
     // MARK: - BODY
 
     var body: some View {
-        NavigationLink(tag: tag, selection: $selection) {
+        NavigationLink {
             switch tag {
-            case "A":
+            case "patterns":
                 PatternsView()
-            case "B":
+            case "theory":
                 TheoryView()
-            case "C":
+            case "onlineShop":
                 WebView(viewModel: viewModel)
-            case "D":
+            case "calendar":
                 Text("Calendar")
             default:
                 EmptyView()
@@ -57,7 +56,7 @@ struct CustomButton: View {
 struct Buttons_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne", tag: "A")
+            CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne", tag: "patterns")
                 .previewLayout(.sizeThatFits)
         }
     }

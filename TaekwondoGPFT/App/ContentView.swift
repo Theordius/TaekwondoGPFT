@@ -24,10 +24,26 @@ struct ContentView: View {
 
                         Text("")
 
-                        CustomButton(title: String(localized: "UKŁADY FORMALNE"), subtitle: String(localized: "Układy Formalne"), tag: "A")
-                        CustomButton(title: String(localized: "TEORIA"), subtitle: String(localized: "Teoria Taekwon - DO"), tag: "B")
-                        CustomButton(title: String(localized: "SKLEP ONLINE"), subtitle: String(localized: "Nasz sklep Online"), tag: "C")
-                        CustomButton(title: String(localized: "KALENDARZ"), subtitle: String(localized: "Kalendarz Imprez"), tag: "D")
+                        CustomButton(
+                            title: String(localized: "UKŁADY FORMALNE"),
+                            subtitle: String(localized: "Układy Formalne"),
+                            tag: "patterns"
+                        )
+                        CustomButton(
+                            title: String(localized: "TEORIA"),
+                            subtitle: String(localized: "Teoria Taekwon - DO"),
+                            tag: "theory"
+                        )
+                        CustomButton(
+                            title: String(localized: "SKLEP ONLINE"),
+                            subtitle: String(localized: "Nasz sklep Online"),
+                            tag: "onlineShop"
+                        )
+                        CustomButton(
+                            title: String(localized: "KALENDARZ"),
+                            subtitle: String(localized: "Kalendarz Imprez"),
+                            tag: "calendar"
+                        )
 
                         Spacer()
                     }

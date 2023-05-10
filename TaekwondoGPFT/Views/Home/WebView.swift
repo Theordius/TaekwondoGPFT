@@ -19,9 +19,11 @@ struct WebView: View {
     var body: some View {
         ZStack {
             VStack(spacing: 0) {
-                Text(webTitle).font(.subheadline).onReceive(self.viewModel.showWebTitle.receive(on: RunLoop.main)) { value in
-                    self.webTitle = value
-                }
+                Text(webTitle)
+                    .font(.subheadline)
+                    .onReceive(self.viewModel.showWebTitle.receive(on: RunLoop.main)) { value in
+                        self.webTitle = value
+                    }
 
                 /* This is our WebView. Here if you pass .localUrl it will load LocalWebsite.html file
                  into the WebView and if you pass .publicUrl it will load the public website depending on

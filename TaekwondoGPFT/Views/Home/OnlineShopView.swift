@@ -134,20 +134,22 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
         func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
             // Shows loader
             parent.viewModel.showLoader.send(true)
-            webViewNavigationSubscriber = parent.viewModel.webViewNavigationPublisher.receive(on: RunLoop.main).sink(receiveValue: { navigation in
-                switch navigation {
-                case .backward:
-                    if webView.canGoBack {
-                        webView.goBack()
+            webViewNavigationSubscriber = parent.viewModel.webViewNavigationPublisher
+                .receive(on: RunLoop.main)
+                .sink(receiveValue: { navigation in
+                    switch navigation {
+                    case .backward:
+                        if webView.canGoBack {
+                            webView.goBack()
+                        }
+                    case .forward:
+                        if webView.canGoForward {
+                            webView.goForward()
+                        }
+                    case .reload:
+                        webView.reload()
                     }
-                case .forward:
-                    if webView.canGoForward {
-                        webView.goForward()
-                    }
-                case .reload:
-                    webView.reload()
-                }
-            })
+                })
         }
 
         // This function is essential for intercepting every navigation in the webview
