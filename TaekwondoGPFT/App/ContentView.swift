@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var quickActionObservable: QuickActionObservable
     var body: some View {
         NavigationStack {
             ZStack {
