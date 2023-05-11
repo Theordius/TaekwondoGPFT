@@ -30,7 +30,7 @@ struct Loader: View {
                     .rotationEffect(.degrees(spinCircle ? 0 : -360), anchor: .center)
                     .animation(Animation.linear(duration: 0.6).repeatForever(autoreverses: false), value: spinCircle)
                     .onAppear {
-                        self.spinCircle = true
+                        spinCircle = true
                     }
                 Text("Please wait...").foregroundColor(.white)
             }

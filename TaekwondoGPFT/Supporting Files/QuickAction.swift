@@ -14,7 +14,7 @@ struct QuickAction {
             localizedTitle: "Układy Formalne",
             localizedSubtitle: "Układy Formalne TKD",
             icon: UIApplicationShortcutIcon(systemImageName: "figure.martial.arts"),
-            userInfo: ["detailView": "patterns" as NSSecureCoding]
+            userInfo: ["name": "patterns" as NSSecureCoding]
         )
         let actionTwo = UIApplicationShortcutItem(
             type: "pl.rgkonsulting.TaekwondoGPFT.actionTwo",

@@ -19,11 +19,12 @@ class CalendarView: UIViewController, WKNavigationDelegate {
     }
 
     override func observeValue(
-        forKeyPath keyPath: String?, of object: Any?,
+        forKeyPath keyPath: String?,
+        of object: Any?,
         change: [NSKeyValueChangeKey: Any]?,
         context: UnsafeMutableRawPointer?
     ) {
-        if keyPath == "estimatedProgress" {
+        if keyPath == #keyPath(WKWebView.estimatedProgress) {
             progressView.progress = Float(webView.estimatedProgress)
         }
     }
