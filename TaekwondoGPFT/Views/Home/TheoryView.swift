@@ -12,21 +12,32 @@ struct TheoryView: View {
 
 //    @StateObject var viewModel2 = Self.ViewModel2(fileName: "Theory.json")!
 //    @StateObject var viewModel3 = Self.ViewModel2()!
-    @StateObject var viewModel = Self.ViewModel()!
+    @StateObject var viewModel = Self.ViewModel()
 
     // MARK: - BODY
 
     var body: some View {
-        List {
-            ForEach(viewModel.model) { item in
-                NavigationLink(destination: TheoryDetailView(theory: item)) {
-                    TheoryRow(theory: item)
-                        .padding()
+        Group {
+            switch viewModel.modelState {
+            case let .failure(error):
+                Text(error.localizedDescription)
+            case let .loadded(model: model):
+                List {
+                    ForEach(model) { item in
+                        NavigationLink(destination: TheoryDetailView(theory: item)) {
+                            TheoryRow(theory: item)
+                                .padding()
+                        }
+                    }
                 }
+                .listStyle(.inset)
+                .navigationTitle("TEORIA TAEKWON-DO")
+            case .loading:
+                ProgressView()
             }
+        }.task {
+            viewModel.loadDataAsync()
         }
-        .listStyle(.inset)
-        .navigationTitle("TEORIA TAEKWON-DO")
     }
 }
 

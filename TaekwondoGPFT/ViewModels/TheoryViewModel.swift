@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 extension TheoryView {
-    typealias ViewModel = AnotherAbstractJsonPopulatedViewModel<[Theory], TeoryFileName>
+    typealias ViewModel3 = AnotherAbstractJsonPopulatedViewModel<[Theory], TeoryFileName>
     typealias ViewModel2 = AbstractJsonPopulatedViewModel<[Theory]>
-    typealias ViewModel3 = YetAnotherAbstractJsonPopulatedViewModel<TheoryModelProvider>
+    typealias ViewModel = YetAnotherAbstractJsonPopulatedViewModel<TheoryModelProvider>
 }

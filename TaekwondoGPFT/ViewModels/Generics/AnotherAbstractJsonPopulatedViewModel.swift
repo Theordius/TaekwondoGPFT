@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AnotherAbstractJsonPopulatedViewModel<
+final class AnotherAbstractJsonPopulatedViewModel<
     Model: Decodable,
     FileName: FileNameProviding
 >: ObservableObject {
