@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class QuickActionObservable: ObservableObject {
-    @Published var selectedAction: QuickAction? = nil
+    @Published var selectedAction: QuickAction?
 }
 
 struct QuickAction: Hashable {
@@ -63,7 +63,7 @@ enum ActionTypes: CaseIterable {
 let allDynamicActions: [QuickAction] = [
     ActionTypes.patternsAction.instance,
     ActionTypes.theoryAction.instance,
-    ActionTypes.onlineShopAction.instance
+    ActionTypes.onlineShopAction.instance,
 ]
 
 func getAction(_ typeString: String) -> QuickAction? {

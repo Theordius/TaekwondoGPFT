@@ -40,8 +40,6 @@ struct TaekwondoGPFT: App {
                             action.setupQuickActions()
                         )
                     }
-                } else {
-                    shortcutItems[0] = ActionTypes.onlineShopAction.instance.setupQuickActions()
                 }
                 UIApplication.shared.shortcutItems = shortcutItems
             @unknown default:
