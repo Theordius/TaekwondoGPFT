@@ -7,7 +7,7 @@
 
 import Foundation
 
-class AbstractJsonPopulatedViewModel<Model: Decodable>: ObservableObject {
+final class AbstractJsonPopulatedViewModel<Model: Decodable>: ObservableObject {
     @Published var model: Model
 
     init?(

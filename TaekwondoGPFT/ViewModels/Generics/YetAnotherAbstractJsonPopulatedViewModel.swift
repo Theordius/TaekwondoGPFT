@@ -7,35 +7,40 @@
 
 import Foundation
 
-class YetAnotherAbstractJsonPopulatedViewModel<
+
+@MainActor
+final class YetAnotherAbstractJsonPopulatedViewModel<
     JSONModelProvider: JSONModelProviding
 >: ObservableObject {
-    @Published var model: JSONModelProvider.Model
-
-    init?(
-        loader: JSONLoader = JSONLoader(),
+    typealias Model = JSONModelProvider.Model
+    
+    @Published var modelState: ModelState<Model> = .loading
+    
+    private let loader: NewJSONLoader<JSONModelProvider>
+    private let appMonitoring: AppMonitoring
+    
+    init(
+        loader: NewJSONLoader<JSONModelProvider> = .init(),
         appMonitoring: AppMonitoring = AppMonitoring()
     ) {
-        do {
-            model = try loader.loadJSON(JSONModelProvider.string)
-        } catch {
-            appMonitoring.recordError()
-            return nil
+        self.loader = loader
+        self.appMonitoring = appMonitoring
+    }
+    
+    func loadDataAsync() {
+        Task {
+            await loadData()
         }
     }
-}
-
-protocol JSONModelProviding {
-    associatedtype Model: Decodable
-    static var string: String { get }
-}
-
-enum PatternsModelProvider: JSONModelProviding {
-    typealias Model = [Patterns]
-    static var string = "Patterns.json"
-}
-
-enum TheoryModelProvider: JSONModelProviding {
-    typealias Model = [Theory]
-    static var string = "Theory.json"
+    
+    func loadData() async {
+        do {
+            sleep(3) /// fake delay.
+            let model = try loader.loadJSON()
+            modelState = .loadded(model: model)
+        } catch {
+            appMonitoring.recordError()
+            modelState = .failure(error)
+        }
+    }
 }
