@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+let quickActionObservable = QuickActionObservable()
 
 @main
 struct TaekwondoGPFT: App {
     @Environment(\.scenePhase) var phase
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    let quickActionObservable = QuickActionObservable()
+
     var shortcutItemToProcess: UIApplicationShortcutItem?
 
     var body: some Scene {
@@ -26,7 +27,7 @@ struct TaekwondoGPFT: App {
                 guard let type = shortcutItemToProcess?.userInfo?["type"] as? String else {
                     return
                 }
-                quickActionObservable.selectedAction = getAction(type)
+                quickActionObservable.selectedAction = QuickAction.getAction(type)
                 print(type)
             case .inactive:
                 print("App is inactive")

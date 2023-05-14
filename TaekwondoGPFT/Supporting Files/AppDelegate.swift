@@ -31,7 +31,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 
 class CustomSceneDelegate: UIResponder, UIWindowSceneDelegate {
+    @Environment(\.openURL) var openURL
+    @State private var isShowingPatternsView = false
+    @State private var isShowingTheoryView = false
+
     var shortcutItemToProcess: UIApplicationShortcutItem?
+    var patternsIdentifier = "patterns"
 
     func windowScene(
         _ windowScene: UIWindowScene,
@@ -39,5 +44,35 @@ class CustomSceneDelegate: UIResponder, UIWindowSceneDelegate {
         completionHandler: @escaping (Bool) -> Void
     ) {
         shortcutItemToProcess = shortcutItem
+        handleShortcutItem(shortcutItem)
+
+        // windowScene.keyWindow?.rootViewController = UIHostingController(rootView: PatternsView())
+        // quickActionObservable.selectedAction = QuickAction.getAction(shortcutItem.type)
+    }
+
+    func handleShortcutItem(_ shortuctItem: UIApplicationShortcutItem) {
+        if let actionTypeValue = ActionTypes(rawValue: shortuctItem.type) {
+            switch actionTypeValue {
+            case .patternsAction:
+                if shortuctItem.type == "pl.rgkonsulting.TaekwondoGPFT.actionOne" {
+                    print("Action One was pressed")
+                    navigateToPatternsView()
+                }
+
+            case .theoryAction:
+                if shortuctItem.type == "pl.rgkonsulting.TaekwondoGPFT.actionTwo" {
+                    print("Action Two was pressed")
+                }
+            case .onlineShopAction:
+                if shortuctItem.type == "pl.rgkonsulting.TaekwondoGPFT.actionThree" {
+                    print("Action Three was pressed")
+                }
+            }
+        }
+    }
+
+    func navigateToPatternsView() {
+        let patternsView = PatternsView()
+        _ = NavigationStack { patternsView }
     }
 }

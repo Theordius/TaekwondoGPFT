@@ -29,10 +29,10 @@ struct QuickAction: Hashable {
     }
 }
 
-enum ActionTypes: CaseIterable {
-    case patternsAction
-    case theoryAction
-    case onlineShopAction
+enum ActionTypes: String, CaseIterable {
+    case patternsAction = "pl.rgkonsulting.TaekwondoGPFT.actionOne"
+    case theoryAction = "pl.rgkonsulting.TaekwondoGPFT.actionTwo"
+    case onlineShopAction = "pl.rgkonsulting.TaekwondoGPFT.actionThree"
 
     var instance: QuickAction {
         switch self {
@@ -60,16 +60,11 @@ enum ActionTypes: CaseIterable {
     }
 }
 
-let allDynamicActions: [QuickAction] = [
-    ActionTypes.patternsAction.instance,
-    ActionTypes.theoryAction.instance,
-    ActionTypes.onlineShopAction.instance,
-]
+let allDynamicActions: [QuickAction] = ActionTypes.allCases.map(\.instance)
 
-func getAction(_ typeString: String) -> QuickAction? {
-    if let action = ActionTypes.allCases.first(where: { $0.instance.type == typeString }) {
-        return action.instance
-    } else {
-        return nil
+extension QuickAction {
+    static func getAction(_ typeString: String) -> QuickAction? {
+        let action = ActionTypes(rawValue: typeString)
+        return action?.instance
     }
 }
