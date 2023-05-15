@@ -50,24 +50,22 @@ class CustomSceneDelegate: UIResponder, UIWindowSceneDelegate {
         // quickActionObservable.selectedAction = QuickAction.getAction(shortcutItem.type)
     }
 
-    func handleShortcutItem(_ shortuctItem: UIApplicationShortcutItem) {
-        if let actionTypeValue = ActionTypes(rawValue: shortuctItem.type) {
-            switch actionTypeValue {
-            case .patternsAction:
-                if shortuctItem.type == "pl.rgkonsulting.TaekwondoGPFT.actionOne" {
-                    print("Action One was pressed")
-                    navigateToPatternsView()
-                }
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        print(URLContexts)
+    }
 
-            case .theoryAction:
-                if shortuctItem.type == "pl.rgkonsulting.TaekwondoGPFT.actionTwo" {
-                    print("Action Two was pressed")
-                }
-            case .onlineShopAction:
-                if shortuctItem.type == "pl.rgkonsulting.TaekwondoGPFT.actionThree" {
-                    print("Action Three was pressed")
-                }
-            }
+    func handleShortcutItem(_ shortuctItem: UIApplicationShortcutItem) {
+        guard let actionTypeValue = ActionTypes(rawValue: shortuctItem.type) else { return }
+        switch actionTypeValue {
+        case .patternsAction:
+            print("Action One was pressed")
+            navigateToPatternsView()
+
+        case .theoryAction:
+            print("Action Two was pressed")
+
+        case .onlineShopAction:
+            print("Action Three was pressed")
         }
     }
 

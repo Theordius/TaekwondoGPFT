@@ -8,30 +8,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>pl.rgkonsulting.TaekwondoGPFT.actionOne</string>
+			<string>pl.rgkonsulting.TaekwondoGPFT</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>patterns</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>pl.rgkonsulting.TaekwondoGPFT.actionTwo</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>theory</string>
-			</array>
-		</dict>
-		<dict>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>CFBundleURLName</key>
-			<string>pl.rgkonsulting.TaekwondoGPFT.actionThree</string>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>onlineShop</string>
+				<string>Taekwondo-GPFT</string>
 			</array>
 		</dict>
 	</array>
