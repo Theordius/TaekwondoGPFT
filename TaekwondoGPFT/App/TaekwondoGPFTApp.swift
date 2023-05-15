@@ -6,13 +6,12 @@
 //
 
 import SwiftUI
-let quickActionObservable = QuickActionObservable()
 
 @main
 struct TaekwondoGPFT: App {
     @Environment(\.scenePhase) var phase
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
+    let quickActionObservable = QuickActionObservable()
     var shortcutItemToProcess: UIApplicationShortcutItem?
 
     var body: some Scene {
