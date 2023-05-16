@@ -68,6 +68,11 @@
 		10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F529DAE99D00B61924 /* ProgressBar.swift */; };
 		10D89A752A136B860094621F /* ButtonsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D89A742A136B860094621F /* ButtonsStack.swift */; };
 		10DBBDBC29F8FE8E008AFF80 /* AppMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */; };
+		AEA0E4382A0E230300AE52A5 /* ModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0E4372A0E230300AE52A5 /* ModelState.swift */; };
+		AEA0E43A2A0E231700AE52A5 /* JSONModelProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0E4392A0E231700AE52A5 /* JSONModelProviding.swift */; };
+		AEA0E43C2A0E232800AE52A5 /* PatternsModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0E43B2A0E232800AE52A5 /* PatternsModelProvider.swift */; };
+		AEA0E43E2A0E234900AE52A5 /* TheoryModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0E43D2A0E234900AE52A5 /* TheoryModelProvider.swift */; };
+		AEA0E4402A0E238D00AE52A5 /* NewJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0E43F2A0E238D00AE52A5 /* NewJSONLoader.swift */; };
 		AEAFAB0C29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */; };
 		AEAFAB0E29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */; };
 		AEAFAB1029FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */; };
@@ -173,6 +178,11 @@
 		10D89A742A136B860094621F /* ButtonsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsStack.swift; sourceTree = "<group>"; };
 		10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMonitoring.swift; sourceTree = "<group>"; };
 		10DBBDBD29F9043B008AFF80 /* TaekwondoGPFT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaekwondoGPFT.entitlements; sourceTree = "<group>"; };
+		AEA0E4372A0E230300AE52A5 /* ModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelState.swift; sourceTree = "<group>"; };
+		AEA0E4392A0E231700AE52A5 /* JSONModelProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModelProviding.swift; sourceTree = "<group>"; };
+		AEA0E43B2A0E232800AE52A5 /* PatternsModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsModelProvider.swift; sourceTree = "<group>"; };
+		AEA0E43D2A0E234900AE52A5 /* TheoryModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryModelProvider.swift; sourceTree = "<group>"; };
+		AEA0E43F2A0E238D00AE52A5 /* NewJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewJSONLoader.swift; sourceTree = "<group>"; };
 		AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractJsonPopulatedViewModel.swift; sourceTree = "<group>"; };
 		AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherAbstractJsonPopulatedViewModel.swift; sourceTree = "<group>"; };
 		AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YetAnotherAbstractJsonPopulatedViewModel.swift; sourceTree = "<group>"; };
@@ -360,6 +370,7 @@
 				10599D47292584EC005E42F0 /* WKWebKit - URLLoader.swift */,
 				100B977329B0B58400D29ED7 /* BlueCapsule.swift */,
 				10A13E7229F5AA4200633D6F /* JSONLoader.swift */,
+				AEA0E43F2A0E238D00AE52A5 /* NewJSONLoader.swift */,
 			);
 			path = Extenions;
 			sourceTree = "<group>";
@@ -418,6 +429,10 @@
 				AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */,
 				AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */,
 				AEAFAB0F29FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift */,
+				AEA0E4372A0E230300AE52A5 /* ModelState.swift */,
+				AEA0E4392A0E231700AE52A5 /* JSONModelProviding.swift */,
+				AEA0E43B2A0E232800AE52A5 /* PatternsModelProvider.swift */,
+				AEA0E43D2A0E234900AE52A5 /* TheoryModelProvider.swift */,
 			);
 			path = Generics;
 			sourceTree = "<group>";
@@ -629,6 +644,7 @@
 				10599D9F292BB23E005E42F0 /* PatternsDetailsViewModel.swift in Sources */,
 				1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */,
 				100B976429AFDEB500D29ED7 /* Bundle - CodableExtension.swift in Sources */,
+				AEA0E43A2A0E231700AE52A5 /* JSONModelProviding.swift in Sources */,
 				10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */,
 				100B976F29AFE50100D29ED7 /* MotionAnimationView.swift in Sources */,
 				1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */,
@@ -645,13 +661,17 @@
 				10283D232938C28C00250E2F /* TheoryDetailView.swift in Sources */,
 				10392FED29C4600300A7F76C /* MapAnnotationView.swift in Sources */,
 				10D821F429DAE05500B61924 /* WebView.swift in Sources */,
+				AEA0E4402A0E238D00AE52A5 /* NewJSONLoader.swift in Sources */,
 				100B977C29B1210C00D29ED7 /* BlueButton.swift in Sources */,
 				10599D48292584EC005E42F0 /* WKWebKit - URLLoader.swift in Sources */,
+				AEA0E43C2A0E232800AE52A5 /* PatternsModelProvider.swift in Sources */,
 				1081A5A62919219000666376 /* CalendarView.swift in Sources */,
 				10CDA5AE28E4D2FD000B4005 /* Events.swift in Sources */,
+				AEA0E4382A0E230300AE52A5 /* ModelState.swift in Sources */,
 				10392FEF29C4618300A7F76C /* InsetMapView.swift in Sources */,
 				107F9DB329B5E45200C0C25F /* VideoPlayerService.swift in Sources */,
 				10D89A752A136B860094621F /* ButtonsStack.swift in Sources */,
+				AEA0E43E2A0E234900AE52A5 /* TheoryModelProvider.swift in Sources */,
 				10599D4C29258F85005E42F0 /* Calendar.swift in Sources */,
 				107F9DB829B5EC6100C0C25F /* VideoPlayerView.swift in Sources */,
 				AEAFAB0E29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift in Sources */,
