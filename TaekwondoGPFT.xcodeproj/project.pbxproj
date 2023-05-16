@@ -238,6 +238,7 @@
 		10392FF129C8582500A7F76C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				10D89A742A136B860094621F /* ButtonsStack.swift */,
 				10392FEE29C4618300A7F76C /* InsetMapView.swift */,
 				1062826529AD4AC500EBBD3E /* MainScreen.swift */,
 				100B977729B0C07200D29ED7 /* PatternsView.swift */,
@@ -247,7 +248,6 @@
 				107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */,
 				104AE65129D4BC20000E0ED2 /* InsetGalleryView.swift */,
 				10D821F329DAE05500B61924 /* WebView.swift */,
-				10D89A742A136B860094621F /* ButtonsStack.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";

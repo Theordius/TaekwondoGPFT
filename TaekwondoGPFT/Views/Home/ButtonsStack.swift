@@ -14,20 +14,24 @@ struct ButtonsStack: View {
         VStack {
             CustomButton(
                 title: String(localized: "UKŁADY FORMALNE"),
-                subtitle: String(localized: "Układy Formalne")
+                subtitle: String(localized: "Układy Formalne"),
+                destination: PatternsView()
             )
 
             CustomButton(
                 title: String(localized: "TEORIA"),
-                subtitle: String(localized: "Teoria Taekwon - DO")
+                subtitle: String(localized: "Teoria Taekwon - DO"),
+                destination: TheoryView()
             )
             CustomButton(
                 title: String(localized: "SKLEP ONLINE"),
-                subtitle: String(localized: "Nasz sklep Online")
+                subtitle: String(localized: "Nasz sklep Online"),
+                destination: WebView()
             )
             CustomButton(
                 title: String(localized: "KALENDARZ"),
-                subtitle: String(localized: "Kalendarz Imprez")
+                subtitle: String(localized: "Kalendarz Imprez"),
+                destination: CalendarView()
             )
         }
 
