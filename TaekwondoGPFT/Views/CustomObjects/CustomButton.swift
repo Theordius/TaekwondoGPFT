@@ -14,25 +14,15 @@ struct CustomButton: View {
 
     var title: String
     var subtitle: String
-    var tag: String
+    // var action: () -> Void
 
     // MARK: - BODY
 
     var body: some View {
-        NavigationLink {
-            switch tag {
-            case "patterns":
-                PatternsView()
-            case "theory":
-                TheoryView()
-            case "onlineShop":
-                WebView(viewModel: viewModel)
-            case "calendar":
-                Text("Calendar")
-            default:
-                EmptyView()
-            }
-        } label: {
+        Button {
+            print("button \(title) was pressesed")
+        }
+        label: {
             VStack(alignment: .center) {
                 Text(title)
                     .font(.headline)
@@ -53,10 +43,10 @@ struct CustomButton: View {
 
 // MARK: - PREVIEW
 
-struct Buttons_Previews: PreviewProvider {
+struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne", tag: "patterns")
+            CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne")
                 .previewLayout(.sizeThatFits)
         }
     }

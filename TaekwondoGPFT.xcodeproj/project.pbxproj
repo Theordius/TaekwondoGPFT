@@ -66,6 +66,7 @@
 		10D821F229DAD2CF00B61924 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F129DAD2CF00B61924 /* Loader.swift */; };
 		10D821F429DAE05500B61924 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F329DAE05500B61924 /* WebView.swift */; };
 		10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F529DAE99D00B61924 /* ProgressBar.swift */; };
+		10D89A752A136B860094621F /* ButtonsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D89A742A136B860094621F /* ButtonsStack.swift */; };
 		10DBBDBC29F8FE8E008AFF80 /* AppMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */; };
 		AEAFAB0C29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */; };
 		AEAFAB0E29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFAB0D29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift */; };
@@ -169,6 +170,7 @@
 		10D821F129DAD2CF00B61924 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		10D821F329DAE05500B61924 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		10D821F529DAE99D00B61924 /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		10D89A742A136B860094621F /* ButtonsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsStack.swift; sourceTree = "<group>"; };
 		10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMonitoring.swift; sourceTree = "<group>"; };
 		10DBBDBD29F9043B008AFF80 /* TaekwondoGPFT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaekwondoGPFT.entitlements; sourceTree = "<group>"; };
 		AEAFAB0B29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractJsonPopulatedViewModel.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */,
 				104AE65129D4BC20000E0ED2 /* InsetGalleryView.swift */,
 				10D821F329DAE05500B61924 /* WebView.swift */,
+				10D89A742A136B860094621F /* ButtonsStack.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -648,6 +651,7 @@
 				10CDA5AE28E4D2FD000B4005 /* Events.swift in Sources */,
 				10392FEF29C4618300A7F76C /* InsetMapView.swift in Sources */,
 				107F9DB329B5E45200C0C25F /* VideoPlayerService.swift in Sources */,
+				10D89A752A136B860094621F /* ButtonsStack.swift in Sources */,
 				10599D4C29258F85005E42F0 /* Calendar.swift in Sources */,
 				107F9DB829B5EC6100C0C25F /* VideoPlayerView.swift in Sources */,
 				AEAFAB0E29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift in Sources */,

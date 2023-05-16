@@ -7,10 +7,20 @@
 
 import SwiftUI
 
+enum Route: Hashable {
+    case patterns(Patterns)
+    case theory(Theory)
+    case onlineShop(OnlineShop)
+}
+
 struct ContentView: View {
     @EnvironmentObject var quickActionObservable: QuickActionObservable
+    @State private var activeLink: Bool = false
+
+    @State private var path: [Route] = []
+
     var body: some View {
-        NavigationStack {
+        NavigationStack(path: $path) {
             ZStack {
                 Rectangle()
                     .fill(Gradient(colors: [.gray, .white]))
@@ -25,35 +35,27 @@ struct ContentView: View {
 
                         Text("")
 
-                        CustomButton(
-                            title: String(localized: "UKŁADY FORMALNE"),
-                            subtitle: String(localized: "Układy Formalne"),
-                            tag: "patterns"
-                        )
-                        CustomButton(
-                            title: String(localized: "TEORIA"),
-                            subtitle: String(localized: "Teoria Taekwon - DO"),
-                            tag: "theory"
-                        )
-                        CustomButton(
-                            title: String(localized: "SKLEP ONLINE"),
-                            subtitle: String(localized: "Nasz sklep Online"),
-                            tag: "onlineShop"
-                        )
-                        CustomButton(
-                            title: String(localized: "KALENDARZ"),
-                            subtitle: String(localized: "Kalendarz Imprez"),
-                            tag: "calendar"
-                        )
-
+                        ButtonsStack()
+                            .navigationDestination(for: Route.self) { route in
+                                switch route {
+                                case .patterns:
+                                    PatternsView()
+                                case .theory:
+                                    TheoryView()
+                                case .onlineShop:
+                                    WebView()
+                                }
+                            }
                         Spacer()
                     }
-
                     .padding(.vertical, -12)
-                    .buttonStyle(BlueCapsule())
-                }
-            }
-        }
+                } // VSTACK
+            } // ZSTACK
+        } // Navigation Path
+    }
+
+    func navigateTo(route: Route) {
+        path.append(route)
     }
 }
 
