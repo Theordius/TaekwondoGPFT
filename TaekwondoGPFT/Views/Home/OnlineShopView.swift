@@ -67,8 +67,8 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
     class Coordinator: NSObject, WKNavigationDelegate {
         var parent: OnlineShopView
         var delegate: WebViewHandlerDelegate?
-        var valueSubscriber: AnyCancellable? = nil
-        var webViewNavigationSubscriber: AnyCancellable? = nil
+        var valueSubscriber: AnyCancellable?
+        var webViewNavigationSubscriber: AnyCancellable?
 
         init(_ uiWebView: OnlineShopView) {
             parent = uiWebView
@@ -83,7 +83,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
         func webView(_ webView: WKWebView, didFinish _: WKNavigation!) {
             // Get the title of loaded webcontent
             webView.evaluateJavaScript("document.title") { response, error in
-                if let error = error {
+                if let error {
                     print("Error getting title")
                     print(error.localizedDescription)
                 }
@@ -100,7 +100,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
             valueSubscriber = parent.viewModel.valuePublisher.receive(on: RunLoop.main).sink(receiveValue: { value in
                 let javascriptFunction = "valueGotFromIOS(\(value));"
                 webView.evaluateJavaScript(javascriptFunction) { _, error in
-                    if let error = error {
+                    if let error {
                         print("Error calling javascript:valueGotFromIOS()")
                         print(error.localizedDescription)
                     } else {
@@ -134,24 +134,32 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
         func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
             // Shows loader
             parent.viewModel.showLoader.send(true)
-            webViewNavigationSubscriber = parent.viewModel.webViewNavigationPublisher.receive(on: RunLoop.main).sink(receiveValue: { navigation in
-                switch navigation {
-                case .backward:
-                    if webView.canGoBack {
-                        webView.goBack()
+            webViewNavigationSubscriber = parent.viewModel.webViewNavigationPublisher
+                .receive(on: RunLoop.main)
+                .sink(receiveValue: { navigation in
+                    switch navigation {
+                    case .backward:
+                        if webView.canGoBack {
+                            webView.goBack()
+                        }
+                    case .forward:
+                        if webView.canGoForward {
+                            webView.goForward()
+                        }
+                    case .reload:
+                        webView.reload()
                     }
-                case .forward:
-                    if webView.canGoForward {
-                        webView.goForward()
-                    }
-                case .reload:
-                    webView.reload()
-                }
-            })
+                })
         }
 
         // This function is essential for intercepting every navigation in the webview
-        func webView(_: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+
+        func webView(
+            _ webView: WKWebView,
+            decidePolicyFor navigationAction: WKNavigationAction,
+            decisionHandler: @escaping (WKNavigationActionPolicy) -> Void
+        ) {
+
             // Suppose you don't want your user to go a restricted site
             // Here you can get many information about new url from 'navigationAction.request.description'
             if let host = navigationAction.request.url?.host {

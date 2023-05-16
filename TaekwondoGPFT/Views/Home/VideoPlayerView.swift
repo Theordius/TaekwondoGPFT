@@ -20,7 +20,7 @@ struct VideoPlayerView: View {
 
     var body: some View {
         VStack {
-            if let player = player {
+            if let player {
                 VideoPlayer(player: player.avPlayer)
                     .frame(height: 400)
                     .overlay(

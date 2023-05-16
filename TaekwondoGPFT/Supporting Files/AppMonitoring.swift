@@ -12,7 +12,5 @@ struct AppMonitoring {
         case jsonDecodingFailure(underlyingError: Swift.Error)
     }
 
-    func recordError() {
-        // TODO: -> Maybe native CloudKit database instead of firebase
-    }
+    func recordError() { }
 }

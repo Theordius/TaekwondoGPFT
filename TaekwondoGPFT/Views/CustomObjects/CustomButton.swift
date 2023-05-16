@@ -7,33 +7,19 @@
 
 import SwiftUI
 
-struct CustomButton: View {
+struct CustomButton<Destination: View>: View {
     // MARK: - PROPERTIES
 
     @ObservedObject var viewModel = ViewModel()
-    @State private var selection: String? = nil
 
     var title: String
     var subtitle: String
-    var tag: String
+    var destination: Destination
 
     // MARK: - BODY
 
     var body: some View {
-        NavigationLink(tag: tag, selection: $selection) {
-            switch tag {
-            case "A":
-                PatternsView()
-            case "B":
-                TheoryView()
-            case "C":
-                WebView(viewModel: viewModel)
-            case "D":
-                Text("Calendar")
-            default:
-                EmptyView()
-            }
-        } label: {
+        NavigationLink(destination: destination) {
             VStack(alignment: .center) {
                 Text(title)
                     .font(.headline)
@@ -54,10 +40,10 @@ struct CustomButton: View {
 
 // MARK: - PREVIEW
 
-struct Buttons_Previews: PreviewProvider {
+struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne", tag: "A")
+            CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne", destination: PatternsView())
                 .previewLayout(.sizeThatFits)
         }
     }
