@@ -11,7 +11,6 @@ struct CalendarView: View {
 
     // MARK: - BODY
 
-
     var body: some View {
         VStack(alignment: .center, spacing: 26) {
             Text(" KALENDARZ DO ZROBIENIA")

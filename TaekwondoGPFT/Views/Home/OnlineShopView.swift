@@ -159,7 +159,6 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
             decidePolicyFor navigationAction: WKNavigationAction,
             decisionHandler: @escaping (WKNavigationActionPolicy) -> Void
         ) {
-
             // Suppose you don't want your user to go a restricted site
             // Here you can get many information about new url from 'navigationAction.request.description'
             if let host = navigationAction.request.url?.host {
