@@ -11,7 +11,10 @@ import SwiftUI
 struct InsetMapView: View {
     // MARK: - PROPERTIES
 
-    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.9194, longitude: 19.1451), span: MKCoordinateSpan(latitudeDelta: 8.0, longitudeDelta: 8.0))
+    @State private var region = MKCoordinateRegion(
+        center: CLLocationCoordinate2D(latitude: 51.9194, longitude: 19.1451),
+        span: MKCoordinateSpan(latitudeDelta: 8.0, longitudeDelta: 8.0)
+    )
 
     // MARK: - BODY
 

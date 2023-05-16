@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var quickActionObservable: QuickActionObservable
+    @State private var activeLink: Bool = false
+
     var body: some View {
         NavigationStack {
             ZStack {
@@ -24,18 +27,13 @@ struct ContentView: View {
 
                         Text("")
 
-                        CustomButton(title: String(localized: "UKŁADY FORMALNE"), subtitle: String(localized: "Układy Formalne"), tag: "A")
-                        CustomButton(title: String(localized: "TEORIA"), subtitle: String(localized: "Teoria Taekwon - DO"), tag: "B")
-                        CustomButton(title: String(localized: "SKLEP ONLINE"), subtitle: String(localized: "Nasz sklep Online"), tag: "C")
-                        CustomButton(title: String(localized: "KALENDARZ"), subtitle: String(localized: "Kalendarz Imprez"), tag: "D")
-
+                        ButtonsStack()
+//
                         Spacer()
                     }
-
                     .padding(.vertical, -12)
-                    .buttonStyle(BlueCapsule())
-                }
-            }
+                } // VSTACK
+            } // ZSTACK
         }
     }
 }

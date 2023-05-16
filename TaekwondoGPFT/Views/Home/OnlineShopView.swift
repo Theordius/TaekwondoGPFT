@@ -55,7 +55,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
         return webView
     }
 
-    func updateUIView(_ webView: WKWebView, context: Context) {
+    func updateUIView(_ webView: WKWebView, context _: Context) {
         if url == .publicUrl {
             // Load local website
             if let url = URL(string: "https://sklep.gpft.pl") {
@@ -67,8 +67,8 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
     class Coordinator: NSObject, WKNavigationDelegate {
         var parent: OnlineShopView
         var delegate: WebViewHandlerDelegate?
-        var valueSubscriber: AnyCancellable? = nil
-        var webViewNavigationSubscriber: AnyCancellable? = nil
+        var valueSubscriber: AnyCancellable?
+        var webViewNavigationSubscriber: AnyCancellable?
 
         init(_ uiWebView: OnlineShopView) {
             parent = uiWebView
@@ -80,10 +80,10 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
             webViewNavigationSubscriber?.cancel()
         }
 
-        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        func webView(_ webView: WKWebView, didFinish _: WKNavigation!) {
             // Get the title of loaded webcontent
             webView.evaluateJavaScript("document.title") { response, error in
-                if let error = error {
+                if let error {
                     print("Error getting title")
                     print(error.localizedDescription)
                 }
@@ -100,7 +100,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
             valueSubscriber = parent.viewModel.valuePublisher.receive(on: RunLoop.main).sink(receiveValue: { value in
                 let javascriptFunction = "valueGotFromIOS(\(value));"
                 webView.evaluateJavaScript(javascriptFunction) { _, error in
-                    if let error = error {
+                    if let error {
                         print("Error calling javascript:valueGotFromIOS()")
                         print(error.localizedDescription)
                     } else {
@@ -121,12 +121,12 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
             parent.viewModel.showLoader.send(false)
         }
 
-        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        func webView(_: WKWebView, didFail _: WKNavigation!, withError _: Error) {
             // Hides loader
             parent.viewModel.showLoader.send(false)
         }
 
-        func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+        func webView(_: WKWebView, didCommit _: WKNavigation!) {
             // Shows loader
             parent.viewModel.showLoader.send(true)
         }
@@ -134,24 +134,32 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
         func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
             // Shows loader
             parent.viewModel.showLoader.send(true)
-            webViewNavigationSubscriber = parent.viewModel.webViewNavigationPublisher.receive(on: RunLoop.main).sink(receiveValue: { navigation in
-                switch navigation {
-                case .backward:
-                    if webView.canGoBack {
-                        webView.goBack()
+            webViewNavigationSubscriber = parent.viewModel.webViewNavigationPublisher
+                .receive(on: RunLoop.main)
+                .sink(receiveValue: { navigation in
+                    switch navigation {
+                    case .backward:
+                        if webView.canGoBack {
+                            webView.goBack()
+                        }
+                    case .forward:
+                        if webView.canGoForward {
+                            webView.goForward()
+                        }
+                    case .reload:
+                        webView.reload()
                     }
-                case .forward:
-                    if webView.canGoForward {
-                        webView.goForward()
-                    }
-                case .reload:
-                    webView.reload()
-                }
-            })
+                })
         }
 
         // This function is essential for intercepting every navigation in the webview
-        func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+
+        func webView(
+            _ webView: WKWebView,
+            decidePolicyFor navigationAction: WKNavigationAction,
+            decisionHandler: @escaping (WKNavigationActionPolicy) -> Void
+        ) {
+
             // Suppose you don't want your user to go a restricted site
             // Here you can get many information about new url from 'navigationAction.request.description'
             if let host = navigationAction.request.url?.host {
@@ -170,7 +178,7 @@ struct OnlineShopView: UIViewRepresentable, WebViewHandlerDelegate {
 // MARK: - Extensions
 
 extension OnlineShopView.Coordinator: WKScriptMessageHandler {
-    func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+    func userContentController(_: WKUserContentController, didReceive message: WKScriptMessage) {
         // Make sure that your passed delegate is called
         if message.name == "iOSNative" {
             if let body = message.body as? [String: Any?] {

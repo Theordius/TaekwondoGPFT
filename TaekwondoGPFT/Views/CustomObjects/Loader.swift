@@ -16,7 +16,11 @@ struct Loader: View {
 
     var body: some View {
         ZStack {
-            Rectangle().frame(width: 160, height: 135).background(Color.black).cornerRadius(8).opacity(0.6).shadow(color: .black, radius: 16)
+            Rectangle().frame(width: 160, height: 135)
+                .background(Color.black)
+                .cornerRadius(8)
+                .opacity(0.6)
+                .shadow(color: .black, radius: 16)
             VStack {
                 Circle()
                     .trim(from: 0.3, to: 1)
@@ -26,7 +30,7 @@ struct Loader: View {
                     .rotationEffect(.degrees(spinCircle ? 0 : -360), anchor: .center)
                     .animation(Animation.linear(duration: 0.6).repeatForever(autoreverses: false), value: spinCircle)
                     .onAppear {
-                        self.spinCircle = true
+                        spinCircle = true
                     }
                 Text("Please wait...").foregroundColor(.white)
             }
