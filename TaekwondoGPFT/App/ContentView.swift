@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var quickActionObservable: QuickActionObservable
-    @State private var activeLink: Bool = false
 
     var body: some View {
         NavigationStack {
@@ -28,7 +27,7 @@ struct ContentView: View {
                         Text("")
 
                         ButtonsStack()
-//
+
                         Spacer()
                     }
                     .padding(.vertical, -12)
