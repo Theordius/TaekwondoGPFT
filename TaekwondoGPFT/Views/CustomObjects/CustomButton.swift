@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct CustomButton<Destination: View>: View {
+struct CustomButton: View {
     // MARK: - PROPERTIES
 
     @ObservedObject var viewModel = ViewModel()
 
     var title: String
     var subtitle: String
-    var destination: Destination
+    var action: () -> Void
 
     // MARK: - BODY
 
     var body: some View {
-        NavigationLink(destination: destination) {
+        Button(action: action) {
             VStack(alignment: .center) {
                 Text(title)
                     .font(.headline)
@@ -43,7 +43,7 @@ struct CustomButton<Destination: View>: View {
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne", destination: PatternsView())
+            CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne", action: { })
                 .previewLayout(.sizeThatFits)
         }
     }

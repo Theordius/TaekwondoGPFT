@@ -26,6 +26,9 @@ struct ContentView: View {
                         Text("")
 
                         ButtonsStack()
+                            .navigationDestination(for: Route.self) { destination in
+                                ViewFactory.viewForDestination(destination)
+                            }
 
                         Spacer()
                     }

@@ -20,9 +20,13 @@ struct TaekwondoGPFT: App {
             MainScreen()
                 .environmentObject(router)
                 .environmentObject(quickActionObservable)
+                .environmentObject(ViewModel())
                 .onOpenURL { url in
                     guard let scheme = url.scheme, scheme == "navStack" else { return }
-                    guard let screen = url.host else { return }
+                    guard let host = url.host else { return }
+                    if host == "patterns" {
+                        router.resetPath()
+                    }
                 }
         }
 

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ButtonsStack: View {
+    @EnvironmentObject var router: Router
+
     // MARK: - BODY
 
     var body: some View {
@@ -15,35 +17,25 @@ struct ButtonsStack: View {
             CustomButton(
                 title: String(localized: "UKŁADY FORMALNE"),
                 subtitle: String(localized: "Układy Formalne"),
-                destination: PatternsView()
+                action: { router.path.append(Route.patterns) }
             )
-
             CustomButton(
                 title: String(localized: "TEORIA"),
                 subtitle: String(localized: "Teoria Taekwon - DO"),
-                destination: TheoryView()
+                action: { router.path.append(Route.theory) }
             )
             CustomButton(
                 title: String(localized: "SKLEP ONLINE"),
                 subtitle: String(localized: "Nasz sklep Online"),
-                destination: WebView()
+                action: { router.path.append(Route.shop) }
             )
             CustomButton(
                 title: String(localized: "KALENDARZ"),
                 subtitle: String(localized: "Kalendarz Imprez"),
-                destination: CalendarView()
+                action: { router.path.append(Route.calendar) }
             )
         }
-
         .padding(.vertical, -12)
         .buttonStyle(BlueCapsule())
-    }
-}
-
-struct ButtonsStack_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationStack {
-            ButtonsStack()
-        }
     }
 }
