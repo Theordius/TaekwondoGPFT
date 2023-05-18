@@ -30,7 +30,7 @@ protocol FileNameProviding {
     static var value: String { get }
 }
 
-enum TeoryFileName: FileNameProviding {
+enum TheoryFileName: FileNameProviding {
     static let value: String = "Theory.json"
 }
 

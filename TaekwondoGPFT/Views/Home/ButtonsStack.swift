@@ -42,6 +42,8 @@ struct ButtonsStack: View {
 
 struct ButtonsStack_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonsStack()
+        NavigationStack {
+            ButtonsStack()
+        }
     }
 }
