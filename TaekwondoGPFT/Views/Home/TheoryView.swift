@@ -13,6 +13,7 @@ struct TheoryView: View {
     //    @StateObject var viewModel2 = Self.ViewModel2(fileName: "Theory.json")!
     //    @StateObject var viewModel3 = Self.ViewModel2()!
     @StateObject var viewModel = Self.ViewModel()
+    @EnvironmentObject var router: Router
 
     // MARK: - BODY
 
@@ -26,7 +27,7 @@ struct TheoryView: View {
                     ForEach(model) { theory in
                         NavigationLink(value: theory) {
                             TheoryRow(theory: theory)
-                                .padding()
+                                .padding(.vertical, 6.0)
                         }
                     }
 

@@ -7,10 +7,27 @@
 
 import SwiftUI
 
-enum Route: Hashable {
-    case patterns(Patterns)
-    case theory(Theory)
-    case shop(OnlineShop)
+enum Route: Hashable, Codable {
+    case patterns
+    case theory
+    case shop
+    case calendar
+}
+
+enum ViewFactory {
+    @ViewBuilder
+    static func viewForDestination(_ destination: Route) -> some View {
+        switch destination {
+        case .patterns:
+            PatternsView()
+        case .theory:
+            TheoryView()
+        case .shop:
+            WebView()
+        case .calendar:
+            CalendarView()
+        }
+    }
 }
 
 class Router: ObservableObject {
