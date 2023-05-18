@@ -35,5 +35,6 @@ struct TheoryRow_Previews: PreviewProvider {
     static let theory: [Theory] = Bundle.main.decode("Theory.json")
     static var previews: some View {
         TheoryRow(theory: theory[0])
+            .previewLayout(.sizeThatFits)
     }
 }

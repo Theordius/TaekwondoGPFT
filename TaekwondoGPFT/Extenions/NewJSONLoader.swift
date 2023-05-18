@@ -9,7 +9,7 @@ final class NewJSONLoader<Provider: JSONModelProviding> {
     func loadJSON() throws -> Provider.Model {
         let data: Data
         let filename = Provider.string
-        
+
         guard
             let file = Bundle.main.url(
                 forResource: filename,
@@ -18,13 +18,13 @@ final class NewJSONLoader<Provider: JSONModelProviding> {
         else {
             throw TestError.fileNotFound("Could not find \(filename) in main bundle")
         }
-        
+
         do {
             data = try Data(contentsOf: file)
         } catch {
             throw TestError.fileNotFound("Couldn't load \(filename) from main bundle: \n\(error)")
         }
-        
+
         do {
             let decoder = JSONDecoder()
             return try decoder.decode(Provider.Model.self, from: data)

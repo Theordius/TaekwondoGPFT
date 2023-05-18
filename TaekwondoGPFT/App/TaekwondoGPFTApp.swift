@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct TaekwondoGPFT: App {
+    @StateObject var router = Router()
     @Environment(\.scenePhase) var phase
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     let quickActionObservable = QuickActionObservable()
@@ -17,8 +18,14 @@ struct TaekwondoGPFT: App {
     var body: some Scene {
         WindowGroup {
             MainScreen()
+                .environmentObject(router)
                 .environmentObject(quickActionObservable)
+                .onOpenURL { url in
+                    guard let scheme = url.scheme, scheme == "navStack" else { return }
+                    guard let screen = url.host else { return }
+                }
         }
+
         .onChange(of: phase) { newPhase in
             switch newPhase {
             case .active:
