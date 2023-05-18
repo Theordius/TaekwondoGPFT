@@ -42,7 +42,7 @@ struct CustomButton<Destination: View>: View {
 
 struct CustomButton_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
+        NavigationStack {
             CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy formalne", destination: PatternsView())
                 .previewLayout(.sizeThatFits)
         }

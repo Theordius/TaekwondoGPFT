@@ -59,7 +59,6 @@ class CustomSceneDelegate: UIResponder, UIWindowSceneDelegate {
         switch actionTypeValue {
         case .patternsAction:
             print("Action One was pressed")
-            navigateToPatternsView()
 
         case .theoryAction:
             print("Action Two was pressed")
@@ -67,10 +66,5 @@ class CustomSceneDelegate: UIResponder, UIWindowSceneDelegate {
         case .onlineShopAction:
             print("Action Three was pressed")
         }
-    }
-
-    func navigateToPatternsView() {
-        let patternsView = PatternsView()
-        _ = NavigationStack { patternsView }
     }
 }

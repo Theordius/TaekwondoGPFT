@@ -9,5 +9,5 @@ import Foundation
 import SwiftUI
 
 extension TheoryDetailView {
-    typealias ViewModel = AnotherAbstractJsonPopulatedViewModel<[Theory], TeoryFileName>
+    typealias ViewModel = AnotherAbstractJsonPopulatedViewModel<[Theory], TheoryFileName>
 }

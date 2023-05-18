@@ -10,8 +10,8 @@ import SwiftUI
 struct TheoryView: View {
     // MARK: - PROPERTIES
 
-//    @StateObject var viewModel2 = Self.ViewModel2(fileName: "Theory.json")!
-//    @StateObject var viewModel3 = Self.ViewModel2()!
+    //    @StateObject var viewModel2 = Self.ViewModel2(fileName: "Theory.json")!
+    //    @StateObject var viewModel3 = Self.ViewModel2()!
     @StateObject var viewModel = Self.ViewModel()
 
     // MARK: - BODY
@@ -23,14 +23,19 @@ struct TheoryView: View {
                 Text(error.localizedDescription)
             case let .loadded(model: model):
                 List {
-                    ForEach(model) { item in
-                        NavigationLink(destination: TheoryDetailView(theory: item)) {
-                            TheoryRow(theory: item)
+                    ForEach(model) { theory in
+                        NavigationLink(value: theory) {
+                            TheoryRow(theory: theory)
                                 .padding()
                         }
                     }
+
+                    .listStyle(.inset)
                 }
-                .listStyle(.inset)
+                .navigationDestination(for: Theory.self) { theory in
+                    TheoryDetailView(theory: theory)
+                }
+
                 .navigationTitle("TEORIA TAEKWON-DO")
             case .loading:
                 ProgressView()
@@ -45,6 +50,8 @@ struct TheoryView: View {
 
 struct TheoryView_Previews: PreviewProvider {
     static var previews: some View {
-        TheoryView()
+        NavigationStack {
+            TheoryView()
+        }
     }
 }

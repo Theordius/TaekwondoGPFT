@@ -10,6 +10,7 @@ import SwiftUI
 struct TheoryDetailView: View {
     // MARK: - PROPERTIES
 
+    @EnvironmentObject var router: Router
     @StateObject var viewModel = Self.ViewModel()!
 
     var theory: Theory
@@ -37,7 +38,12 @@ struct TheoryDetailView: View {
                 .fontWeight(.bold)
                 .multilineTextAlignment(.leading)
                 .lineLimit(.max)
+            Button("Strona Główna") {
+                router.resetPath()
+            }
+            .buttonStyle(.borderedProminent)
         }
+
         .padding(.vertical, 5)
     }
 }
@@ -45,7 +51,10 @@ struct TheoryDetailView: View {
 struct TheoryDetailView_Previews: PreviewProvider {
     static let theory: [Theory] = Bundle.main.decode("Theory.json")
     static var previews: some View {
-        TheoryDetailView(theory: theory[0])
-            .previewDevice("iPhone 11 Pro")
+        NavigationStack {
+            TheoryDetailView(theory: theory[0])
+                .environmentObject(Router())
+                .previewDevice("iPhone 11 Pro")
+        }
     }
 }

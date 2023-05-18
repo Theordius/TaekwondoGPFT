@@ -51,7 +51,7 @@ struct VideoPlayerView: View {
 
 struct VideoPlayerView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
+        NavigationStack {
             VideoPlayerView(videoSelected: "Chon-gi", videoTitle: "Chon-gi")
         }
     }

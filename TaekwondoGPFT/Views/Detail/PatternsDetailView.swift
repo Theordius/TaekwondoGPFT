@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct PatternDetailView: View {
+    @EnvironmentObject var router: Router
+
     // MARK: - PROPERTIES
 
     var pattern: Patterns
@@ -33,6 +35,10 @@ struct PatternDetailView: View {
                 .fontWeight(.bold)
                 .multilineTextAlignment(.leading)
                 .lineLimit(.max)
+            Button("Strona Główna") {
+                router.resetPath()
+            }
+            .buttonStyle(.borderedProminent)
         }
         .padding()
     }
@@ -42,6 +48,7 @@ struct PatternsDetailView_Previews: PreviewProvider {
     static let patterns: [Patterns] = Bundle.main.decode("Patterns.json")
     static var previews: some View {
         PatternDetailView(pattern: patterns[0])
+            .environmentObject(Router())
             .previewDevice("iPhone 11 Pro")
     }
 }

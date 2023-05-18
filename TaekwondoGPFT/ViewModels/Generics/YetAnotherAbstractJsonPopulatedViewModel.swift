@@ -7,18 +7,17 @@
 
 import Foundation
 
-
 @MainActor
 final class YetAnotherAbstractJsonPopulatedViewModel<
     JSONModelProvider: JSONModelProviding
 >: ObservableObject {
     typealias Model = JSONModelProvider.Model
-    
+
     @Published var modelState: ModelState<Model> = .loading
-    
+
     private let loader: NewJSONLoader<JSONModelProvider>
     private let appMonitoring: AppMonitoring
-    
+
     init(
         loader: NewJSONLoader<JSONModelProvider> = .init(),
         appMonitoring: AppMonitoring = AppMonitoring()
@@ -26,16 +25,16 @@ final class YetAnotherAbstractJsonPopulatedViewModel<
         self.loader = loader
         self.appMonitoring = appMonitoring
     }
-    
+
     func loadDataAsync() {
         Task {
             await loadData()
         }
     }
-    
+
     func loadData() async {
         do {
-            sleep(3) /// fake delay.
+            sleep(1) /// fake delay.
             let model = try loader.loadJSON()
             modelState = .loadded(model: model)
         } catch {
