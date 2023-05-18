@@ -68,6 +68,7 @@
 		10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D821F529DAE99D00B61924 /* ProgressBar.swift */; };
 		10D89A752A136B860094621F /* ButtonsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D89A742A136B860094621F /* ButtonsStack.swift */; };
 		10DBBDBC29F8FE8E008AFF80 /* AppMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */; };
+		10EEF51A2A15067E009E1F8B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EEF5192A15067E009E1F8B /* Router.swift */; };
 		AEA0E4382A0E230300AE52A5 /* ModelState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0E4372A0E230300AE52A5 /* ModelState.swift */; };
 		AEA0E43A2A0E231700AE52A5 /* JSONModelProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0E4392A0E231700AE52A5 /* JSONModelProviding.swift */; };
 		AEA0E43C2A0E232800AE52A5 /* PatternsModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0E43B2A0E232800AE52A5 /* PatternsModelProvider.swift */; };
@@ -178,6 +179,7 @@
 		10D89A742A136B860094621F /* ButtonsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsStack.swift; sourceTree = "<group>"; };
 		10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMonitoring.swift; sourceTree = "<group>"; };
 		10DBBDBD29F9043B008AFF80 /* TaekwondoGPFT.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TaekwondoGPFT.entitlements; sourceTree = "<group>"; };
+		10EEF5192A15067E009E1F8B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		AEA0E4372A0E230300AE52A5 /* ModelState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelState.swift; sourceTree = "<group>"; };
 		AEA0E4392A0E231700AE52A5 /* JSONModelProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModelProviding.swift; sourceTree = "<group>"; };
 		AEA0E43B2A0E232800AE52A5 /* PatternsModelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsModelProvider.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				1059C09C2A0CCAC40011855D /* AppDelegate.swift */,
 				10DBBDBB29F8FE8E008AFF80 /* AppMonitoring.swift */,
 				1059C0922A0AD1060011855D /* QuickAction.swift */,
+				10EEF5192A15067E009E1F8B /* Router.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -653,6 +656,7 @@
 				10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */,
 				10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */,
 				107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */,
+				10EEF51A2A15067E009E1F8B /* Router.swift in Sources */,
 				107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */,
 				104AE64E29D4B877000E0ED2 /* GalleryModel.swift in Sources */,
 				10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */,

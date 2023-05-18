@@ -11,7 +11,7 @@
 			<string>pl.rgkonsulting.TaekwondoGPFT</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>Taekwondo-GPFT</string>
+				<string>navStack</string>
 			</array>
 		</dict>
 	</array>

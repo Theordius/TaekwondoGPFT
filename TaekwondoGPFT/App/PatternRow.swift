@@ -36,5 +36,6 @@ struct PatternRow_Previews: PreviewProvider {
 
     static var previews: some View {
         PatternRow(pattern: patterns[3])
+            .previewLayout(.sizeThatFits)
     }
 }
