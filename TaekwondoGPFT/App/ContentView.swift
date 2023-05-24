@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var router: Router
     var body: some View {
-        NavigationStack(path: $router.path) {
+        NavigationStack {
             ZStack {
                 Rectangle()
                     .fill(Gradient(colors: [.gray, .white]))
@@ -32,9 +32,11 @@ struct ContentView: View {
 
                         Spacer()
                     }
+
                     .buttonStyle(BlueCapsule())
                     .padding(.vertical, -12)
                 } // VSTACK
+                .environmentObject(router)
             }
         } // ZSTACK
     }

@@ -38,6 +38,7 @@ struct PatternDetailView: View {
             Button("Strona Główna") {
                 router.resetPath()
             }
+
             .buttonStyle(.borderedProminent)
         }
         .padding()
