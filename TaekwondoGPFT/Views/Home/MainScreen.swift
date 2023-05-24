@@ -10,6 +10,8 @@ import SwiftUI
 struct MainScreen: View {
     // MARK: - PROPERTIES
 
+    @EnvironmentObject var router: Router
+
     private let mainPage = String(localized: "Strona Główna")
     private let timer = String(localized: "Timer")
     private let ourSections = String(localized: "Nasze Sekcje")
@@ -18,30 +20,32 @@ struct MainScreen: View {
     // MARK: - BODY
 
     var body: some View {
-        TabView {
-            ContentView()
-                .tabItem {
-                    Image(systemName: "figure.martial.arts")
-                    Text(mainPage)
-                }
+        NavigationStack(path: $router.path) {
+            TabView {
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "figure.martial.arts")
+                        Text(mainPage)
+                    }
 
-            TimerView()
-                .tabItem {
-                    Image(systemName: "timer")
-                    Text(timer)
-                }
+                TimerView()
+                    .tabItem {
+                        Image(systemName: "timer")
+                        Text(timer)
+                    }
 
-            MapView()
-                .tabItem {
-                    Image(systemName: "map")
-                    Text(ourSections)
-                }
+                MapView()
+                    .tabItem {
+                        Image(systemName: "map")
+                        Text(ourSections)
+                    }
 
-            GalleryView()
-                .tabItem {
-                    Image(systemName: "photo")
-                    Text(gallery)
-                }
+                GalleryView()
+                    .tabItem {
+                        Image(systemName: "photo")
+                        Text(gallery)
+                    }
+            }
         } //: TAB
     }
 }
@@ -51,5 +55,6 @@ struct MainScreen: View {
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         MainScreen()
+            .environmentObject(Router())
     }
 }
