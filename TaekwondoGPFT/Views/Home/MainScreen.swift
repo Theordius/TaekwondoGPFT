@@ -10,7 +10,7 @@ import SwiftUI
 struct MainScreen: View {
     // MARK: - PROPERTIES
 
-    @EnvironmentObject var router: Router
+//    @EnvironmentObject var router: Router
 
     private let mainPage = String(localized: "Strona Główna")
     private let timer = String(localized: "Timer")
@@ -20,7 +20,7 @@ struct MainScreen: View {
     // MARK: - BODY
 
     var body: some View {
-        NavigationStack(path: $router.path) {
+        NavigationStack {
             TabView {
                 ContentView()
                     .tabItem {
@@ -55,6 +55,6 @@ struct MainScreen: View {
 struct MainScreen_Previews: PreviewProvider {
     static var previews: some View {
         MainScreen()
-            .environmentObject(Router())
+//            .environmentObject(Router())
     }
 }

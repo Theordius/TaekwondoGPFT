@@ -12,7 +12,6 @@ enum Route: Hashable, Codable {
     case theory
     case shop
     case calendar
-    case patternDetail(Patterns)
 }
 
 enum ViewFactory {
@@ -27,8 +26,6 @@ enum ViewFactory {
             WebView()
         case .calendar:
             CalendarView()
-        case let .patternDetail(pattern):
-            PatternDetailView(pattern: pattern)
         }
     }
 }
@@ -76,7 +73,6 @@ class Router: ObservableObject {
             let encoder = JSONEncoder()
             let data = try encoder.encode(representation)
             Self.writeSerializedData(data)
-            print(path)
         } catch {
             print("Failed to save navigation data")
         }
