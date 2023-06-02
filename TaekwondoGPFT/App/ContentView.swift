@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var router: Router
+    // @EnvironmentObject var router: Router
     var body: some View {
         NavigationStack {
             ZStack {
@@ -36,7 +36,7 @@ struct ContentView: View {
                     .buttonStyle(BlueCapsule())
                     .padding(.vertical, -12)
                 } // VSTACK
-                .environmentObject(router)
+                //  .environmentObject(router)
             }
         } // ZSTACK
     }
@@ -46,7 +46,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             ContentView()
-                .environmentObject(Router())
+                //    .environmentObject(Router())
                 .previewLayout(.sizeThatFits)
         }
     }

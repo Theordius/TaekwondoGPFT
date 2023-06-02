@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct OnlineShop: Hashable {
+struct OnlineShop: Hashable, Codable {
     let url: URL
 }
