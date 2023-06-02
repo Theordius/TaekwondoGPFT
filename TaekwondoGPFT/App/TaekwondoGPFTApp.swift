@@ -40,9 +40,12 @@ struct TaekwondoGPFT: App {
                 print(type)
             case .inactive:
                 print("App is inactive")
+                router.save()
+                print(router.path)
             case .background:
                 // add quick actions
                 print("App is in background")
+                router.save()
                 var shortcutItems = UIApplication.shared.shortcutItems ?? []
                 if shortcutItems.isEmpty {
                     for action in allDynamicActions {

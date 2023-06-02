@@ -12,6 +12,7 @@ enum Route: Hashable, Codable {
     case theory
     case shop
     case calendar
+    case patternDetail(Patterns)
 }
 
 enum ViewFactory {
@@ -26,34 +27,56 @@ enum ViewFactory {
             WebView()
         case .calendar:
             CalendarView()
+        case let .patternDetail(pattern):
+            PatternDetailView(pattern: pattern)
         }
     }
 }
 
 class Router: ObservableObject {
-    @Published var path = NavigationPath() {
+    @Published var path: NavigationPath {
         didSet {
             save()
         }
     }
 
-    private let savePath = URL.documentsDirectory.appending(path: "SavedPath")
+    static func readSerializedData() -> Data? {
+        let savedPath = URL.documentsDirectory.appendingPathComponent("SavedPathStore")
+        return try? Data(contentsOf: savedPath)
+    }
+
+    static func writeSerializedData(_ data: Data) {
+        let savedPath = URL.documentsDirectory.appendingPathComponent("SavedPathStore")
+        do {
+            try data.write(to: savedPath)
+        } catch {
+            print("Failed to write navigation data to file: \(error)")
+        }
+    }
 
     init() {
-        if let data = try? Data(contentsOf: savePath) {
-            if let decoded = try? JSONDecoder().decode(NavigationPath.CodableRepresentation.self, from: data) {
-                path = NavigationPath(decoded)
-                return
+        if let data = Self.readSerializedData() {
+            do {
+                let representation = try JSONDecoder().decode(
+                    NavigationPath.CodableRepresentation.self,
+                    from: data
+                )
+                path = NavigationPath(representation)
+            } catch {
+                path = NavigationPath()
             }
+        } else {
+            path = NavigationPath()
         }
     }
 
     func save() {
         guard let representation = path.codable else { return }
-
         do {
-            let data = try JSONEncoder().encode(representation)
-            try data.write(to: savePath)
+            let encoder = JSONEncoder()
+            let data = try encoder.encode(representation)
+            Self.writeSerializedData(data)
+            print(path)
         } catch {
             print("Failed to save navigation data")
         }
