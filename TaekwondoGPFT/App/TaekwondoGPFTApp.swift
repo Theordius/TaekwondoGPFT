@@ -18,15 +18,8 @@ struct TaekwondoGPFT: App {
     var body: some Scene {
         WindowGroup {
             MainScreen()
-                .environmentObject(router)
                 .environmentObject(quickActionObservable)
-                .onOpenURL { url in
-                    guard let scheme = url.scheme, scheme == "navStack" else { return }
-                    guard let host = url.host else { return }
-                    if host == "patterns" {
-                        router.resetPath()
-                    }
-                }
+                .environmentObject(Router())
         }
 
         .onChange(of: phase) { newPhase in
@@ -40,12 +33,10 @@ struct TaekwondoGPFT: App {
                 print(type)
             case .inactive:
                 print("App is inactive")
-                router.save()
-                print(router.path)
             case .background:
                 // add quick actions
                 print("App is in background")
-                router.save()
+
                 var shortcutItems = UIApplication.shared.shortcutItems ?? []
                 if shortcutItems.isEmpty {
                     for action in allDynamicActions {

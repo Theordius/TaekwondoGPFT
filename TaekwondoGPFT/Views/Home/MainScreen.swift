@@ -20,7 +20,7 @@ struct MainScreen: View {
     // MARK: - BODY
 
     var body: some View {
-        NavigationStack(path: $router.path) {
+        NavigationStack {
             TabView {
                 ContentView()
                     .tabItem {
@@ -45,8 +45,8 @@ struct MainScreen: View {
                         Image(systemName: "photo")
                         Text(gallery)
                     }
-            }
-        } //: TAB
+            } //: TAB
+        } //: Navigation Stack
     }
 }
 
