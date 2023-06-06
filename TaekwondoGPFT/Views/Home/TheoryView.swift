@@ -13,7 +13,6 @@ struct TheoryView: View {
     //    @StateObject var viewModel2 = Self.ViewModel2(fileName: "Theory.json")!
     //    @StateObject var viewModel3 = Self.ViewModel2()!
     @StateObject var viewModel = Self.ViewModel()
-    @EnvironmentObject var router: Router
 
     // MARK: - BODY
 
@@ -25,16 +24,13 @@ struct TheoryView: View {
             case let .loadded(model: model):
                 List {
                     ForEach(model) { theory in
-                        NavigationLink(value: theory) {
+                        NavigationLink(value: Route.theoryDetail(theory)) {
                             TheoryRow(theory: theory)
                                 .padding(.vertical, 6.0)
                         }
                     }
 
                     .listStyle(.inset)
-                }
-                .navigationDestination(for: Theory.self) { theory in
-                    TheoryDetailView(theory: theory)
                 }
 
                 .navigationTitle("TEORIA TAEKWON-DO")

@@ -9,6 +9,8 @@ import SwiftUI
 struct PatternsView: View {
     // MARK: - PROPERTIES
 
+    let title: String = "UKŁADY FORMALNE"
+
     @StateObject var viewModel = Self.ViewModel()!
 
     // MARK: - BODY
@@ -16,16 +18,13 @@ struct PatternsView: View {
     var body: some View {
         List {
             ForEach(viewModel.model) { pattern in
-                NavigationLink(value: pattern) {
+                NavigationLink(value: Route.patternDetail(pattern)) {
                     PatternRow(pattern: pattern)
                         .padding(.vertical, 6.0)
                 }
             }
         }
-        .navigationDestination(for: Patterns.self) { pattern in
-            PatternDetailView(pattern: pattern)
-        }
-        .navigationTitle("UKŁADY FORMALNE")
+        .navigationTitle(title)
     }
 }
 

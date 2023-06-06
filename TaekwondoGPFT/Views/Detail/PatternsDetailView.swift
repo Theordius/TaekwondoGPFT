@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct PatternDetailView: View {
-    @EnvironmentObject var router: Router
-
     // MARK: - PROPERTIES
 
     var pattern: Patterns
+    @EnvironmentObject var router: Router
 
     // MARK: - BODY
 

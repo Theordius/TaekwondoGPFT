@@ -7,18 +7,16 @@
 
 import SwiftUI
 
-enum Route: Hashable, Codable {
+enum Route: Hashable, Codable, View {
     case patterns
     case theory
     case shop
     case calendar
     case patternDetail(Patterns)
-}
+    case theoryDetail(Theory)
 
-enum ViewFactory {
-    @ViewBuilder
-    static func viewForDestination(_ destination: Route) -> some View {
-        switch destination {
+    var body: some View {
+        switch self {
         case .patterns:
             PatternsView()
         case .theory:
@@ -29,54 +27,36 @@ enum ViewFactory {
             CalendarView()
         case let .patternDetail(pattern):
             PatternDetailView(pattern: pattern)
+        case let .theoryDetail(theory):
+            TheoryDetailView(theory: theory)
         }
     }
 }
 
 class Router: ObservableObject {
-    @Published var path: NavigationPath {
+    @Published var path = NavigationPath() {
         didSet {
             save()
         }
     }
 
-    static func readSerializedData() -> Data? {
-        let savedPath = URL.documentsDirectory.appendingPathComponent("SavedPathStore")
-        return try? Data(contentsOf: savedPath)
-    }
-
-    static func writeSerializedData(_ data: Data) {
-        let savedPath = URL.documentsDirectory.appendingPathComponent("SavedPathStore")
-        do {
-            try data.write(to: savedPath)
-        } catch {
-            print("Failed to write navigation data to file: \(error)")
-        }
-    }
+    private let savePath = URL.documentsDirectory.appending(path: "SavedPathStore")
 
     init() {
-        if let data = Self.readSerializedData() {
-            do {
-                let representation = try JSONDecoder().decode(
-                    NavigationPath.CodableRepresentation.self,
-                    from: data
-                )
-                path = NavigationPath(representation)
-            } catch {
-                path = NavigationPath()
+        if let data = try? Data(contentsOf: savePath) {
+            if let decoded = try? JSONDecoder().decode(NavigationPath.CodableRepresentation.self, from: data) {
+                path = NavigationPath(decoded)
+                return
             }
-        } else {
-            path = NavigationPath()
         }
     }
 
     func save() {
         guard let representation = path.codable else { return }
+
         do {
-            let encoder = JSONEncoder()
-            let data = try encoder.encode(representation)
-            Self.writeSerializedData(data)
-            print(path)
+            let data = try JSONEncoder().encode(representation)
+            try data.write(to: savePath)
         } catch {
             print("Failed to save navigation data")
         }
