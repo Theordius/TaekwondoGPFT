@@ -21,7 +21,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         }
 
         let sceneConfiguration = UISceneConfiguration(
-            name: "Custom Configuration",
+            name: connectingSceneSession.configuration.name,
             sessionRole: connectingSceneSession.role
         )
 
@@ -31,10 +31,6 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 }
 
 class CustomSceneDelegate: UIResponder, UIWindowSceneDelegate {
-    @Environment(\.openURL) var openURL
-    @State private var isShowingPatternsView = false
-    @State private var isShowingTheoryView = false
-
     var shortcutItemToProcess: UIApplicationShortcutItem?
     var patternsIdentifier = "patterns"
 
@@ -45,13 +41,6 @@ class CustomSceneDelegate: UIResponder, UIWindowSceneDelegate {
     ) {
         shortcutItemToProcess = shortcutItem
         handleShortcutItem(shortcutItem)
-
-        // windowScene.keyWindow?.rootViewController = UIHostingController(rootView: PatternsView())
-        // quickActionObservable.selectedAction = QuickAction.getAction(shortcutItem.type)
-    }
-
-    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        print(URLContexts)
     }
 
     func handleShortcutItem(_ shortuctItem: UIApplicationShortcutItem) {

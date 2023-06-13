@@ -27,6 +27,7 @@ struct ContentView: View {
                         Text("")
 
                         ButtonsStack()
+                            .navigationDestination(for: Route.self) { $0 }
 
                         Spacer()
                     }
@@ -34,9 +35,8 @@ struct ContentView: View {
                     .buttonStyle(BlueCapsule())
                     .padding(.vertical, -12)
                 } // VSTACK
-            }
-            .navigationDestination(for: Route.self) { $0 }
-        } // ZSTACK
+            } //: ZSTACK
+        } //: NAVIGATION STACK
     }
 }
 
