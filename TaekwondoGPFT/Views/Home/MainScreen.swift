@@ -20,33 +20,35 @@ struct MainScreen: View {
     // MARK: - BODY
 
     var body: some View {
-        NavigationStack {
-            TabView {
-                ContentView()
-                    .tabItem {
-                        Image(systemName: "figure.martial.arts")
-                        Text(mainPage)
-                    }
+        TabView {
+            ContentView()
+                .tabItem {
+                    Image(systemName: "figure.martial.arts")
+                    Text(mainPage)
+                }
+                .tag(0)
 
-                TimerView()
-                    .tabItem {
-                        Image(systemName: "timer")
-                        Text(timer)
-                    }
+            TimerView()
+                .tabItem {
+                    Image(systemName: "timer")
+                    Text(timer)
+                }
+                .tag(1)
 
-                MapView()
-                    .tabItem {
-                        Image(systemName: "map")
-                        Text(ourSections)
-                    }
+            MapView()
+                .tabItem {
+                    Image(systemName: "map")
+                    Text(ourSections)
+                }
+                .tag(2)
 
-                GalleryView()
-                    .tabItem {
-                        Image(systemName: "photo")
-                        Text(gallery)
-                    }
-            } //: TAB
-        } //: Navigation Stack
+            GalleryView()
+                .tabItem {
+                    Image(systemName: "photo")
+                    Text(gallery)
+                }
+                .tag(3)
+        } //: TAB
     }
 }
 

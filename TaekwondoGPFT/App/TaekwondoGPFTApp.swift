@@ -12,14 +12,26 @@ struct TaekwondoGPFT: App {
     @StateObject var router = Router()
     @Environment(\.scenePhase) var phase
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    let quickActionObservable = QuickActionObservable()
+    let quickActionService = QuickActionService()
     var shortcutItemToProcess: UIApplicationShortcutItem?
 
     var body: some Scene {
         WindowGroup {
             MainScreen()
-                .environmentObject(quickActionObservable)
+                .environmentObject(quickActionService)
                 .environmentObject(Router())
+                // Deep Link functionality
+                .onOpenURL { url in
+                    if url.scheme == "navStack" {
+                        if url.host == "patterns" {
+                            router.path.append(Route.patterns)
+                        } else if url.host == "theory" {
+                            router.path.append(Route.theory)
+                        } else {
+                            router.resetPath()
+                        }
+                    }
+                }
         }
 
         .onChange(of: phase) { newPhase in
@@ -29,7 +41,7 @@ struct TaekwondoGPFT: App {
                 guard let type = shortcutItemToProcess?.userInfo?["type"] as? String else {
                     return
                 }
-                quickActionObservable.selectedAction = QuickAction.getAction(type)
+                quickActionService.selectedAction = QuickAction.getAction(type)
                 print(type)
             case .inactive:
                 print("App is inactive")

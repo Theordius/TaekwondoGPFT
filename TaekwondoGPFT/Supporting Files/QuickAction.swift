@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class QuickActionObservable: ObservableObject {
+class QuickActionService: ObservableObject {
     @Published var selectedAction: QuickAction?
 }
 
