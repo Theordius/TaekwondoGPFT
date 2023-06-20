@@ -9,7 +9,8 @@ import SwiftUI
 import UIKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
-    var shortcutItemToProcess: UIApplicationShortcutItem?
+    private let actionService = ActionService.shared
+    // var shortcutItemToProcess: UIApplicationShortcutItem?
 
     func application(
         _ application: UIApplication,
@@ -17,7 +18,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         options: UIScene.ConnectionOptions
     ) -> UISceneConfiguration {
         if let shortcutItem = options.shortcutItem {
-            shortcutItemToProcess = shortcutItem
+            actionService.action = Action.getAction(shortcutItem)
         }
 
         let sceneConfiguration = UISceneConfiguration(
@@ -25,35 +26,20 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             sessionRole: connectingSceneSession.role
         )
 
-        sceneConfiguration.delegateClass = CustomSceneDelegate.self
+        sceneConfiguration.delegateClass = SceneDelegate.self
         return sceneConfiguration
     }
 }
 
-class CustomSceneDelegate: UIResponder, UIWindowSceneDelegate {
-    var shortcutItemToProcess: UIApplicationShortcutItem?
-    var patternsIdentifier = "patterns"
-
+class SceneDelegate: NSObject, UIWindowSceneDelegate {
+    private let actionService = ActionService.shared
     func windowScene(
         _ windowScene: UIWindowScene,
         performActionFor shortcutItem: UIApplicationShortcutItem,
         completionHandler: @escaping (Bool) -> Void
     ) {
-        shortcutItemToProcess = shortcutItem
-        handleShortcutItem(shortcutItem)
-    }
-
-    func handleShortcutItem(_ shortuctItem: UIApplicationShortcutItem) {
-        guard let actionTypeValue = ActionTypes(rawValue: shortuctItem.type) else { return }
-        switch actionTypeValue {
-        case .patternsAction:
-            print("Action One was pressed")
-
-        case .theoryAction:
-            print("Action Two was pressed")
-
-        case .onlineShopAction:
-            print("Action Three was pressed")
-        }
+        // (UIApplication.shared.delegate as? AppDelegate)?.shortcutItemToProcess = shortcutItem
+        actionService.action = Action.getAction(shortcutItem)
+        completionHandler(true)
     }
 }
