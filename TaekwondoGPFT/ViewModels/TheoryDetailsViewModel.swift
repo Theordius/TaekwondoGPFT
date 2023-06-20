@@ -9,7 +9,5 @@ import Foundation
 import SwiftUI
 
 extension TheoryDetailView {
-    class ViewModel: ObservableObject {
-        @Published public var theory: [Theory] = Bundle.main.decode("Theory.json")
-    }
+    typealias ViewModel = AnotherAbstractJsonPopulatedViewModel<[Theory], TheoryFileName>
 }

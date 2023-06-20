@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct PatternRow: View {
-    //MARK: - PROPERTIES
+    // MARK: - PROPERTIES
+
     var pattern: Patterns
-    
-    //MARK: - BODY
+
+    // MARK: - BODY
+
     var body: some View {
         HStack {
             Image(systemName: "figure.kickboxing")
@@ -22,18 +24,18 @@ struct PatternRow: View {
             Text(pattern.name)
                 .fontWeight(.heavy)
                 .padding(.horizontal, 6)
-            
         }
         .foregroundColor(.green)
-      
     }
 }
 
-//MARK: - PREVIEW
+// MARK: - PREVIEW
+
 struct PatternRow_Previews: PreviewProvider {
     static let patterns: [Patterns] = Bundle.main.decode("Patterns.json")
-    
+
     static var previews: some View {
         PatternRow(pattern: patterns[3])
+            .previewLayout(.sizeThatFits)
     }
 }

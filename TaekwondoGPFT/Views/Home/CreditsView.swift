@@ -8,28 +8,30 @@
 import SwiftUI
 
 struct CreditsView: View {
-    //MARK: - PROPERTIES
-    
-    //MARK: - BODY
+    // MARK: - PROPERTIES
+
+    // MARK: - BODY
+
     var body: some View {
         VStack {
             Image("rgkonsulting")
                 .resizable()
                 .scaledToFit()
                 .frame(width: 128, height: 128)
-            
+
             Text("""
-    Copyright © Rafal Gesior
-    All right reserved
-    """)
+            Copyright © Rafal Gesior
+            All right reserved
+            """)
             .font(.footnote)
-        .multilineTextAlignment(.center)
+            .multilineTextAlignment(.center)
         } //: VSTACK
-        .padding()        
+        .padding()
     }
 }
 
-//MARK: - PREVIEW
+// MARK: - PREVIEW
+
 struct CreditsView_Previews: PreviewProvider {
     static var previews: some View {
         CreditsView()

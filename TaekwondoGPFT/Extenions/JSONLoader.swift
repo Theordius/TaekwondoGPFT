@@ -8,15 +8,14 @@
 import Foundation
 
 final class JSONLoader {
-    
     enum TestError: Error, Equatable {
         case fileNotFound(_ message: String = "File not found")
         case fileDataCorrupted(_ message: String = "Data file is corrupted")
     }
-    
+
     func loadJSON<T: Decodable>(_ filename: String) throws -> T {
         let data: Data
-        
+
         guard let file = Bundle.main.url(forResource: filename, withExtension: nil) else {
             throw TestError.fileNotFound("Could not find \(filename) in main bundle")
         }

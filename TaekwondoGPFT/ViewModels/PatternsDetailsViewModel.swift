@@ -9,7 +9,5 @@ import Foundation
 import SwiftUI
 
 extension PatternDetailView {
-    class ViewModel: ObservableObject {
-        @Published public var patterns: [Patterns] = Bundle.main.decode("Patterns.json")
-    }
+    typealias ViewModel = AnotherAbstractJsonPopulatedViewModel<[Patterns], PatternsFileName>
 }

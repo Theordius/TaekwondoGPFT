@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  TaekwondoGPFT
+
+  Created by Rafał Gęsior on 27/04/2023.
+  
+*/
+
+// MainScreen
+"Strona Główna" = "Strona Główna";
+"Timer" = "Timer";
+"Nasze Sekcje" = "Nasze Sekcje";
+"Galeria" = "Galeria";
+
+// Button titles and subtitles
+"UKŁADY FORMALNE" = "UKŁADY FORMALNE";
+"Układy Formalne" = "Układy Formalne";
+"TEORIA" = "TEORIA";
+"Teoria Taekwon - DO" = "Teoria Taekwon - DO";
+
+"SKLEP ONLINE" = "SKLEP ONLINE";
+"Nasz sklep Online" = "Nasz sklep Online";
+"KALENDARZ" = "KALENDARZ";
+"Kalendarz Imprez" = "Kalendarz Imprez";
+
+// TODO Theory JSON
+
+// TODO Patterns JSON

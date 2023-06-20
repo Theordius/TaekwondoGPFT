@@ -8,46 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var router: Router
+
     var body: some View {
-        NavigationView {
+        NavigationStack(path: $router.path) {
             ZStack {
                 Rectangle()
                     .fill(Gradient(colors: [.gray, .white]))
                     .ignoresSafeArea()
-                VStack {
+                VStack(alignment: .center, spacing: 35) {
                     Group {
                         Spacer()
                         Image("logo")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 180, height: 180)
-                        
+
                         Text("")
-                        
-                        CustomButton(title: "UKŁADY FORMALNE", subtitle: "Układy Formalne", tag: "A")
-                        CustomButton(title: "TEORIA", subtitle: "Teoria Taekwon - DO", tag: "B")
-                        CustomButton(title: "SKLEP ONLINE", subtitle: "Nasz sklep Online", tag: "C")
-                        CustomButton(title: "KALENDARZ", subtitle: "Kalendarz Imprez", tag: "D")
-                        
+
+                        ButtonsStack()
+                            .navigationDestination(for: Route.self) { $0 }
+
                         Spacer()
                     }
-                    
-                    .padding(.vertical, -12)
+
                     .buttonStyle(BlueCapsule())
-                    
-                    
-                }
-            }
-        }
-        
+                    .padding(.vertical, -12)
+                } // VSTACK
+            } //: ZSTACK
+        } //: NAVIGATION STACK
     }
 }
 
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
+        NavigationStack {
             ContentView()
+                .environmentObject(Router())
                 .previewLayout(.sizeThatFits)
         }
     }
