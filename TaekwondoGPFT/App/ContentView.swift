@@ -44,7 +44,7 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
             ContentView()
-
+                .environmentObject(Router())
                 .previewLayout(.sizeThatFits)
         }
     }
