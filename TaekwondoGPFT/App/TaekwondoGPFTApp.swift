@@ -13,7 +13,6 @@ struct TaekwondoGPFT: App {
     @StateObject var router = Router()
     @Environment(\.scenePhase) var phase
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-
     private var actionService = ActionService.shared
 
     var body: some Scene {
@@ -38,7 +37,7 @@ struct TaekwondoGPFT: App {
         .onChange(of: phase) { newPhase in
             switch newPhase {
             case .active:
-                handleShortcutItem()
+                actionService.handleShortcutItem(router: router)
                 print("App become active")
 
             case .inactive:
@@ -47,7 +46,6 @@ struct TaekwondoGPFT: App {
             case .background:
                 // add quick actions
                 print("App is in background")
-
                 var shortcutItems = UIApplication.shared.shortcutItems ?? []
                 if shortcutItems.isEmpty {
                     for action in allDynamicActions {
@@ -59,22 +57,6 @@ struct TaekwondoGPFT: App {
                 UIApplication.shared.shortcutItems = shortcutItems
             @unknown default:
                 print("Default - unexpected value")
-            }
-        }
-    }
-
-    func handleShortcutItem() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-            guard let action = actionService.action else { return }
-            switch action.type {
-            case ActionType.patternsAction.rawValue:
-                router.path.append(Route.patterns)
-            case ActionType.theoryAction.rawValue:
-                router.path.append(Route.theory)
-            case ActionType.onlineShopAction.rawValue:
-                router.path.append(Route.shop)
-            default:
-                break
             }
         }
     }

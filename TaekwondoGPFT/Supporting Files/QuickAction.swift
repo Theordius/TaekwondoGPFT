@@ -5,12 +5,35 @@
 //  Created by Rafał Gęsior on 09/05/2023.
 //
 
+import Combine
 import Foundation
 import SwiftUI
 
 class ActionService: ObservableObject {
     static let shared = ActionService()
-    @Published var action: Action?
+    @Published private var action: Action?
+    private var cancellable: AnyCancellable?
+
+    func setActionToHandle(action: Action?) {
+        self.action = action
+    }
+
+    func handleShortcutItem(router: Router) {
+        cancellable = $action.sink { action in
+            router.resetPath()
+            guard let action else { return }
+            switch action.type {
+            case ActionType.patternsAction.rawValue:
+                router.path.append(Route.patterns)
+            case ActionType.theoryAction.rawValue:
+                router.path.append(Route.theory)
+            case ActionType.onlineShopAction.rawValue:
+                router.path.append(Route.shop)
+            default:
+                break
+            }
+        }
+    }
 }
 
 enum ActionType: String, CaseIterable {

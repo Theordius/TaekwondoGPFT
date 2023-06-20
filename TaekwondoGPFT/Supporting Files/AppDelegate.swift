@@ -10,7 +10,6 @@ import UIKit
 
 class AppDelegate: NSObject, UIApplicationDelegate {
     private let actionService = ActionService.shared
-    // var shortcutItemToProcess: UIApplicationShortcutItem?
 
     func application(
         _ application: UIApplication,
@@ -18,7 +17,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         options: UIScene.ConnectionOptions
     ) -> UISceneConfiguration {
         if let shortcutItem = options.shortcutItem {
-            actionService.action = Action.getAction(shortcutItem)
+            actionService.setActionToHandle(action: Action.getAction(shortcutItem))
         }
 
         let sceneConfiguration = UISceneConfiguration(
@@ -38,8 +37,7 @@ class SceneDelegate: NSObject, UIWindowSceneDelegate {
         performActionFor shortcutItem: UIApplicationShortcutItem,
         completionHandler: @escaping (Bool) -> Void
     ) {
-        // (UIApplication.shared.delegate as? AppDelegate)?.shortcutItemToProcess = shortcutItem
-        actionService.action = Action.getAction(shortcutItem)
+        actionService.setActionToHandle(action: Action.getAction(shortcutItem))
         completionHandler(true)
     }
 }
