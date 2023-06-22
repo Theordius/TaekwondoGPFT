@@ -18,8 +18,10 @@ struct ProgressBar: View {
     var body: some View {
         ZStack {
             Rectangle()
+                .fill(
+                    LinearGradient(colors: [.blue, .gray, .black], startPoint: .top, endPoint: .bottom)
+                )
                 .frame(width: 240, height: 240)
-                .background(Color.blue)
                 .cornerRadius(8).opacity(0.3)
 
             VStack(alignment: .center) {
@@ -30,6 +32,7 @@ struct ProgressBar: View {
                 Divider().padding(.vertical, 15)
 
                 ProgressView("Loading...", value: loadingData, total: 100.0)
+                    .frame(width: 220)
                     .onReceive(timer) { _ in
                         if loadingData < 100 {
                             loadingData += 2
@@ -45,6 +48,5 @@ struct ProgressBar: View {
 struct ProgressBar_Previews: PreviewProvider {
     static var previews: some View {
         ProgressBar()
-            .previewLayout(.sizeThatFits)
     }
 }
