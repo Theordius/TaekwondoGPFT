@@ -56,6 +56,8 @@
 		10A13E7129F4663500633D6F /* CorruptedJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 10A13E7029F4663500633D6F /* CorruptedJSON.json */; };
 		10A13E7329F5AA4200633D6F /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E7229F5AA4200633D6F /* JSONLoader.swift */; };
 		10A13E7B29F7057E00633D6F /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E7A29F7057E00633D6F /* JSONLoaderTests.swift */; };
+		10C4E90C2A443664007E360D /* YouTubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C4E90B2A443664007E360D /* YouTubeService.swift */; };
+		10C4E90E2A444C5D007E360D /* YouTubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C4E90D2A444C5D007E360D /* YouTubeView.swift */; };
 		10CDA59228E4CF93000B4005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CDA59128E4CF93000B4005 /* Assets.xcassets */; };
 		10CDA5A428E4D1FE000B4005 /* TheoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */; };
 		10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */; };
@@ -165,6 +167,8 @@
 		10A13E7029F4663500633D6F /* CorruptedJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CorruptedJSON.json; sourceTree = "<group>"; };
 		10A13E7229F5AA4200633D6F /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		10A13E7A29F7057E00633D6F /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
+		10C4E90B2A443664007E360D /* YouTubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeService.swift; sourceTree = "<group>"; };
+		10C4E90D2A444C5D007E360D /* YouTubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeView.swift; sourceTree = "<group>"; };
 		10CDA58528E4CF92000B4005 /* TaekwondoGPFT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaekwondoGPFT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10CDA59128E4CF93000B4005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10CDA5A328E4D1FE000B4005 /* TheoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryViewModel.swift; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				107F9DB229B5E45200C0C25F /* VideoPlayerService.swift */,
+				10C4E90B2A443664007E360D /* YouTubeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */,
 				104AE65129D4BC20000E0ED2 /* InsetGalleryView.swift */,
 				10D821F329DAE05500B61924 /* WebView.swift */,
+				10C4E90D2A444C5D007E360D /* YouTubeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -678,6 +684,7 @@
 				AEA0E43E2A0E234900AE52A5 /* TheoryModelProvider.swift in Sources */,
 				10599D4C29258F85005E42F0 /* Calendar.swift in Sources */,
 				107F9DB829B5EC6100C0C25F /* VideoPlayerView.swift in Sources */,
+				10C4E90E2A444C5D007E360D /* YouTubeView.swift in Sources */,
 				AEAFAB0E29FA6F4700169C35 /* AnotherAbstractJsonPopulatedViewModel.swift in Sources */,
 				100B976B29AFE10A00D29ED7 /* GalleryView.swift in Sources */,
 				1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */,
@@ -696,6 +703,7 @@
 				1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */,
 				10CDA5AC28E4D2EF000B4005 /* Patterns.swift in Sources */,
 				AEAFAB1029FA6F5A00169C35 /* YetAnotherAbstractJsonPopulatedViewModel.swift in Sources */,
+				10C4E90C2A443664007E360D /* YouTubeService.swift in Sources */,
 				10D821F229DAD2CF00B61924 /* Loader.swift in Sources */,
 				1059C09D2A0CCAC40011855D /* AppDelegate.swift in Sources */,
 			);
