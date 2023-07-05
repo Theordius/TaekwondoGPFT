@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "LICZEBNIKI KOREAŃSKIE",
-        "description" : " 1. -> Hana \n 2. -> Tul \n 3. -> Set \n 4. -> Net \n 5. -> Dasot \n 6. -> Yasot \n 7. -> Ilgot \n 8. -> Yodol \n 9. -> Ahop \n 10. -> Yol ",
+        "description" : "1. -> Hana \n2. -> Tul \n3. -> Set \n4. -> Net \n5. -> Dasot \n6. -> Yasot \n7. -> Ilgot \n8. -> Yodol \n9. -> Ahop \n10. -> Yol",
         
         
     },
@@ -10,7 +10,7 @@
     {
         "id": "2",
         "name": "STREFY ATAKU",
-        "description" : "   W Taekwon - do wyróżniamy 3 strefy ataku. \n \n Niska - Najunde \n Średnia - Kaunde \n Wysoka - Nepunde",
+        "description" : "W Taekwon - do wyróżniamy 3 strefy ataku. \n\nNiska - Najunde \nŚrednia - Kaunde \nWysoka - Nepunde",
         
     },
     
@@ -59,9 +59,22 @@
     
     {
         "id": "9",
-        "name": "TWÓRCA TAEKWNO -DO ",
-        "description" : "To be done",
+        "name": "TWÓRCA TAEKWON -DO ",
+        "description" : "Taekwon - do to koreańska sztuka walki, która powstała w 1955 roku. \nZa jej twórce uważa się gen. Choi Hong Hi",
         
+    },
+    
+    {
+        "id": "10",
+        "name": "SYMBOLIKA PASÓW",
+        "description" : "Pas biały - niewinność i bezradność początkującego adepta, który o Taekwon-do wie bardzo mało \nPas żółty - symbolizuje ziarno, z której roślina kiełkuje \nPas zielony - symbolizuję roślinę \nPas niebieski - symbolizuje niebo w kierunku, którego rosną umiejętności umiejętności adepta \nPas czerwony - symbolizuje zagrożenie \nPas czarny - symbolizuje przeciwieństwo pasa białego oraz doświadczenie adepta. Symbolizuje również odwagę i odporność posiadacza",
+        
+    },
+    
+    {
+        "id": "11",
+        "name": "TEORIA SIŁY ",
+        "description" : "Teoria siły składa się z 6 elementów, które podczas wykonywania technik stanowić powinny nierozerwalną całość. \n\n1. Siła reakcji (Bangdong Ryok) \n2. Koncentracja(Jip joong) \n3. Równowaga(Kyun Hyung) \n4. Kontrola oddechu \n5. Masa \n6. Szybkość",
     }
 
 ]

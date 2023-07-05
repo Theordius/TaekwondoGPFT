@@ -22,7 +22,9 @@ struct TheoryDetailView: View {
             Image("logo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 180, height: 180)
+                .frame(width: 160, height: 160)
+                .padding()
+
             Text("")
 
             Divider().padding(.horizontal, 6)
@@ -30,21 +32,38 @@ struct TheoryDetailView: View {
             Text(theory.name)
                 .font(.headline)
                 .foregroundColor(.blue)
+                .foregroundStyle(
+                    LinearGradient(
+                        colors: [.customGrayLight, .customGrayMedium],
+                        startPoint: .top, endPoint: .bottom
+                    )
+                )
 
             Divider().padding(.horizontal, 6)
 
-            Text(theory.description ?? "To be done")
-                .font(.system(.subheadline))
-                .fontWeight(.bold)
-                .multilineTextAlignment(.leading)
-                .lineLimit(.max)
+            ScrollView(showsIndicators: false) {
+                ZStack {
+                    CustomTextBackround()
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(theory.description ?? "To be done")
+                            .modifier(DescriptionTextModifier())
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.all)
+                }
+                .padding()
+            }
+
             Button("Strona Główna") {
                 router.resetPath()
             }
+
             .buttonStyle(.borderedProminent)
+            Spacer()
         }
 
-        .padding(.vertical, 5)
+        .padding(.vertical, 4)
     }
 }
 

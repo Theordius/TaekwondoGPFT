@@ -16,9 +16,9 @@ struct PatternDetailView: View {
     // MARK: - BODY
 
     var body: some View {
-        VStack(alignment: .center, spacing: 26) {
+        VStack(alignment: .center, spacing: 12) {
             YouTubeView(videoID: pattern.videoID)
-                .frame(width: 360, height: 360)
+                .frame(width: 300, height: 300)
                 .scaledToFit()
 
             Divider().padding(.horizontal, 6)
@@ -29,16 +29,27 @@ struct PatternDetailView: View {
 
             Divider().padding(.horizontal, 6)
 
-            Text(pattern.description!)
-                .font(.system(.subheadline))
-                .fontWeight(.bold)
-                .multilineTextAlignment(.leading)
-                .lineLimit(.max)
+            ScrollView(showsIndicators: false) {
+                ZStack {
+                    CustomTextBackround()
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(pattern.description ?? "Opis wkrótce")
+                            .modifier(DescriptionTextModifier())
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.all)
+                }
+                .padding()
+            }
+            Divider().padding(.horizontal, 6)
+
             Button("Strona Główna") {
                 router.resetPath()
             }
-
             .buttonStyle(.borderedProminent)
+
+            Divider().padding(.horizontal, 6)
         }
         .padding()
     }
@@ -49,6 +60,5 @@ struct PatternsDetailView_Previews: PreviewProvider {
     static var previews: some View {
         PatternDetailView(pattern: patterns[0])
             .environmentObject(Router())
-            .previewDevice("iPhone 11 Pro")
     }
 }

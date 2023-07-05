@@ -30,7 +30,7 @@ struct TheoryView: View {
                         }
                     }
 
-                    .listStyle(.inset)
+                    .listStyle(.automatic)
                 }
 
                 .navigationTitle("TEORIA TAEKWON-DO")

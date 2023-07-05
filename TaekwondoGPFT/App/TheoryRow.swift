@@ -22,10 +22,9 @@ struct TheoryRow: View {
                 .frame(width: 24, height: 24)
                 .foregroundColor(.blue)
             Text(theory.name)
-                .fontWeight(.heavy)
-                .padding(.horizontal, 6)
+                .modifier(RowTitleModifier())
         }
-        .foregroundColor(.green)
+        .foregroundColor(.black)
     }
 }
 

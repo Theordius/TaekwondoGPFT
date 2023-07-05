@@ -12,20 +12,15 @@ struct YouTubeView: View {
     var videoID: String
 
     var body: some View {
-        ZStack {
-            ScrollView(showsIndicators: false) {
-                VStack {
-                    YouTubePlayer(videoID: videoID)
-                        .frame(width: 300, height: 300)
-                        .padding()
-                }
-            }
-        }
+        YouTubePlayer(videoID: videoID)
+            .frame(width: 300, height: 300)
+            .padding()
     }
 }
 
 struct YouTubeView_Previews: PreviewProvider {
     static var previews: some View {
         YouTubeView(videoID: "gZvn0B4JSLg")
+            .previewLayout(.sizeThatFits)
     }
 }
