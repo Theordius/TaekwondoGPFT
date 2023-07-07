@@ -14,7 +14,7 @@ struct MainScreen: View {
 
     private let mainPage = String(localized: "Strona Główna")
     private let timer = String(localized: "Timer")
-    private let ourSections = String(localized: "Nasze Sekcje")
+    private let goAndFight = String(localized: "Go & Fight")
     private let gallery = String(localized: "Galeria")
 
     // MARK: - BODY
@@ -35,10 +35,10 @@ struct MainScreen: View {
                 }
                 .tag(1)
 
-            MapView()
+            GoAndFightView()
                 .tabItem {
-                    Image(systemName: "map")
-                    Text(ourSections)
+                    Image("go&fight")
+                    Text(goAndFight)
                 }
                 .tag(2)
 

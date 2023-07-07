@@ -30,6 +30,11 @@ struct ButtonsStack: View {
                 action: { router.path.append(Route.shop) }
             )
             CustomButton(
+                title: String(localized: "STRAGAN PFT"),
+                subtitle: String(localized: "Używany sprzęt TKD"),
+                action: { }
+            )
+            CustomButton(
                 title: String(localized: "KALENDARZ"),
                 subtitle: String(localized: "Kalendarz Imprez"),
                 action: { router.path.append(Route.calendar) }

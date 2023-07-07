@@ -40,6 +40,8 @@
 		1062826229AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */; };
 		1062826429AD4A7500EBBD3E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826329AD4A7500EBBD3E /* ContentView.swift */; };
 		1062826629AD4AC500EBBD3E /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1062826529AD4AC500EBBD3E /* MainScreen.swift */; };
+		107EF4812A57F2260050D56B /* GoAndFightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF4802A57F2260050D56B /* GoAndFightView.swift */; };
+		107EF4832A57F9290050D56B /* WebLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107EF4822A57F9290050D56B /* WebLoader.swift */; };
 		107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA329B4BC8E00C0C25F /* PatternRow.swift */; };
 		107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DA529B4EA5500C0C25F /* TheoryRow.swift */; };
 		107F9DB329B5E45200C0C25F /* VideoPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107F9DB229B5E45200C0C25F /* VideoPlayerService.swift */; };
@@ -48,8 +50,6 @@
 		1081A5A62919219000666376 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A52919219000666376 /* CalendarView.swift */; };
 		1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A9291933A700666376 /* CalendarViewModel.swift */; };
 		1081A5B0291A7A4800666376 /* Patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 1081A5AF291A7A4800666376 /* Patterns.json */; };
-		1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */; };
-		1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5B5291BDF3600666376 /* OnlineShopView.swift */; };
 		108F13E329FAEEFF0037E0B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 108F13E529FAEEFF0037E0B0 /* Localizable.strings */; };
 		10A13E6629F4546300633D6F /* TaekwondoGPFTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */; };
 		10A13E6829F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */; };
@@ -151,6 +151,8 @@
 		1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTApp.swift; sourceTree = "<group>"; };
 		1062826329AD4A7500EBBD3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1062826529AD4AC500EBBD3E /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		107EF4802A57F2260050D56B /* GoAndFightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoAndFightView.swift; sourceTree = "<group>"; };
+		107EF4822A57F9290050D56B /* WebLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLoader.swift; sourceTree = "<group>"; };
 		107F9DA329B4BC8E00C0C25F /* PatternRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternRow.swift; sourceTree = "<group>"; };
 		107F9DA529B4EA5500C0C25F /* TheoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryRow.swift; sourceTree = "<group>"; };
 		107F9DB229B5E45200C0C25F /* VideoPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerService.swift; sourceTree = "<group>"; };
@@ -159,8 +161,6 @@
 		1081A5A52919219000666376 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		1081A5A9291933A700666376 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 		1081A5AF291A7A4800666376 /* Patterns.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Patterns.json; sourceTree = "<group>"; };
-		1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopViewModel.swift; sourceTree = "<group>"; };
-		1081A5B5291BDF3600666376 /* OnlineShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineShopView.swift; sourceTree = "<group>"; };
 		108F13E429FAEEFF0037E0B0 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		108F13E629FAEF310037E0B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		108F13E729FAEF3D0037E0B0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -257,6 +257,7 @@
 			children = (
 				107F9DB229B5E45200C0C25F /* VideoPlayerService.swift */,
 				10C4E90B2A443664007E360D /* YouTubeService.swift */,
+				107EF4822A57F9290050D56B /* WebLoader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -270,11 +271,11 @@
 				100B977729B0C07200D29ED7 /* PatternsView.swift */,
 				100B976C29AFE40600D29ED7 /* CreditsView.swift */,
 				100B977529B0BABD00D29ED7 /* TheoryView.swift */,
-				1081A5B5291BDF3600666376 /* OnlineShopView.swift */,
 				107F9DB729B5EC6100C0C25F /* VideoPlayerView.swift */,
 				104AE65129D4BC20000E0ED2 /* InsetGalleryView.swift */,
 				10D821F329DAE05500B61924 /* WebView.swift */,
 				10C4E90D2A444C5D007E360D /* YouTubeView.swift */,
+				107EF4802A57F2260050D56B /* GoAndFightView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -422,7 +423,6 @@
 				10599D9E292BB23E005E42F0 /* PatternsDetailsViewModel.swift */,
 				1081A5A9291933A700666376 /* CalendarViewModel.swift */,
 				10CDA5A528E4D21F000B4005 /* EventsViewModel.swift */,
-				1081A5B3291BDEE100666376 /* OnlineShopViewModel.swift */,
 				10CDA59F28E4D163000B4005 /* Models */,
 			);
 			path = ViewModels;
@@ -684,7 +684,6 @@
 				AEA0E43A2A0E231700AE52A5 /* JSONModelProviding.swift in Sources */,
 				10CDA5A628E4D21F000B4005 /* EventsViewModel.swift in Sources */,
 				100B976F29AFE50100D29ED7 /* MotionAnimationView.swift in Sources */,
-				1081A5B4291BDEE100666376 /* OnlineShopViewModel.swift in Sources */,
 				10AAA8CA2A55787C005F4679 /* ColorExtension.swift in Sources */,
 				10599D9D292BA26F005E42F0 /* PatternsDetailView.swift in Sources */,
 				104AE65229D4BC20000E0ED2 /* InsetGalleryView.swift in Sources */,
@@ -696,7 +695,7 @@
 				104AE64E29D4B877000E0ED2 /* GalleryModel.swift in Sources */,
 				10599D4A29258F72005E42F0 /* OnlineShop.swift in Sources */,
 				10283D252938C36200250E2F /* TheoryDetailsViewModel.swift in Sources */,
-				1081A5B6291BDF3600666376 /* OnlineShopView.swift in Sources */,
+				107EF4812A57F2260050D56B /* GoAndFightView.swift in Sources */,
 				10283D232938C28C00250E2F /* TheoryDetailView.swift in Sources */,
 				10392FED29C4600300A7F76C /* MapAnnotationView.swift in Sources */,
 				10D821F429DAE05500B61924 /* WebView.swift in Sources */,
@@ -726,6 +725,7 @@
 				10A13E7329F5AA4200633D6F /* JSONLoader.swift in Sources */,
 				100B977829B0C07200D29ED7 /* PatternsView.swift in Sources */,
 				AEAFAB0C29FA6ED500169C35 /* AbstractJsonPopulatedViewModel.swift in Sources */,
+				107EF4832A57F9290050D56B /* WebLoader.swift in Sources */,
 				10CDA5B028E4D309000B4005 /* Theory.swift in Sources */,
 				104AE65029D4B96A000E0ED2 /* GalleryGridItemView.swift in Sources */,
 				10AAA8C82A556BAE005F4679 /* RowTitleModifier.swift in Sources */,

@@ -22,7 +22,7 @@ struct ContentView: View {
                         Image("logo")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 180, height: 180)
+                            .frame(width: 140, height: 140)
 
                         Text("")
 

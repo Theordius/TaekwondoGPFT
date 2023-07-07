@@ -1,17 +1,17 @@
 //
-//  WebView.swift
+//  GoAndFightView.swift
 //  TaekwondoGPFT
 //
-//  Created by Rafał Gęsior on 03/04/2023.
+//  Created by Rafał Gęsior on 07/07/2023.
 //
 
 import SwiftUI
 
-struct WebView: View {
+struct GoAndFightView: View {
     // MARK: - PROPERTIES
 
     @State var showLoader = true
-    let url = URL(string: "https://sklep.gpft.pl")
+    let url = URL(string: "https://www.go.gpft.pl/zawody")
 
     // MARK: - BODY
 
@@ -36,8 +36,8 @@ struct WebView: View {
 
 // MARK: - PREVIEW
 
-struct WebView_Previews: PreviewProvider {
+struct GoAndFightView_Previews: PreviewProvider {
     static var previews: some View {
-        WebView()
+        GoAndFightView()
     }
 }

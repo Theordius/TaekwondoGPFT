@@ -10,8 +10,6 @@ import SwiftUI
 struct CustomButton: View {
     // MARK: - PROPERTIES
 
-    @ObservedObject var viewModel = ViewModel()
-
     var title: String
     var subtitle: String
     var action: () -> Void
