@@ -39,7 +39,7 @@ struct WebLoader: UIViewRepresentable {
         }
 
         func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-            // Do something when the web page fails to load
+            print("The page failed to load \(error)")
         }
     }
 }

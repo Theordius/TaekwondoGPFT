@@ -8,69 +8,27 @@
 import SwiftUI
 
 struct GalleryView: View {
-    @State private var selectedImage: String = "tkd-02"
-    @State private var gridLayout: [GridItem] = [GridItem(.flexible())]
-    @State private var gridColumn: Double = 3.0
-
-    let gallery: [Gallery] = Bundle.main.decode("Gallery.json")
-    let haptics = UIImpactFeedbackGenerator(style: .medium)
-
-    // MARK: - FUNCTIONS
-
-    func gridSwitch() {
-        gridLayout = Array(repeating: .init(.flexible()), count: Int(gridColumn))
-    }
+    @State var showLoader = true
+    let url = URL(string: "https://www.gpft.pl/galeria/")
 
     // MARK: - BODY
 
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
-            VStack(alignment: .center, spacing: 30) {
-                // MARK: - IMAGE
+        ZStack {
+            VStack(spacing: 0) {
+                if let url {
+                    WebLoader(url: url, showLoader: $showLoader)
+                }
+            }
 
-                Image(selectedImage)
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.white, lineWidth: 8))
-
-                // MARK: - SLIDER
-
-                Slider(value: $gridColumn, in: 2 ... 4, step: 1)
-                    .padding(.horizontal)
-                    .onChange(of: gridColumn, perform: { _ in
-                        gridSwitch()
-                    })
-
-                // MARK: - GRID
-
-                LazyVGrid(columns: gridLayout, alignment: .center, spacing: 10) {
-                    ForEach(gallery) { item in
-                        Image(item.image)
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.white, lineWidth: 1))
-                            .onTapGesture {
-                                selectedImage = item.image
-                                haptics.impactOccurred()
-                            }
-                    } //: LOOP
-                } //: GRID
-                CreditsView().opacity(0.6)
-
-                    .animation(.easeIn, value: 0.5)
-                    .onAppear(perform: {
-                        gridSwitch()
-
-                    })
-            } //: VSTACK
-            .padding(.horizontal, 10)
-            .padding(.vertical, 50)
-        } //: SCROLL
-        // .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(MotionAnimationView())
-        .background(Color.black)
+            if showLoader {
+                ProgressBar()
+                    .frame(width: 200, height: 200)
+            }
+        }
+        .onAppear {
+            showLoader = true
+        }
     }
 }
 
