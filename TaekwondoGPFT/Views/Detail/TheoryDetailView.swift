@@ -10,7 +10,6 @@ import SwiftUI
 struct TheoryDetailView: View {
     // MARK: - PROPERTIES
 
-    @StateObject var viewModel = Self.ViewModel()!
     @EnvironmentObject var router: Router
 
     var theory: Theory

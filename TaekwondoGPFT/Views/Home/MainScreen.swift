@@ -21,34 +21,40 @@ struct MainScreen: View {
 
     var body: some View {
         TabView {
-            ContentView()
-                .tabItem {
-                    Image(systemName: "figure.martial.arts")
-                    Text(mainPage)
-                }
-                .tag(0)
+            Group {
+                ContentView()
+                    .tabItem {
+                        Image(systemName: "figure.martial.arts")
+                        Text(mainPage)
+                    }
+                    .tag(0)
 
-            TimerView()
-                .tabItem {
-                    Image(systemName: "timer")
-                    Text(timer)
-                }
-                .tag(1)
+                TimerView()
+                    .tabItem {
+                        Image(systemName: "timer")
+                        Text(timer)
+                    }
+                    .tag(1)
 
-            GoAndFightView()
-                .tabItem {
-                    Image("go&fight")
-                    Text(goAndFight)
-                }
-                .tag(2)
+                GoAndFightView()
+                    .tabItem {
+                        Image("go&fight")
+                        Text(goAndFight)
+                    }
+                    .tag(2)
 
-            GalleryView()
-                .tabItem {
-                    Image(systemName: "photo")
-                    Text(gallery)
-                }
-                .tag(3)
+                GalleryView()
+                    .tabItem {
+                        Image(systemName: "photo")
+                        Text(gallery)
+                    }
+                    .tag(3)
+            }
         } //: TAB
+        .onAppear {
+            UITabBar.appearance().backgroundColor = UIColor.systemBackground
+            UITabBar.appearance().isTranslucent = true
+        }
     }
 }
 

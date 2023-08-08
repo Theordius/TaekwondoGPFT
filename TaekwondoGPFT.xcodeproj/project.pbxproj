@@ -51,6 +51,7 @@
 		1081A5AA291933A700666376 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1081A5A9291933A700666376 /* CalendarViewModel.swift */; };
 		1081A5B0291A7A4800666376 /* Patterns.json in Resources */ = {isa = PBXBuildFile; fileRef = 1081A5AF291A7A4800666376 /* Patterns.json */; };
 		108F13E329FAEEFF0037E0B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 108F13E529FAEEFF0037E0B0 /* Localizable.strings */; };
+		109A56AD2A828A030022F0A8 /* CustomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109A56AC2A828A030022F0A8 /* CustomBackground.swift */; };
 		10A13E6629F4546300633D6F /* TaekwondoGPFTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */; };
 		10A13E6829F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A13E6729F4546300633D6F /* TaekwondoGPFTUITestsLaunchTests.swift */; };
 		10A13E7129F4663500633D6F /* CorruptedJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 10A13E7029F4663500633D6F /* CorruptedJSON.json */; };
@@ -164,6 +165,7 @@
 		108F13E429FAEEFF0037E0B0 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		108F13E629FAEF310037E0B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		108F13E729FAEF3D0037E0B0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		109A56AC2A828A030022F0A8 /* CustomBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackground.swift; sourceTree = "<group>"; };
 		10A13E5629F4544600633D6F /* TaekwondoGPFTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A13E6329F4546300633D6F /* TaekwondoGPFTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaekwondoGPFTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A13E6529F4546300633D6F /* TaekwondoGPFTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaekwondoGPFTUITests.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				1062826129AD4A1B00EBBD3E /* TaekwondoGPFTApp.swift */,
+				109A56AC2A828A030022F0A8 /* CustomBackground.swift */,
 				1062826329AD4A7500EBBD3E /* ContentView.swift */,
 				100B976629AFE0D100D29ED7 /* MapView.swift */,
 				100B976829AFE0E600D29ED7 /* TimerView.swift */,
@@ -689,6 +692,7 @@
 				104AE65229D4BC20000E0ED2 /* InsetGalleryView.swift in Sources */,
 				10CDA5AA28E4D249000B4005 /* PatternsViewModel.swift in Sources */,
 				10D821F629DAE99D00B61924 /* ProgressBar.swift in Sources */,
+				109A56AD2A828A030022F0A8 /* CustomBackground.swift in Sources */,
 				107F9DA629B4EA5500C0C25F /* TheoryRow.swift in Sources */,
 				10EEF51A2A15067E009E1F8B /* Router.swift in Sources */,
 				107F9DA429B4BC8E00C0C25F /* PatternRow.swift in Sources */,

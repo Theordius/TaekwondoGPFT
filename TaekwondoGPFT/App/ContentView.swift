@@ -13,9 +13,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack(path: $router.path) {
             ZStack {
-                Rectangle()
-                    .fill(Gradient(colors: [.gray, .white]))
-                    .ignoresSafeArea()
+                CustomBackground()
                 VStack(alignment: .center, spacing: 35) {
                     Group {
                         Spacer()
@@ -25,7 +23,6 @@ struct ContentView: View {
                             .frame(width: 140, height: 140)
 
                         Text("")
-
                         ButtonsStack()
                             .navigationDestination(for: Route.self) { $0 }
 
